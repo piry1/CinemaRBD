@@ -20,11 +20,56 @@ export class DbService {
     this.headers.append('Content-Type', 'text/plain');
   }
 
-  getData(str: String, id?: Number) {
+  private get(str: string, id?: number) {
     var url = this.apiUrl + str + '/' + (id ? id : "");
     return this._http.get(url)
       .map(res => res.json());
   }
+
+  getData(str: string, id?: number) {
+    return this.get(str, id);
+  }
+
+  getTickets(id?: number) {
+    return this.getData('bilety', id);
+  }
+
+  getSeat(id?: number) {
+    return this.getData('miejsca', id);
+  }
+
+  getFilm(id?: number) {
+    return this.getData('filmy', id);
+  }
+
+  getReservation(id?: number) {
+    return this.getData('rezerwacje', id);
+  }
+
+  getRoom(id?: number) {
+    return this.getData('sale', id);
+  }
+
+  getSeance(id?: number) {
+    return this.getData('seanse', id);
+  }
+
+  getTicket(id: number) {
+    return this.getData('bilet', id);
+  }
+
+  getFilmSeance(filmId: number) {
+    return this.getData('seansefilmu', filmId);
+  }
+
+  getFreeSeats(seanceId: number) {
+    return this.getData('wolnemiejsca', seanceId);
+  }
+
+  getUsersTickets(id: number) {
+    return this.getData('biletyusera', id);
+  }
+
 
   // DODAWANIE
 

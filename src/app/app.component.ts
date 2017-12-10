@@ -15,37 +15,13 @@ export class AppComponent {
   constructor(private _db: DbService) { }
 
   title = 'app';
-  test;
 
   ngOnInit() {
-    /*
-        this._db.getData('filmy')
-          .subscribe(album => {
-            this.test = album;
-            console.log(this.test);
-          });
-          */
 
-    var film: Film = new Film();
-    film.dlugosc = "100";
-    film.gatunek = "musical";
-    film.rezyser = "mu";
-    film.rok = "2200";
-    film.tytul = "Edit Test";
-
-    console.log(JSON.stringify(film));
-
-    this._db.deleteFilm(17)
-      .subscribe(a => {
-        console.log(a);
+    this._db.getFilm()
+      .subscribe(test => {
+        console.log(test);
       });
-
-    /*
-        this._db.deleteFilm()
-        .subscribe(a => {
-          console.log(a);
-        });
-    */
 
   }
 }
