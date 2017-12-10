@@ -21,7 +21,7 @@ export class DbService {
   }
 
   getData(str: String, id?: Number) {
-    var url = this.apiUrl + str + (id ? id : "");
+    var url = this.apiUrl + str + '/' + (id ? id : "");
     return this._http.get(url)
       .map(res => res.json());
   }
@@ -54,8 +54,19 @@ export class DbService {
     return this.post('bilet', ticket);
   }
 
+  // MODYFIKOWANIE
 
+  editFilm(film: Film, id: number) {
+    return this.post('film/' + id, film);
+  }
 
+  editRoom(room: Room, id: number) {
+    return this.post('sala/' + id, room);
+  }
+
+  editSeance(seance: Seance, id: number) {
+    return this.post('seans/' + id, seance);
+  }
 
 
 }

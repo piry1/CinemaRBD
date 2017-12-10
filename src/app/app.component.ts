@@ -31,11 +31,11 @@ export class AppComponent {
     film.gatunek = "musical";
     film.rezyser = "mu";
     film.rok = "2200";
-    film.tytul = "TesSS";
+    film.tytul = "Edit Test";
 
     console.log(JSON.stringify(film));
 
-    this._db.addFilm(film)
+    this._db.editFilm(film, 17)
     .subscribe(a => {
       console.log(a);
     });
