@@ -3,16 +3,22 @@ import { Http, Headers } from '@angular/http';
 import 'rxjs/add/operator/map';
 import { isDefined } from '@angular/compiler/src/util';
 import { Film } from './dbModel/film';
+import { Room } from './dbModel/room';
+import { Seance } from './dbModel/seance';
+import { Ticket } from './dbModel/ticket';
+import { User } from './dbModel/user';
+
 
 @Injectable()
 export class DbService {
 
   private apiUrl: string = 'http://93.175.96.60/cinemaapi.php/';
-  private artistUrl: string;
-  private albumsUrl: string;
-  private albumUrl: string;
+  private headers: Headers = new Headers();
 
-  constructor(private _http: Http) { }
+
+  constructor(private _http: Http) {
+    this.headers.append('Content-Type', 'text/plain');
+  }
 
   getData(str: String, id?: Number) {
     var url = this.apiUrl + str + (id ? id : "");
@@ -20,13 +26,36 @@ export class DbService {
       .map(res => res.json());
   }
 
-  addFilm(film: Film) {
-    let headers = new Headers();
-    headers.append('Content-Type', 'text/plain');
-    var url = this.apiUrl + 'film'
-    return this._http.post(url, JSON.stringify(film), { headers: headers })
+  // DODAWANIE
+
+  private post(str: string, data: any) {
+    var url = this.apiUrl + str;
+    return this._http.post(url, JSON.stringify(data), { headers: this.headers })
       .map(res => res.json);
   }
 
-  
+  addFilm(film: Film) {
+    return this.post('film', film);
+  }
+
+  addSeance(seance: Seance) {
+    return this.post('seans', seance);
+  }
+
+  addRoom(room: Room) {
+    return this.post('sala', room);
+  }
+
+  addUser(user: User) {
+    return this.post('uzytkownik', user);
+  }
+
+  addTicket(ticket: Ticket) {
+    return this.post('bilet', ticket);
+  }
+
+
+
+
+
 }
