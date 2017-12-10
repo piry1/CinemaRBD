@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { DbService } from './db.service';
 import { Film } from './dbModel/film';
-
+import { User } from './dbModel/user';
 
 @Component({
   selector: 'app-root',
@@ -17,11 +17,6 @@ export class AppComponent {
   title = 'app';
 
   ngOnInit() {
-
-    this._db.getFilm()
-      .subscribe(test => {
-        console.log(test);
-      });
 
   }
 }

@@ -22,6 +22,8 @@ function postRequest($table, $key, $d){
       case 'seans': $sql = "CALL DodajSeans('$d->idfilmu', '$d->idsali', '$d->data', '$d->godzina', '$d->cena')";  break;
       case 'uzytkownik': $sql = "CALL DodajUzytkownika('$d->imie', '$d->nazwisko', '$d->login', '$d->haslo')";  break;
       case 'bilet': $sql = "CALL KupBilet('$d->klient', '$d->rezerwacja')";  break;
+      case 'login': $sql = "CALL SprawdzUzytkownika('$d->login', '$d->haslo')";  break;
+
     }
   }
 

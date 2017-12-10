@@ -7,6 +7,7 @@ import { Room } from './dbModel/room';
 import { Seance } from './dbModel/seance';
 import { Ticket } from './dbModel/ticket';
 import { User } from './dbModel/user';
+import { Response } from '@angular/http/src/static_response';
 
 
 @Injectable()
@@ -28,6 +29,10 @@ export class DbService {
 
   getData(str: string, id?: number) {
     return this.get(str, id);
+  }
+
+  checkUser(user: User) {
+    return this.post('login', user);
   }
 
   getTickets(id?: number) {
@@ -76,7 +81,7 @@ export class DbService {
   private post(str: string, data: any) {
     var url = this.apiUrl + str;
     return this._http.post(url, JSON.stringify(data), { headers: this.headers })
-      .map(res => res.json);
+      .map((res: Response) => res.json())
   }
 
   addFilm(film: Film) {

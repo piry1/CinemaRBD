@@ -61,7 +61,6 @@ switch ($method) {
 
 //http_response_code(406);
 //die($method);
-
 $result = mysqli_query($link,$sql);
 
 // die if SQL statement failed
@@ -73,7 +72,7 @@ if (!$result) {
 
 
 // print results, insert id or affected row count
-if ($method == 'GET') {
+if ($method == 'GET' || $table == 'login') {
   if (!$key) echo '[';
   for ($i=0;$i<mysqli_num_rows($result);$i++) {
     echo ($i>0?',':'').json_encode(mysqli_fetch_object($result));
