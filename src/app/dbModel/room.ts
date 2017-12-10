@@ -1,5 +1,6 @@
 export class Room {
-    nazwa: String;
-    miejsca: Number;
-    rzedy: Number;
+    Id: number;
+    Nazwa: String;
+    Miejsca: Number;
+    Rzedy: Number;
 }

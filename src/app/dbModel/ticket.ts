@@ -1,4 +1,5 @@
 export class Ticket {
-    klient: number;
-    rezerwacja: number;
+    Id: number;
+    Klient: number;
+    Rezerwacja: number;
 }

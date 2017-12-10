@@ -5,9 +5,9 @@ function postRequest($table, $key, $d){
 
   if($key){
     switch ($table) {
-      case 'film': $sql = "CALL EdytujFilm('$key', '$d->tytul', '$d->rezyser', '$d->rok', '$d->gatunek', '$d->dlugosc')";  break;
-      case 'sala': $sql = "CALL EdytujSale('$key', '$d->nazwa')";  break;
-      case 'seans': $sql = "CALL EdytujSeans('$key', '$d->data', '$d->godzina', '$d->cena')";  break;
+      case 'film': $sql = "CALL EdytujFilm('$key', '$d->Tytul', '$d->Rezyser', '$d->Rok', '$d->Gatunek', '$d->Dlugosc')";  break;
+      case 'sala': $sql = "CALL EdytujSale('$key', '$d->Nazwa')";  break;
+      case 'seans': $sql = "CALL EdytujSeans('$key', '$d->Data', '$d->Godzina', '$d->Cena')";  break;
       //DELETE
       case 'dseans': $sql = "CALL UsunSeans('$key')"; break;
       case 'dsala': $sql = "CALL UsunSale('$key')"; break;
@@ -16,13 +16,13 @@ function postRequest($table, $key, $d){
     }
   }else{
     switch ($table) {
-      case 'film': $sql = "CALL DodajFilm('$d->tytul', '$d->rezyser', '$d->rok', '$d->gatunek', '$d->dlugosc')";  break;
-      case 'admin': $sql = "CALL DodajAdmina('$d->imie', '$d->nazwisko', '$d->login', '$d->haslo')";  break;
-      case 'sala': $sql = "CALL DodajSale('$d->nazwa', '$d->miejsca', '$d->rzedy')";  break;
-      case 'seans': $sql = "CALL DodajSeans('$d->idfilmu', '$d->idsali', '$d->data', '$d->godzina', '$d->cena')";  break;
-      case 'uzytkownik': $sql = "CALL DodajUzytkownika('$d->imie', '$d->nazwisko', '$d->login', '$d->haslo')";  break;
-      case 'bilet': $sql = "CALL KupBilet('$d->klient', '$d->rezerwacja')";  break;
-      case 'login': $sql = "CALL SprawdzUzytkownika('$d->login', '$d->haslo')";  break;
+      case 'film': $sql = "CALL DodajFilm('$d->Tytul', '$d->Rezyser', '$d->Rok', '$d->Gatunek', '$d->Dlugosc')";  break;
+      case 'admin': $sql = "CALL DodajAdmina('$d->Imie', '$d->Nazwisko', '$d->Login', '$d->Haslo')";  break;
+      case 'sala': $sql = "CALL DodajSale('$d->Nazwa', '$d->Miejsca', '$d->Rzedy')";  break;
+      case 'seans': $sql = "CALL DodajSeans('$d->IdFilmu', '$d->IdSali', '$d->Data', '$d->Godzina', '$d->Cena')";  break;
+      case 'uzytkownik': $sql = "CALL DodajUzytkownika('$d->Imie', '$d->Nazwisko', '$d->Login', '$d->Haslo')";  break;
+      case 'bilet': $sql = "CALL KupBilet('$d->Klient', '$d->Rezerwacja')";  break;
+      case 'login': $sql = "CALL SprawdzUzytkownika('$d->Login', '$d->Haslo')";  break;
 
     }
   }

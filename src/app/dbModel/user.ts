@@ -1,6 +1,8 @@
 export class User {
-    imie: String;
-    nazwisko: String;
-    login: String;
-    haslo: String;
+    Id: number;
+    Imie: String;
+    Nazwisko: String;
+    Login: String;
+    Haslo: String;
+    Kot: String;
 }

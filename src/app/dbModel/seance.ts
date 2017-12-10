@@ -1,7 +1,8 @@
 export class Seance {
-    idfilmu: number;
-    idsali: number;
-    data: String;
-    godzina: String;
-    cena: String;
+    Id: number;
+    IdFilmu: number;
+    IdSali: number;
+    Data: String;
+    Godzina: String;
+    Cena: String;
 }
