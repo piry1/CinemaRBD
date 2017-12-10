@@ -18,14 +18,14 @@ export class AppComponent {
   test;
 
   ngOnInit() {
-/*
-    this._db.getData('filmy')
-      .subscribe(album => {
-        this.test = album;
-        console.log(this.test);
-      });
-      */
-/*
+    /*
+        this._db.getData('filmy')
+          .subscribe(album => {
+            this.test = album;
+            console.log(this.test);
+          });
+          */
+
     var film: Film = new Film();
     film.dlugosc = "100";
     film.gatunek = "musical";
@@ -35,17 +35,17 @@ export class AppComponent {
 
     console.log(JSON.stringify(film));
 
-    this._db.editFilm(film, 17)
-    .subscribe(a => {
-      console.log(a);
-    });
-*/
-/*
-    this._db.deleteFilm()
-    .subscribe(a => {
-      console.log(a);
-    });
-*/
+    this._db.deleteFilm(17)
+      .subscribe(a => {
+        console.log(a);
+      });
+
+    /*
+        this._db.deleteFilm()
+        .subscribe(a => {
+          console.log(a);
+        });
+    */
 
   }
 }

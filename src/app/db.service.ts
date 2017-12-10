@@ -68,5 +68,22 @@ export class DbService {
     return this.post('seans/' + id, seance);
   }
 
+  //USUWANIE
+
+  deleteFilm(id: number) {
+    return this.post('dfilm/' + id, null);
+  }
+
+  deleteRoom(id: number) {
+    return this.post('dsala/' + id, null);
+  }
+
+  deleteSeance(id: number) {
+    return this.post('dseans/' + id, null);
+  }
+
+  deleteReservation(id: number) {
+    return this.post('drezerwacja/' + id, null);
+  }
 
 }
