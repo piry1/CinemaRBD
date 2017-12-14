@@ -38,12 +38,9 @@ if($method == 'GET'){
   or die('Error connecting to MySQL server.');
 } else{
   $link = mysqli_connect('90.156.81.49', 'piru', 'pirukrulem', 'Cinema')
-  or $link = mysqli_connect('localhost', 'piry', 'kot', 'Cinema')
   or die('Error connectiong to MySQL server');
 }
 mysqli_set_charset($link,'utf8');
-
-$aa = $input->city;
 
 // create SQL based on HTTP method
 switch ($method) {
@@ -57,10 +54,6 @@ switch ($method) {
   $sql = postRequest($table, $key, $input); break;
 }
 
-// excecute SQL statement
-
-//http_response_code(406);
-//die($method);
 $result = mysqli_query($link,$sql);
 
 // die if SQL statement failed
@@ -68,8 +61,6 @@ if (!$result) {
   http_response_code(404);
   die(mysqli_error());
 }
-
-
 
 // print results, insert id or affected row count
 if ($method == 'GET' || $table == 'login') {
