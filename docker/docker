@@ -1,0 +1,11 @@
+cd /home/rado/composetest
+docker-compose up -d
+docker run --name phpmyadminMaster --link composetest_db_master_1:db -p 8082:80 -d --net composetest_default phpmyadmin/phpmyadmin
+docker run --name phpmyadminSlave1 --link composetest_db_slave1_1:db -p 8083:80 -d --net composetest_default phpmyadmin/phpmyadmin
+docker run --name phpmyadminSlave2 --link composetest_db_slave2_1:db -p 8084:80 -d --net composetest_default phpmyadmin/phpmyadmin
+
+hasła:
+root master  / user test
+root slave1  / user test
+root slave2  / user test
+

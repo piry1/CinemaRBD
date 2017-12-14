@@ -34,10 +34,10 @@ if($table == ""){
 
 // connect to the mysql database
 if($method == 'GET'){
-  $link = mysqli_connect('localhost', 'piry', 'kot', 'Cinema')
+  $link = $link = mysqli_connect('localhost:3307', 'root', 'master', 'Cinema')
   or die('Error connecting to MySQL server.');
 } else{
-  $link = mysqli_connect('90.156.81.49', 'piru', 'pirukrulem', 'Cinema')
+  $link = $link = mysqli_connect('localhost:3307', 'root', 'master', 'Cinema')
   or die('Error connectiong to MySQL server');
 }
 mysqli_set_charset($link,'utf8');

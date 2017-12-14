@@ -1,0 +1,45 @@
+version: "2"
+services:
+    db_master:
+        image: mysql
+        ports: 
+            - "3307:3306"
+        environment:
+            MYSQL_USER: user
+            MYSQL_PASSWORD: test
+            MYSQL_ROOT_PASSWORD: master
+        volumes:
+            - master:/var/lib/mysql
+        networks:
+            - default
+    db_slave1:
+        image: mysql
+        ports: 
+            - "3308:3306"
+        environment:
+            MYSQL_USER: user
+            MYSQL_PASSWORD: test
+            MYSQL_ROOT_PASSWORD: slave1
+        volumes:
+            - slave1:/var/lib/mysql
+        networks:
+            - default
+    db_slave2:
+        image: mysql
+        ports: 
+            - "3309:3306"
+        environment:
+            MYSQL_USER: user
+            MYSQL_PASSWORD: test
+            MYSQL_ROOT_PASSWORD: slave2
+        volumes:
+            - slave2:/var/lib/mysql
+        networks:
+            - default
+volumes:
+    master:
+    slave1:
+    slave2:
+
+
+
