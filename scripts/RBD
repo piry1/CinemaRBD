@@ -1,0 +1,13 @@
+#!/bin/bash
+cd /home/rado/composetest
+docker-compose up -d
+
+docker start phpmyadminMaster
+docker start phpmyadminSlave1
+docker start phpmyadminSlave2
+docker start phpmyadminSlave3
+docker start phpmyadminSlave4
+
+cd /home/rado/Programowanie/Skrypty
+./serwerownia
+

@@ -1,0 +1,4 @@
+#!/bin/bash
+/opt/lampp/lampp stop
+service ssh stop
+

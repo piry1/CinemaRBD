@@ -4,8 +4,11 @@ header("Content-Type: application/json");
 header("Access-Control-Allow-Headers: Content-Type, Authorization, X-Requested-With");
 header("Access-Control-Allow-Methods: GET, OPTIONS, DELETE");
 
-// Master IP 90.156.81.49
-// Slave IP 93.175.96.60
+// Master IP localhost:3307 root master
+// Slave1 IP localhost:3308 root slave1
+// Slave2 IP localhost:3309 root slave2		delayed
+// Slave3 IP localhost:3310 root slave3
+// Slave4 IP localhost:3311 root slave4
 
 require_once("./CinemaApi/get.php");
 require_once("./CinemaApi/delete.php");
@@ -34,10 +37,10 @@ if($table == ""){
 
 // connect to the mysql database
 if($method == 'GET'){
-  $link = $link = mysqli_connect('localhost:3307', 'root', 'master', 'Cinema')
+  $link = mysqli_connect('localhost:3307', 'root', 'master', 'Cinema')
   or die('Error connecting to MySQL server.');
 } else{
-  $link = $link = mysqli_connect('localhost:3307', 'root', 'master', 'Cinema')
+  $link = mysqli_connect('localhost:3308', 'root', 'slave1', 'Cinema')
   or die('Error connectiong to MySQL server');
 }
 mysqli_set_charset($link,'utf8');

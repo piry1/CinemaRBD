@@ -1,0 +1,16 @@
+#!/bin/bash
+docker stop phpmyadminMaster
+docker stop phpmyadminSlave1
+docker stop phpmyadminSlave2
+docker stop phpmyadminSlave3
+docker stop phpmyadminSlave4
+docker stop composetest_db_master_1 
+docker stop composetest_db_slave1_1 
+docker stop composetest_db_slave2_1 
+docker stop composetest_db_slave3_1 
+docker stop composetest_db_slave4_1 
+
+
+cd /home/rado/Programowanie/Skrypty
+./serwerownia-out
+
