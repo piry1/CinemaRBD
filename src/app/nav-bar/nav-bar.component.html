@@ -17,12 +17,13 @@
   </div>
 
   <form *ngIf="showLoginInfo" class="form-inline my-2 my-lg-0">
-    <input class="form-control mr-sm-2" type="text" placeholder="Login">
-    <input class="form-control mr-sm-2" type="password" placeholder="Password">
-    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Login</button>
+    <input name="login" class="form-control mr-sm-2" type="text" [(ngModel)]="user.Login" placeholder="Login">
+    <input name="pass" class="form-control mr-sm-2" type="password" [(ngModel)]="user.Haslo" placeholder="Hasło">
+    <button class="btn btn-secondary my-2 my-sm-0" (click)="login()" type="submit">Login</button>
 
   </form>
-  <button data-toggle="modal" data-target="#myModal" style="margin-left: 5px;" class="btn btn-warning my-2 my-sm-0">Register</button>
+  <button *ngIf="showLoginInfo" data-toggle="modal" data-target="#myModal" style="margin-left: 5px;" class="btn btn-warning my-2 my-sm-0">Rejestracja</button>
+  <button *ngIf="!showLoginInfo" (click)="logout()" style="margin-left: 5px;" class="btn btn-warning my-2 my-sm-0">Wyloguj</button>
 </nav>
 
 

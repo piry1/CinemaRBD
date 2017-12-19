@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
+import { DbService } from '../db.service';
+import { User } from '../dbModel/user';
 
 @Component({
   selector: 'app-cinema',
@@ -7,11 +10,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CinemaComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router, private _bd: DbService) { }
 
   toogle: string = "toggled";
+  user: User;
 
   ngOnInit() {
+    this.user = User.getCurrentUser();
+    if (this.user == null)
+      this.router.navigateByUrl('/home');
   }
 
   toggleMenu() {

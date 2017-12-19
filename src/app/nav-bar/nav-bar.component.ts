@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
+import { DbService } from '../db.service';
+import { User } from '../dbModel/user';
+
 
 @Component({
   selector: 'app-nav-bar',
@@ -9,8 +12,9 @@ import { Router, NavigationEnd } from '@angular/router';
 export class NavBarComponent implements OnInit {
 
   showLoginInfo: boolean;
+  user: User = new User();
 
-  constructor(private router: Router) {
+  constructor(private router: Router, private _bd: DbService) {
 
     router.events.subscribe((val) => {
       if (val instanceof NavigationEnd) {
@@ -22,6 +26,26 @@ export class NavBarComponent implements OnInit {
 
   ngOnInit() {
 
+  }
+
+  login() {
+    var u = this.user;
+    if (u.Login != undefined && u.Haslo != undefined && u.Login != "" && u.Haslo != "") {
+      this._bd.checkUser(u).subscribe(res => {
+        // console.log(res);
+        if (res.length == 1) {
+          this.user = res;
+          User.setCurrentUser(this.user);
+          this.router.navigateByUrl('/cinema');
+        }
+      });
+    }
+
+  }
+
+  logout() {
+    User.removeCurrentUser();
+    this.router.navigateByUrl('/home');
   }
 
 }
