@@ -9,7 +9,16 @@ export class CinemaComponent implements OnInit {
 
   constructor() { }
 
+  toogle: string = "toggled";
+
   ngOnInit() {
+  }
+
+  toggleMenu() {
+    if (this.toogle === "toggled")
+      this.toogle = "";
+    else
+      this.toogle = "toggled";
   }
 
 }
