@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-nav-bar',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavBarComponent implements OnInit {
 
-  constructor() { }
+  showLoginInfo: boolean;
+
+  constructor(private router: Router) {
+
+    router.events.subscribe((val) => {
+      if (val instanceof NavigationEnd) {
+        this.showLoginInfo = (val["url"] === "/home" || val["urlAfterRedirects"] === "/home") ? true : false;
+        console.log(val);
+      }
+    });
+  }
 
   ngOnInit() {
+
   }
 
 }
