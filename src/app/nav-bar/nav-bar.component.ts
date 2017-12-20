@@ -31,10 +31,10 @@ export class NavBarComponent implements OnInit {
   login() {
     var u = this.user;
     if (u.Login != undefined && u.Haslo != undefined && u.Login != "" && u.Haslo != "") {
-      this._bd.checkUser(u).subscribe(res => {
+      this._bd.checkUser(u).subscribe((res: User[]) => {
         // console.log(res);
         if (res.length == 1) {
-          this.user = res;
+          this.user = res[0];
           User.setCurrentUser(this.user);
           this.router.navigateByUrl('/cinema');
         }

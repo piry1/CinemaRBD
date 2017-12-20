@@ -67,11 +67,11 @@ if (!$result) {
 
 // print results, insert id or affected row count
 if ($method == 'GET' || $table == 'login') {
-  if (!$key) echo '[';
+  if (mysqli_num_rows($result) > 1) echo '[';
   for ($i=0;$i<mysqli_num_rows($result);$i++) {
     echo ($i>0?',':'').json_encode(mysqli_fetch_object($result));
   }
-  if (!$key) echo ']';
+  if (mysqli_num_rows($result) > 1) echo ']';
 } elseif ($method == 'POST') {
   echo mysqli_insert_id($link);
 } else {

@@ -1,5 +1,5 @@
 export class User {
-    Id: number;
+    Id: string;
     Imie: String;
     Nazwisko: String;
     Login: String;
@@ -10,8 +10,8 @@ export class User {
         localStorage.setItem('currentUser', JSON.stringify(user));
     }
 
-    static getCurrentUser() {
-        return JSON.parse(localStorage.getItem('currentUser'));
+    static getCurrentUser(): User {
+        return JSON.parse(localStorage.getItem('currentUser')) as User;
     }
 
     static removeCurrentUser() {

@@ -21,13 +21,13 @@ export class DbService {
     this.headers.append('Content-Type', 'text/plain');
   }
 
-  private get(str: string, id?: number) {
+  private get(str: string, id?: string) {
     var url = this.apiUrl + str + '/' + (id ? id : "");
     return this._http.get(url)
       .map(res => res.json());
   }
 
-  getData(str: string, id?: number) {
+  getData(str: string, id?: string) {
     return this.get(str, id);
   }
 
@@ -35,43 +35,43 @@ export class DbService {
     return this.post('login', user);
   }
 
-  getTickets(id?: number) {
+  getTickets(id?: string) {
     return this.getData('bilety', id);
   }
 
-  getSeat(id?: number) {
+  getSeat(id?: string) {
     return this.getData('miejsca', id);
   }
 
-  getFilm(id?: number) {
+  getFilm(id?: string) {
     return this.getData('filmy', id);
   }
 
-  getReservation(id?: number) {
+  getReservation(id?: string) {
     return this.getData('rezerwacje', id);
   }
 
-  getRoom(id?: number) {
+  getRoom(id?: string) {
     return this.getData('sale', id);
   }
 
-  getSeance(id?: number) {
+  getSeance(id?: string) {
     return this.getData('seanse', id);
   }
 
-  getTicket(id: number) {
+  getTicket(id: string) {
     return this.getData('bilet', id);
   }
 
-  getFilmSeance(filmId: number) {
+  getFilmSeance(filmId: string) {
     return this.getData('seansefilmu', filmId);
   }
 
-  getFreeSeats(seanceId: number) {
+  getFreeSeats(seanceId: string) {
     return this.getData('wolnemiejsca', seanceId);
   }
 
-  getUsersTickets(id: number) {
+  getUsersTickets(id: string) {
     return this.getData('biletyusera', id);
   }
 
