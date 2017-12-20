@@ -23,7 +23,11 @@
 
   </form>
   <button *ngIf="showLoginInfo" data-toggle="modal" data-target="#myModal" style="margin-left: 5px;" class="btn btn-warning my-2 my-sm-0">Rejestracja</button>
-  <button *ngIf="!showLoginInfo" (click)="logout()" style="margin-left: 5px;" class="btn btn-warning my-2 my-sm-0">Wyloguj</button>
+  <h4 *ngIf="!showLoginInfo" style="margin: 5px; color: white"> {{user.Imie}} </h4>
+  <h4 *ngIf="!showLoginInfo" style="margin: 5px; color: white"> {{user.Nazwisko}} </h4>
+  <button *ngIf="!showLoginInfo" (click)="logout()" style="margin-left: 5px;" class="btn btn-danger my-2 my-sm-0">
+    <i class="fa fa-sign-out" aria-hidden="true"></i>
+  </button>
 </nav>
 
 
@@ -31,7 +35,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header bg-primary">
-        <h3 class="modal-title"  style="color: white">Rejestracja</h3>
+        <h3 class="modal-title" style="color: white">Rejestracja</h3>
 
       </div>
       <div class="modal-body">
