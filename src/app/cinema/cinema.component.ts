@@ -20,7 +20,7 @@ export class CinemaComponent implements OnInit {
     { "name": "Moje bilety", "active": "active", "route": "tickets" },
     { "name": "Kup bilet", "active": "", "route": "buyticket" },
     { "name": "Filmy", "active": "", "route": "films" },
-    { "name": "Seanse", "active": "", "route": "seaence" },
+    { "name": "Seanse", "active": "", "route": "seance" },
     { "name": "Sale", "active": "", "route": "room" },
   ];
 

@@ -11,6 +11,10 @@ import { HomeComponent } from './home/home.component';
 import { CinemaComponent } from './cinema/cinema.component';
 import { RegisterComponent } from './register/register.component';
 import { TicketsComponent } from './cinema/tickets/tickets.component';
+import { BuyticketComponent } from './cinema/buyticket/buyticket.component';
+import { FilmsComponent } from './cinema/films/films.component';
+import { SeanceComponent } from './cinema/seance/seance.component';
+import { RoomComponent } from './cinema/room/room.component';
 
 
 @NgModule({
@@ -21,7 +25,11 @@ import { TicketsComponent } from './cinema/tickets/tickets.component';
     HomeComponent,
     CinemaComponent,
     RegisterComponent,
-    TicketsComponent
+    TicketsComponent,
+    BuyticketComponent,
+    FilmsComponent,
+    SeanceComponent,
+    RoomComponent
   ],
   imports: [
     BrowserModule,
