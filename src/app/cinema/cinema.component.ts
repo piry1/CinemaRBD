@@ -15,6 +15,15 @@ export class CinemaComponent implements OnInit {
   toogle: string = "toggled";
   user: User;
 
+
+  side: { name: string, active: string }[] = [
+    { "name": "Moje bilety", "active": "active" },
+    { "name": "Kup bilet", "active": "" },
+    { "name": "Filmy", "active": "" },
+    { "name": "Seanse", "active": "" },
+    { "name": "Sale", "active": "" },
+  ];
+
   ngOnInit() {
     this.user = User.getCurrentUser();
     if (this.user == null)
@@ -26,6 +35,15 @@ export class CinemaComponent implements OnInit {
       this.toogle = "";
     else
       this.toogle = "toggled";
+  }
+
+  changeSide(i) {
+    this.side.forEach(elem => {
+      elem.active = "";
+    });
+
+    this.side[i].active = "active";
+
   }
 
 }

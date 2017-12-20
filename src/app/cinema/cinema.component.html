@@ -3,27 +3,9 @@
   <!-- Sidebar -->
   <div id="sidebar-wrapper">
     <ul class="sidebar-nav">
-     
-      <li>
-        <a href="#" class="active">Dashboard</a>
-      </li>
-      <li>
-        <a href="#">Shortcuts</a>
-      </li>
-      <li>
-        <a href="#">Overview</a>
-      </li>
-      <li>
-        <a href="#">Events</a>
-      </li>
-      <li>
-        <a href="#">About</a>
-      </li>
-      <li>
-        <a href="#">Services</a>
-      </li>
-      <li>
-        <a href="#">Contact</a>
+
+      <li *ngFor="let s of side; let i = index">
+        <a (click)="changeSide(i)" [ngClass]="s.active">{{s.name}}</a>
       </li>
     </ul>
   </div>
@@ -32,9 +14,9 @@
   <!-- Page Content -->
   <div id="page-content-wrapper">
     <div class="container-fluid">
-      
 
-      
+
+
       <button class="btn btn-secondary" (click)="toggleMenu()">Toggle Menu</button>
     </div>
   </div>
