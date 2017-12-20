@@ -10,6 +10,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { CinemaComponent } from './cinema/cinema.component';
 import { RegisterComponent } from './register/register.component';
+import { TicketsComponent } from './cinema/tickets/tickets.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { RegisterComponent } from './register/register.component';
     FooterComponent,
     HomeComponent,
     CinemaComponent,
-    RegisterComponent
+    RegisterComponent,
+    TicketsComponent
   ],
   imports: [
     BrowserModule,

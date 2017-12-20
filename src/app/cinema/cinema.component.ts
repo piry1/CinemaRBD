@@ -16,15 +16,19 @@ export class CinemaComponent implements OnInit {
   user: User;
 
 
-  side: { name: string, active: string }[] = [
-    { "name": "Moje bilety", "active": "active" },
-    { "name": "Kup bilet", "active": "" },
-    { "name": "Filmy", "active": "" },
-    { "name": "Seanse", "active": "" },
-    { "name": "Sale", "active": "" },
+  side: { name: string, active: string, route: string }[] = [
+    { "name": "Moje bilety", "active": "active", "route": "tickets" },
+    { "name": "Kup bilet", "active": "", "route": "buyticket" },
+    { "name": "Filmy", "active": "", "route": "films" },
+    { "name": "Seanse", "active": "", "route": "seaence" },
+    { "name": "Sale", "active": "", "route": "room" },
   ];
 
   ngOnInit() {
+    this.checkUser();
+  }
+
+  checkUser() {
     this.user = User.getCurrentUser();
     if (this.user == null)
       this.router.navigateByUrl('/home');
@@ -35,15 +39,6 @@ export class CinemaComponent implements OnInit {
       this.toogle = "";
     else
       this.toogle = "toggled";
-  }
-
-  changeSide(i) {
-    this.side.forEach(elem => {
-      elem.active = "";
-    });
-
-    this.side[i].active = "active";
-
   }
 
 }
