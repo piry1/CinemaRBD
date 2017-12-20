@@ -1,3 +1,22 @@
-<p>
-  films works!
-</p>
+<h1>Filmy</h1>
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>Tytuł</th>
+      <th>Reżyser</th>
+      <th>Rok</th>
+      <th>Gatunek</th>
+      <th>Długość</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let film of films">
+      <td>{{film.Tytul}}</td>
+      <td>{{film.Rezyser}}</td>
+      <td>{{film.Rok}}</td>
+      <td>{{film.Gatunek}}</td>
+      <td>{{film.Dlugosc}} min</td>
+    </tr>
+  </tbody>
+</table>

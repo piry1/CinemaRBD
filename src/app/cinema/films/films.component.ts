@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { DbService } from '../../db.service';
+import { User } from '../../dbModel/user';
+import { Film } from '../../dbModel/film';
 
 @Component({
   selector: 'app-films',
@@ -7,9 +10,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FilmsComponent implements OnInit {
 
-  constructor() { }
+  user: User;
+  films: Film[] = [];
+
+  constructor(private _db: DbService) { }
 
   ngOnInit() {
+    this.user = User.getCurrentUser();
+    this.getFilms();
+  }
+
+  getFilms() {
+    this._db.getFilm().subscribe((res: Film[]) => {
+      this.films = res;
+      console.log(res);
+    });
   }
 
 }
