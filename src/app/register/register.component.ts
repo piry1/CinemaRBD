@@ -24,8 +24,13 @@ export class RegisterComponent implements OnInit {
 
     if (user.Imie != undefined && user.Nazwisko != undefined && user.Haslo != undefined && user.Login != undefined)
       if (user.Imie != "" && user.Nazwisko != "" && user.Haslo != "" && user.Login != "") {
-        //this._db.addUser(user);
-        this.router.navigateByUrl('/cinema');
+        this._db.addUser(user).subscribe(res => {
+          if (res === 0) {
+            console.log("Zarejestrowano");
+          } else {
+            console.log("ERROR: Nie zarejestrowano");
+          }
+        });
       }
   }
 
