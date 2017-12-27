@@ -13,7 +13,8 @@ import { Response } from '@angular/http/src/static_response';
 @Injectable()
 export class DbService {
 
-  private apiUrl: string = 'http://93.175.96.60/cinemaapi.php/';
+  //private apiUrl: string = 'http://93.175.96.60/cinemaapi.php/';
+  private apiUrl: string = 'http://localhost/cinemaapi.php/';
   private headers: Headers = new Headers();
 
 
