@@ -147,8 +147,11 @@ UPDATE Rezerwacje
 SET Zajete=0
 WHERE Id=_id;
 
+UPDATE Seanse INNER JOIN Rezerwacje SET WolneMiejsca=WolneMiejsca+1 WHERE Rezerwacje.Id=_id AND Seanse.Id=Rezerwacje.IdSeansu;
+
 DELETE FROM Bilety
 WHERE IdRezerwacji=_id;
+
 END
 //
 
@@ -157,6 +160,16 @@ delimiter //
 DROP PROCEDURE IF EXISTS UsunFilm//
 CREATE PROCEDURE UsunFilm(in _id int) 
 BEGIN
+
+DELETE FROM Bilety
+WHERE IdRezerwacji in (SELECT Rezerwacje.Id FROM Rezerwacje WHERE IdSeansu in (SELECT Seanse.Id FROM Seanse WHERE IdFilmu =_id));
+
+DELETE FROM Rezerwacje
+WHERE IdSeansu in (SELECT Seanse.Id FROM Seanse WHERE IdFilmu =_id);
+
+DELETE FROM Seanse
+WHERE IdFilmu=_id;
+
 DELETE FROM Filmy
 WHERE Id=_id;
 END

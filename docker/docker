@@ -1,18 +1,6 @@
 cd /home/rado/composetest
 docker-compose up -d
 
-docker start phpmyadminMaster
-docker start phpmyadminSlave1
-docker start phpmyadminSlave2
-docker start phpmyadminSlave3
-docker start phpmyadminSlave4
-
-docker run --name phpmyadminMaster --link composetest_db_master_1:db -p 8082:80 -d --net composetest_default phpmyadmin/phpmyadmin
-docker run --name phpmyadminSlave1 --link composetest_db_slave1_1:db -p 8083:80 -d --net composetest_default phpmyadmin/phpmyadmin
-docker run --name phpmyadminSlave2 --link composetest_db_slave2_1:db -p 8084:80 -d --net composetest_default phpmyadmin/phpmyadmin
-docker run --name phpmyadminSlave3 --link composetest_db_slave3_1:db -p 8085:80 -d --net composetest_default phpmyadmin/phpmyadmin
-docker run --name phpmyadminSlave4 --link composetest_db_slave4_1:db -p 8086:80 -d --net composetest_default phpmyadmin/phpmyadmin
-
 $link = mysqli_connect('localhost:3307', 'root', 'master', 'Cinema')
 etc/mysql/mysql.conf.d/mysqld.cnf
 etc/phpmyadmin/config.inic.php

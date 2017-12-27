@@ -1,9 +1,9 @@
 #!/bin/bash
-docker stop phpmyadminMaster
-docker stop phpmyadminSlave1
-docker stop phpmyadminSlave2
-docker stop phpmyadminSlave3
-docker stop phpmyadminSlave4
+docker stop composetest_phpmyadminMaster_1
+docker stop composetest_phpmyadminSlave1_1
+docker stop composetest_phpmyadminSlave2_1
+docker stop composetest_phpmyadminSlave3_1
+docker stop composetest_phpmyadminSlave4_1
 docker stop composetest_db_master_1 
 docker stop composetest_db_slave1_1 
 docker stop composetest_db_slave2_1 
