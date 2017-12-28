@@ -16,6 +16,7 @@ export class RoomComponent implements OnInit {
   private newRoom: Room = new Room();
   private processing: boolean = false;
   private deleteProcessing: boolean = false;
+  private submitError: boolean = false;
 
   ngOnInit() {
     this.getRooms();
@@ -30,17 +31,19 @@ export class RoomComponent implements OnInit {
 
   addRoom() {
     this.processing = true;
-    console.log(this.newRoom);
-    if (this.newRoom.Miejsca != undefined && this.newRoom.Nazwa != undefined && this.newRoom.Rzedy != undefined)
-      this._db.addRoom(this.newRoom).subscribe(res => {
-        this.getRooms();
-        this.processing = false;
-      });
+    this.submitError = false;
 
+    this._db.addRoom(this.newRoom)
+      .finally(() => this.processing = false)
+      .subscribe(res => {
+        this.getRooms();
+      }, err => { this.submitError = true; });
   }
 
   deleteRoom(id: number) {
     this.deleteProcessing = true;
+
+
     console.log(id);
     this._db.deleteRoom(id).subscribe(res => {
       this.getRooms();

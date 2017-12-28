@@ -8,7 +8,7 @@ import { Seance } from './dbModel/seance';
 import { Ticket } from './dbModel/ticket';
 import { User } from './dbModel/user';
 import { Response } from '@angular/http/src/static_response';
-
+import 'rxjs/add/operator/finally';
 
 @Injectable()
 export class DbService {

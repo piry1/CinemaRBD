@@ -8,6 +8,7 @@
       <th>Rok</th>
       <th>Gatunek</th>
       <th>Długość</th>
+      <th>Usuń</th>
     </tr>
   </thead>
   <tbody>
@@ -17,6 +18,8 @@
       <td>{{film.Rok}}</td>
       <td>{{film.Gatunek}}</td>
       <td>{{film.Dlugosc}} min</td>
+      <td><button (click)="deleteRoom(room.Id)" class="btn btn-outline-danger"><i class="fa fa-times" aria-hidden="true"></i></button></td>
+      
     </tr>
   </tbody>
 </table>

@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
+import { CustomFormsModule } from 'ng2-validation'
 
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
@@ -35,7 +36,8 @@ import { RoomComponent } from './cinema/room/room.component';
     BrowserModule,
     AppRoutingModule,
     HttpModule,
-    FormsModule
+    FormsModule,
+    CustomFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

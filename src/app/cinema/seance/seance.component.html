@@ -13,6 +13,8 @@
         <th scope="col">Sala</th> 
         <th scope="col">Wolne miejsca</th>
         <th scope="col">Cena</th>
+        <th>Usuń</th>
+        
       </tr>
     </thead>
     <tbody>
@@ -27,6 +29,8 @@
        <td>{{seance.NazwaSali}}</td>
        <td>{{seance.WolneMiejsca}}</td>
        <td>{{seance.Cena}} zł</td>
+       <td><button (click)="deleteRoom(room.Id)" class="btn btn-outline-danger"><i class="fa fa-times" aria-hidden="true"></i></button></td>
+       
      </tr>
     </tbody>
   </table> 

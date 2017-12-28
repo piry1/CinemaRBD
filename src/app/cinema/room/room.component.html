@@ -15,12 +15,16 @@
           <td>{{room.Id}}</td>
           <td>{{room.NazwaSali}}</td>
           <td>{{room.Pojemnosc}}</td>
-          <td><button (click)="deleteRoom(room.Id)" class="btn btn-outline-danger"><i class="fa fa-times" aria-hidden="true"></i></button></td>
+          <td>
+            <button (click)="deleteRoom(room.Id)" class="btn btn-outline-danger">
+              <i class="fa fa-times" aria-hidden="true"></i>
+            </button>
+          </td>
         </tr>
       </tbody>
     </table>
     <div *ngIf="deleteProcessing" class="card-body" style="text-align: center;">
-        <i class="fa fa-circle-o-notch" aria-hidden="true"></i>
+      <i class="fa fa-circle-o-notch" aria-hidden="true"></i>
     </div>
   </div>
 
@@ -29,21 +33,31 @@
       <div class="card-header">
         <h3>Dodaj salę</h3>
       </div>
-      <div class="card-body">
-        <label>Nazwa sali</label>
-        <input [(ngModel)]="newRoom.Nazwa" type="text" class="form-control" placeholder="Nazwa">
-        <label>Ilość miejsc w rzędzie</label>
-        <input [(ngModel)]="newRoom.Miejsca" type="number" class="form-control" placeholder="Ilość miejsc w rzędzie">
-        <label>Ilość rzędów</label>
-        <input [(ngModel)]="newRoom.Rzedy" type="number" class="form-control" placeholder="Rzędy">
 
-      </div>
-      <div *ngIf="!processing" class="card-body">
-        <button (click)="addRoom()" class="btn btn-primary btn-lg btn-block">Dodaj salę</button>
-      </div>
+      <form (ngSubmit)="addRoom()" #roomForm="ngForm">
+
+        <div class="card-body">
+
+          <label>Nazwa sali</label>
+          <input name="nazwa" [(ngModel)]="newRoom.Nazwa" type="text" class="form-control" required>
+
+          <label>Ilość miejsc w rzędzie</label>
+          <input name="miejsca" [(ngModel)]="newRoom.Miejsca" type="number" class="form-control" required min="1">
+
+          <label>Ilość rzędów</label>
+          <input name="rzedy" [(ngModel)]="newRoom.Rzedy" type="number" class="form-control" required min="1">
+        </div>
+
+        <div *ngIf="!processing" class="card-body">
+          <button [disabled]="!roomForm.form.valid" type="submit" class="btn btn-primary btn-lg btn-block">Dodaj salę</button>
+          <h5 *ngIf="submitError" style="text-align: center" class="text-danger">Operacja nie powiodła się</h5>
+
+        </div>
+
+      </form>
 
       <div *ngIf="processing" class="card-body" style="text-align: center;">
-          <i class="fa fa-circle-o-notch" aria-hidden="true"></i>
+        <i class="fa fa-circle-o-notch" aria-hidden="true"></i>
       </div>
 
     </div>
