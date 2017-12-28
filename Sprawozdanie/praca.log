@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.23)  28 DEC 2017 13:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.23)  28 DEC 2017 16:36
 entering extended mode
 **./praca.tex
 (praca.tex
@@ -1052,15 +1052,19 @@ Non-PDF special ignored!
 
  (rozdzial01.tex
 Rozdzia\PlPrIeC {\l } 1.
+LaTeX Font Info:    Try loading font information for TS1+qtm on input line 14.
+("C:\Program Files\MiKTeX 2.9\tex\latex\tex-gyre\ts1qtm.fd"
+File: ts1qtm.fd 2009/09/25 v1.2 font definition file for TS1/qtm
 ) [5
 
 
-]
+]) [6]
 \openout2 = `rozdzial02.aux'.
 
- (rozdzial02.tex
+
+(rozdzial02.tex
 Rozdzia\PlPrIeC {\l } 2.
-) [6
+) [7
 
 
 
@@ -1069,7 +1073,7 @@ Rozdzia\PlPrIeC {\l } 2.
 
  (rozdzial03.tex
 Rozdzia\PlPrIeC {\l } 3.
-<rozdzial03/model_konceptualny.png, id=23, 393.1488pt x 226.6869pt>
+<rozdzial03/model_konceptualny.png, id=29, 393.1488pt x 226.6869pt>
 File: rozdzial03/model_konceptualny.png Graphic file (type png)
 
 <use rozdzial03/model_konceptualny.png>
@@ -1077,29 +1081,23 @@ Package pdftex.def Info: rozdzial03/model_konceptualny.png used on input line 7
 .
 (pdftex.def)             Requested size: 455.24408pt x 262.50386pt.
 
-<rozdzial03/model_fizyczny.png, id=25, 562.7424pt x 819.06pt>
+<rozdzial03/model_fizyczny.png, id=31, 562.7424pt x 819.06pt>
 File: rozdzial03/model_fizyczny.png Graphic file (type png)
 
 <use rozdzial03/model_fizyczny.png>
 Package pdftex.def Info: rozdzial03/model_fizyczny.png used on input line 19.
 (pdftex.def)             Requested size: 432.48048pt x 629.49086pt.
- [7
+ [8
 
 
 
  <./rozdzial03/model_konceptualny.png>]
-[8 <./rozdzial03/model_fizyczny.png>]
-LaTeX Font Info:    Try loading font information for TS1+qtm on input line 26.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\tex-gyre\ts1qtm.fd"
-File: ts1qtm.fd 2009/09/25 v1.2 font definition file for TS1/qtm
-)) [9]
+[9 <./rozdzial03/model_fizyczny.png>]) [10]
 \openout2 = `rozdzial04.aux'.
 
-
-(rozdzial04.tex
+ (rozdzial04.tex
 Rozdzia\PlPrIeC {\l } 4.
-) [10
+) [11
 
 
 
@@ -1108,16 +1106,23 @@ Rozdzia\PlPrIeC {\l } 4.
 
  (rozdzial05.tex
 Rozdzia\PlPrIeC {\l } 5.
-) [11
+<rozdzial05/diagram.png, id=46, 678.28406pt x 530.73282pt>
+File: rozdzial05/diagram.png Graphic file (type png)
+
+<use rozdzial05/diagram.png>
+Package pdftex.def Info: rozdzial05/diagram.png used on input line 23.
+(pdftex.def)             Requested size: 273.14922pt x 213.72276pt.
+ [12
 
 
 
-]
+]) [13 <./rozdzial05/diagram.png>]
 \openout2 = `rozdzial06.aux'.
 
- (rozdzial06.tex
+
+(rozdzial06.tex
 Rozdzia\PlPrIeC {\l } 6.
-) [12
+) [14
 
 
 
@@ -1126,14 +1131,14 @@ Rozdzia\PlPrIeC {\l } 6.
 
  (rozdzial07.tex
 Rozdzia\PlPrIeC {\l } 7.
-) [13
+) [15
 
 
 
 ]
 \openout2 = `Bibliografia2.aux'.
 
- (Bibliografia2.tex) [14
+ (Bibliografia2.tex) [16
 
 
 ] (praca.aux (rozdzial01.aux) (rozdzial02.aux)
@@ -1141,22 +1146,22 @@ Rozdzia\PlPrIeC {\l } 7.
 (rozdzial07.aux) (Bibliografia2.aux)) )
 (\end occurred when \iftrue on line 249 was incomplete) 
 Here is how much of TeX's memory you used:
- 6368 strings out of 493333
- 87508 string characters out of 3139194
- 151391 words of memory out of 3000000
- 9643 multiletter control sequences out of 15000+200000
+ 6375 strings out of 493333
+ 87648 string characters out of 3139194
+ 152402 words of memory out of 3000000
+ 9648 multiletter control sequences out of 15000+200000
  55088 words of font info for 47 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,15n,34p,839b,381s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX
- 2.9/fonts/enc/dvips/tex-gyre/q-ts1.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/
-dvips/tex-gyre/q-ec.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/tex-gyre/q
+ 2.9/fonts/enc/dvips/tex-gyre/q-ec.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/d
+vips/tex-gyre/q-ts1.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/tex-gyre/q
 -ec-sc.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/tex-gyre/qtmb.pfb><C
 :/Program Files/MiKTeX 2.9/fonts/type1/public/tex-gyre/qtmr.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/tex-gyre/qtmri.pfb>
-Output written on praca.pdf (14 pages, 441157 bytes).
+Output written on praca.pdf (16 pages, 534133 bytes).
 PDF statistics:
- 72 PDF objects out of 1000 (max. 8388607)
+ 80 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
