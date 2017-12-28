@@ -2,4 +2,107 @@
 
 \section{Realizacja bazy danych}
 
+\subsection{Tabele}
+
+Tabele generowano za pomocą skryptów MySQL.
+
+\begin{itemize}
+	\item zdefiniowano klucze główne;
+	\item zdefiniowano klucze obce;
+	\item dodano ograniczenia jeżeli jakiś element nie może być pusty;
+	\item tam gdzie to konieczne (login użytkownika ,nazwa sali i nazwa uprawnień) dodano ograniczenia, aby dane te były unikalne w swoich tabelach;
+	\item sprawdzanie czy podana liczba należy do przedziału wykorzystując słowo kluczowe \textit{CHECK} (pojemność sali musi się znajdować w przedziale od 20 do 450 miejsc);
+	\item zabezpieczenie przed nadpisywaniem już wcześniej utworzonych tabel \textit{IF NOT EXISTS}.
+\end{itemize}
+
+\begin{figure} [H]
+	\centering
+	\includegraphics[width=0.6\linewidth]{rozdzial04/T_Seanse.png}
+	\caption{Generowanie tabeli seansów}
+	\label{fig:t_seanse}
+\end{figure}
+
+\begin{figure} [H]
+	\centering
+	\includegraphics[width=0.6\linewidth]{rozdzial04/T_Bilety.png}
+	\caption{Generowanie tabeli biletów - przykład użycia klucza głównego, kluczy obcych i ograniczenia "not null"}
+	\label{fig:t_bilety}
+\end{figure}
+
+\begin{figure} [H]
+	\centering
+	\includegraphics[width=0.5\linewidth]{rozdzial04/T_Sale.png}
+	\caption{Generowanie tabeli sal - przykład użycia CHECK}
+	\label{fig:t_sale}
+\end{figure}
+
+\subsection{Widoki}
+
+\textbf{Utworzono trzy widoki:} %TODO:uaktualnić
+
+\begin{figure} [H]
+	\centering
+	\includegraphics[width=0.8\linewidth]{rozdzial04/widoki.png}
+	\caption{Wygenerowane widoki}
+	\label{fig:views}
+\end{figure}
+
+\begin{itemize}
+	\item \_Seanse\_ - rozszerza tabelę \textit{Seanse} o dodatkowe informacje o filmie, którego dotyczy seans i sali, na której seans zostanie wyświetlony;
+	\item \_Miejsca\_ - rozszerza tabelę \textit{Rezerwacje} o informacje takie jak nazwa sali, rząd i numer miejsca.
+\end{itemize}
+
+\begin{figure} [H]
+	\centering
+	\includegraphics[width=0.6\linewidth]{rozdzial04/V_Seanse_.png}
+	\caption{Generowanie widoku seansów}
+	\label{fig:v_seanse}
+\end{figure}
+
+\begin{figure} [H]
+	\centering
+	\includegraphics[width=0.6\linewidth]{rozdzial04/V_Miejsca_.png}
+	\caption{Generowanie widoku Miejsc}
+	\label{fig:v_miejsca}
+\end{figure}
+
+\subsection{Procedury}
+
+Rysunek \ref{fig:procedury} przedstawia wszystkie procedury jakie zostały zaimplementowane. Natomiast na rysunku \ref{fig:p_DodajSeans} pokazana została jedna przykładowa procedura, która dodając seans dodaje również pulę miejsc równą pojemności sali, w której odbędzie się seans do tabeli \textit{Rezerwacje}.
+\begin{figure} [H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{rozdzial04/Procedury.png}
+	\caption{Przykładowa procedura}
+	\label{fig:procedury}
+\end{figure}
+
+\textbf{Opisy procedur:}
+\begin{itemize}
+	\item BiletyUsera - wyświetla wszystkie bilety które zostały zakupione przez konkretnego użytkownika;
+	\item DodajAdmina - procedura pozwala na dodanie nowego użytkownika o uprawnieniach administratora;
+	\item DodajFilm - pozwala na dodanie nowego filmu do filmoteki kina;
+	\item DodajSale - pozwala dodać do bazy danych nowej sali kinowej;
+	\item DodajSeans - umożliwia dodanie nowego seansu do oferty kina;
+	\item DodajUzytkownika - procedura pozwala na dodanie nowego użytkownika o standardowych prawach zwykłego użytkownika;
+	\item EdytujFilm - pozwala na zmienienie wszystkich informacji o filmie dostępnych w bazie;
+	\item EdytujSale - pozwala na zmianę nazwy sali;
+	\item EdytujSeans - pozwala modyfikować datę godzinę i cenę seansu;
+	\item KupBilet - tworzy nowy rekord w tabeli Bilety, przypisuje go do konkretnego użytownika, oraz zmienia ilość wolnych miejsc na seansie, a w tabeli Rezerwacje oznacza miejsce jako zajęte;
+	\item SprawdzUzytkownika - sprawdza czy użytkownik o podanym loginie i haśle istnieje w systemie;
+	\item UsunFilm - usuwa film z filmoteki kina;
+	\item UsunRezerwacje - usuwa wszystkie bilet, anuluje transakcję użytkownika, przywraca miejsce jako niezarezerwowane;
+	\item UsunSale - usuwa sale i miejsca przypisane do sali, anuluje wszystkie seanse, które miały odbyć się na danej sali, i anuluje wszystkie bilety na te seanse;
+	\item UsunSeans - anuluje seans i wszystkie bilety i rezerwacje na niego;
+	\item WyswietlBilet - wyświetla informacje o bilecie o podanym id;
+	\item WyswietlMiejsca - pokazuje wszystkie wolne miejsca na konkretny seans, korzystając z widoku \_Miejsca\_;
+	\item WyswietlSeanse - wyświetla rozszerzone informacje o seansach z podanym filmem, korzystając z widoku \_Seanse\_.
+\end{itemize}
+
+\begin{figure} [H]
+	\centering
+	\includegraphics[width=1\linewidth]{rozdzial04/P_DodajSeans.png}
+	\caption{Przykładowa procedura}
+	\label{fig:p_DodajSeans}
+\end{figure}
+
 \section{Wykorzystanie mechanizmów replikacji master-slave}

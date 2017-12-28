@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.23)  28 DEC 2017 16:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.23)  28 DEC 2017 16:51
 entering extended mode
 **./praca.tex
 (praca.tex
@@ -1097,32 +1097,101 @@ Package pdftex.def Info: rozdzial03/model_fizyczny.png used on input line 19.
 
  (rozdzial04.tex
 Rozdzia\PlPrIeC {\l } 4.
-) [11
+
+Overfull \hbox (8.81857pt too wide) in paragraph at lines 14--15
+[]\T1/qtm/m/n/12 sprawdzanie czy po-da-na licz-ba na-le-»y do prze-dzia-ªu wy-k
+o-rzy-stu-j¡c sªo-wo klu-czo-we \T1/qtm/m/it/12 CHECK
+ []
+
+<rozdzial04/T_Seanse.png, id=43, 252.945pt x 150.5625pt>
+File: rozdzial04/T_Seanse.png Graphic file (type png)
+
+<use rozdzial04/T_Seanse.png>
+Package pdftex.def Info: rozdzial04/T_Seanse.png used on input line 20.
+(pdftex.def)             Requested size: 273.14922pt x 162.59128pt.
+
+<rozdzial04/T_Bilety.png, id=44, 297.36093pt x 100.12407pt>
+File: rozdzial04/T_Bilety.png Graphic file (type png)
+
+<use rozdzial04/T_Bilety.png>
+Package pdftex.def Info: rozdzial04/T_Bilety.png used on input line 27.
+(pdftex.def)             Requested size: 273.14922pt x 91.97621pt.
+ [11
 
 
 
-]
+ <./rozdzial04/T_Seanse.png>]
+<rozdzial04/T_Sale.png, id=48, 221.32687pt x 86.57344pt>
+File: rozdzial04/T_Sale.png Graphic file (type png)
+
+<use rozdzial04/T_Sale.png>
+Package pdftex.def Info: rozdzial04/T_Sale.png used on input line 34.
+(pdftex.def)             Requested size: 227.62204pt x 89.04083pt.
+
+<rozdzial04/widoki.png, id=49, 543.53062pt x 498.36188pt>
+File: rozdzial04/widoki.png Graphic file (type png)
+
+<use rozdzial04/widoki.png>
+Package pdftex.def Info: rozdzial04/widoki.png used on input line 45.
+(pdftex.def)             Requested size: 364.19664pt x 333.94635pt.
+ [12 <./rozdzial04/T_Bilety.png> <./rozdzial04/T_Sale.png> <./rozdzial04/widoki
+.png>]
+<rozdzial04/V_Seanse_.png, id=54, 307.1475pt x 100.12407pt>
+File: rozdzial04/V_Seanse_.png Graphic file (type png)
+
+<use rozdzial04/V_Seanse_.png>
+Package pdftex.def Info: rozdzial04/V_Seanse_.png used on input line 57.
+(pdftex.def)             Requested size: 273.14922pt x 89.04749pt.
+
+<rozdzial04/V_Miejsca_.png, id=55, 302.63063pt x 77.53969pt>
+File: rozdzial04/V_Miejsca_.png Graphic file (type png)
+
+<use rozdzial04/V_Miejsca_.png>
+Package pdftex.def Info: rozdzial04/V_Miejsca_.png used on input line 64.
+(pdftex.def)             Requested size: 273.14922pt x 69.98618pt.
+
+<rozdzial04/Procedury.png, id=56, 376.40625pt x 330.48468pt>
+File: rozdzial04/Procedury.png Graphic file (type png)
+
+<use rozdzial04/Procedury.png>
+Package pdftex.def Info: rozdzial04/Procedury.png used on input line 74.
+(pdftex.def)             Requested size: 318.66946pt x 279.81398pt.
+ [13 <./rozdzial04/V_Seanse_.png> <./rozdzial04/V_Miejsca_.png>]
+Overfull \hbox (1.83461pt too wide) in paragraph at lines 93--94
+[]\T1/qtm/m/n/12 UsunRezerwacje - usu-wa wszyst-kie bi-let, anu-lu-je trans-ak-
+cj¦ u»yt-kow-ni-ka, przy-wra-ca miej-
+ []
+
+[14 <./rozdzial04/Procedury.png>]
+<rozdzial04/P_DodajSeans.png, id=64, 624.08156pt x 253.69781pt>
+File: rozdzial04/P_DodajSeans.png Graphic file (type png)
+
+<use rozdzial04/P_DodajSeans.png>
+Package pdftex.def Info: rozdzial04/P_DodajSeans.png used on input line 103.
+(pdftex.def)             Requested size: 455.24408pt x 185.06624pt.
+) [15 <./rozdzial04/P_DodajSeans.png>]
 \openout2 = `rozdzial05.aux'.
 
- (rozdzial05.tex
+
+(rozdzial05.tex
 Rozdzia\PlPrIeC {\l } 5.
-<rozdzial05/diagram.png, id=46, 678.28406pt x 530.73282pt>
+<rozdzial05/diagram.png, id=68, 678.28406pt x 530.73282pt>
 File: rozdzial05/diagram.png Graphic file (type png)
 
 <use rozdzial05/diagram.png>
 Package pdftex.def Info: rozdzial05/diagram.png used on input line 23.
 (pdftex.def)             Requested size: 273.14922pt x 213.72276pt.
- [12
+ [16
 
 
 
-]) [13 <./rozdzial05/diagram.png>]
+]) [17 <./rozdzial05/diagram.png>]
 \openout2 = `rozdzial06.aux'.
 
 
 (rozdzial06.tex
 Rozdzia\PlPrIeC {\l } 6.
-) [14
+) [18
 
 
 
@@ -1131,14 +1200,14 @@ Rozdzia\PlPrIeC {\l } 6.
 
  (rozdzial07.tex
 Rozdzia\PlPrIeC {\l } 7.
-) [15
+) [19
 
 
 
 ]
 \openout2 = `Bibliografia2.aux'.
 
- (Bibliografia2.tex) [16
+ (Bibliografia2.tex) [20
 
 
 ] (praca.aux (rozdzial01.aux) (rozdzial02.aux)
@@ -1146,11 +1215,11 @@ Rozdzia\PlPrIeC {\l } 7.
 (rozdzial07.aux) (Bibliografia2.aux)) )
 (\end occurred when \iftrue on line 249 was incomplete) 
 Here is how much of TeX's memory you used:
- 6375 strings out of 493333
- 87648 string characters out of 3139194
- 152402 words of memory out of 3000000
- 9648 multiletter control sequences out of 15000+200000
- 55088 words of font info for 47 fonts, out of 3000000 for 9000
+ 6425 strings out of 493333
+ 88791 string characters out of 3139194
+ 152490 words of memory out of 3000000
+ 9689 multiletter control sequences out of 15000+200000
+ 57935 words of font info for 48 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,15n,34p,839b,381s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX
@@ -1159,9 +1228,9 @@ vips/tex-gyre/q-ts1.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/tex-gyre/q
 -ec-sc.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/tex-gyre/qtmb.pfb><C
 :/Program Files/MiKTeX 2.9/fonts/type1/public/tex-gyre/qtmr.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/tex-gyre/qtmri.pfb>
-Output written on praca.pdf (16 pages, 534133 bytes).
+Output written on praca.pdf (20 pages, 657957 bytes).
 PDF statistics:
- 80 PDF objects out of 1000 (max. 8388607)
+ 102 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
 

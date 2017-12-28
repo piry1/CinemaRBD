@@ -13,10 +13,13 @@
 \contentsline {section}{\numberline {3.2}Model fizyczny}{9}
 \contentsline {chapter}{\numberline {4}Implementacja baz danych w \IeC {\'s}rodowisku MySQL}{11}
 \contentsline {section}{\numberline {4.1}Realizacja bazy danych}{11}
-\contentsline {section}{\numberline {4.2}Wykorzystanie mechanizm\IeC {\'o}w replikacji master-slave}{11}
-\contentsline {chapter}{\numberline {5}Projekt i implementacja aplikacji klienckiej}{12}
-\contentsline {section}{\numberline {5.1}Funkcje aplikacji - diagram przypadk\IeC {\'o}w u\IeC {\.z}ycia}{12}
-\contentsline {section}{\numberline {5.2}Realizacja wybranych funkcjonalno\IeC {\'s}ci}{13}
-\contentsline {chapter}{\numberline {6}Wdro\IeC {\.z}enie i testowanie aplikacji}{14}
-\contentsline {chapter}{\numberline {7}Podsumowanie}{15}
-\contentsline {chapter}{Literatura}{16}
+\contentsline {subsection}{\numberline {4.1.1}Tabele}{11}
+\contentsline {subsection}{\numberline {4.1.2}Widoki}{12}
+\contentsline {subsection}{\numberline {4.1.3}Procedury}{13}
+\contentsline {section}{\numberline {4.2}Wykorzystanie mechanizm\IeC {\'o}w replikacji master-slave}{15}
+\contentsline {chapter}{\numberline {5}Projekt i implementacja aplikacji klienckiej}{16}
+\contentsline {section}{\numberline {5.1}Funkcje aplikacji - diagram przypadk\IeC {\'o}w u\IeC {\.z}ycia}{16}
+\contentsline {section}{\numberline {5.2}Realizacja wybranych funkcjonalno\IeC {\'s}ci}{17}
+\contentsline {chapter}{\numberline {6}Wdro\IeC {\.z}enie i testowanie aplikacji}{18}
+\contentsline {chapter}{\numberline {7}Podsumowanie}{19}
+\contentsline {chapter}{Literatura}{20}
