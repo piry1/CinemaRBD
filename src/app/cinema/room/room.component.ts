@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DbService } from '../../db.service';
+import { Room } from '../../dbModel/room';
 
 @Component({
   selector: 'app-room',
@@ -12,6 +13,9 @@ export class RoomComponent implements OnInit {
 
   private rooms: any[] = [];
 
+  private newRoom: Room = new Room();
+  private processing: boolean = false;
+
   ngOnInit() {
     this.getRooms();
   }
@@ -21,6 +25,16 @@ export class RoomComponent implements OnInit {
       console.log(res);
       this.rooms = res;
     });
+  }
+
+  addRoom() {
+    this.processing = true;
+    console.log(this.newRoom);
+    this._db.addRoom(this.newRoom).subscribe(res => {
+      this.getRooms();
+      this.processing = false;
+    });
+
   }
 
 }
