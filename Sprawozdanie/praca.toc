@@ -1,0 +1,21 @@
+\contentsline {chapter}{Spis rysunk\IeC {\'o}w}{3}
+\contentsline {chapter}{Spis tabel}{4}
+\contentsline {chapter}{\numberline {1}Wst\IeC {\k e}p}{5}
+\contentsline {section}{\numberline {1.1}Cele projektu}{5}
+\contentsline {section}{\numberline {1.2}Za\IeC {\l }o\IeC {\.z}enia projektowe}{5}
+\contentsline {section}{\numberline {1.3}Zakres projektu}{5}
+\contentsline {chapter}{\numberline {2}Replikacja w systemie baz danych MySQL}{6}
+\contentsline {section}{\numberline {2.1}Poj\IeC {\k e}cie replikacji i podstawowe informacje}{6}
+\contentsline {section}{\numberline {2.2}Replikacja master-slave}{6}
+\contentsline {chapter}{\numberline {3}Model konceptualny i fizyczny baz danych}{7}
+\contentsline {section}{\numberline {3.1}Model konceptualny}{7}
+\contentsline {section}{\numberline {3.2}Model fizyczny}{7}
+\contentsline {chapter}{\numberline {4}Implementacja baz danych w \IeC {\'s}rodowisku MySQL}{8}
+\contentsline {section}{\numberline {4.1}Realizacja bazy danych}{8}
+\contentsline {section}{\numberline {4.2}Wykorzystanie mechanizm\IeC {\'o}w replikacji master-slave}{8}
+\contentsline {chapter}{\numberline {5}Projekt i implementacja aplikacji klienckiej}{9}
+\contentsline {section}{\numberline {5.1}Funkcje aplikacji - diagram przypadk\IeC {\'o}w u\IeC {\.z}ycia}{9}
+\contentsline {section}{\numberline {5.2}Realizacja wybranych funkcjonalno\IeC {\'s}ci}{9}
+\contentsline {chapter}{\numberline {6}Wdro\IeC {\.z}enie i testowanie aplikacji}{10}
+\contentsline {chapter}{\numberline {7}Podsumowanie}{11}
+\contentsline {chapter}{Literatura}{12}
