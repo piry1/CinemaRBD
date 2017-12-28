@@ -7,19 +7,20 @@
 \contentsline {chapter}{\numberline {2}Replikacja w systemie baz danych MySQL}{7}
 \contentsline {section}{\numberline {2.1}Poj\IeC {\k e}cie replikacji i podstawowe informacje}{7}
 \contentsline {section}{\numberline {2.2}Replikacja master-slave}{7}
-\contentsline {section}{\numberline {2.3}Testowanie mechanizm\IeC {\'o}w replikacji}{7}
-\contentsline {chapter}{\numberline {3}Model konceptualny i fizyczny baz danych}{8}
-\contentsline {section}{\numberline {3.1}Model konceptualny}{8}
-\contentsline {section}{\numberline {3.2}Model fizyczny}{9}
-\contentsline {chapter}{\numberline {4}Implementacja baz danych w \IeC {\'s}rodowisku MySQL}{11}
-\contentsline {section}{\numberline {4.1}Realizacja bazy danych}{11}
-\contentsline {subsection}{\numberline {4.1.1}Tabele}{11}
-\contentsline {subsection}{\numberline {4.1.2}Widoki}{12}
-\contentsline {subsection}{\numberline {4.1.3}Procedury}{13}
-\contentsline {section}{\numberline {4.2}Wykorzystanie mechanizm\IeC {\'o}w replikacji master-slave}{15}
-\contentsline {chapter}{\numberline {5}Projekt i implementacja aplikacji klienckiej}{16}
-\contentsline {section}{\numberline {5.1}Funkcje aplikacji - diagram przypadk\IeC {\'o}w u\IeC {\.z}ycia}{16}
-\contentsline {section}{\numberline {5.2}Realizacja wybranych funkcjonalno\IeC {\'s}ci}{17}
-\contentsline {chapter}{\numberline {6}Wdro\IeC {\.z}enie i testowanie aplikacji}{18}
-\contentsline {chapter}{\numberline {7}Podsumowanie}{19}
-\contentsline {chapter}{Literatura}{20}
+\contentsline {section}{\numberline {2.3}Testowanie mechanizm\IeC {\'o}w replikacji}{8}
+\contentsline {chapter}{\numberline {3}Model konceptualny i fizyczny baz danych}{10}
+\contentsline {section}{\numberline {3.1}Model konceptualny}{10}
+\contentsline {section}{\numberline {3.2}Model fizyczny}{11}
+\contentsline {chapter}{\numberline {4}Implementacja baz danych w \IeC {\'s}rodowisku MySQL}{13}
+\contentsline {section}{\numberline {4.1}Realizacja bazy danych}{13}
+\contentsline {subsection}{\numberline {4.1.1}Tabele}{13}
+\contentsline {subsection}{\numberline {4.1.2}Widoki}{14}
+\contentsline {subsection}{\numberline {4.1.3}Procedury}{15}
+\contentsline {section}{\numberline {4.2}Wykorzystanie mechanizm\IeC {\'o}w replikacji master-slave}{17}
+\contentsline {chapter}{\numberline {5}Projekt i implementacja aplikacji klienckiej oraz REST API}{18}
+\contentsline {section}{\numberline {5.1}Funkcje aplikacji - diagram przypadk\IeC {\'o}w u\IeC {\.z}ycia}{18}
+\contentsline {section}{\numberline {5.2}Realizacja wybranych funkcjonalno\IeC {\'s}ci aplikacji}{19}
+\contentsline {section}{\numberline {5.3}Realizacja REST API}{19}
+\contentsline {chapter}{\numberline {6}Wdro\IeC {\.z}enie i testowanie aplikacji}{20}
+\contentsline {chapter}{\numberline {7}Podsumowanie}{21}
+\contentsline {chapter}{Literatura}{22}

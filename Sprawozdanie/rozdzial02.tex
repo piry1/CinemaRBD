@@ -2,7 +2,58 @@
 
 \section{Pojęcie replikacji i podstawowe informacje}
 
+Replikacja bazy danych polega na powielaniu bazy danych między różnymi serwerami baz danych, co ma miejsce np. przy pracy w klastrze. Replikacja pozwala na:
+\begin{itemize}
+	\item \textbf{skalowalność}: dzięki temu możliwe jest rozłożenie obciążenia między wieloma serwerami; operacje zapisu i aktualizacji rekordów mogą odbywać się na jednym serwerze, a pobieranie i przeszukiwanie danych na innych, a znacznie obciążające serwer operacje - na jeszcze innych. Na jednej z kopii mogą pracować analitycy, deweloperzy itp.
+	\item \textbf{bezpieczeństwo}: dzięki replikacji tworzymy kopie istniejącej bazy produkcyjnej, które co prawna nie uchronią nas przed operacjami typu \textit{DROP}, ale zapewnią ciągły dostęp do bazy danych w przypadku awarii sprzętu głównego serwera.
+	\item \textbf{analizę}: skomplikowane operacje analityczne, różnego rodzaju przeliczenia i analizy statystyczne mogą być wykonywane na osobnym serwerze bez obciążania głównej bazy.
+	\item \textbf{separację}: możemy udostępnić kopię bazy produkcyjnej dla deweloperów i testerów, aby swoje prace wykonywali na kopii bazy danych.
+	
+\end{itemize}
+
+\textbf{Replikację można podzielić na:}
+\begin{itemize}
+	\item replikację typu \textit{master-slave} - wtedy na bazie produkcyjnej (master) wykonywane są operacje modyfikacji danych, natomiast na pozostałe przenoszona jest kopia bazy danych z serwera głównego
+	\item replikację typu \textit{master-master}, inaczej duplikacja, gdzie zmiany czy modyfikacje danych mogą być wykonane na dowolnym komputerze i dochodzi do obustronnej synchronizacji baz danych; dzięki takiemu rozwiązaniu zmiany przeprowadzone na jednej z baz danych zostaną również prowadzone na pozostałych.
+\end{itemize}
+
 \section{Replikacja master-slave}
+
+Replikacja danych w \textit{MySQL} opiera się o bardzo prostą zasadę: serwer główny (\textit{master}) prowadzi swego rodzaju dziennik, w którym zapisuje każdą czynność, którą wykonał. Wykorzystuje do tego logi binarne zawierające instrukcje, które wykonał master. Serwer zapasowy (\textit{slave}) odczytuje te dane i kolejno wykonuje zapytania, zapełniając bazę kolejnymi rekordami. Efektem tej pracy są dwie identyczne bazy danych.
+
+Po skonfigurowaniu mechanizmu replikacji na serwerze master pojawia się dodatkowy wątek, który odpowiada za wysyłanie bin-logów do serwerów \textit{slave}. Z kolei serwer zapasowy ma dwa wątki:
+
+\begin{itemize}
+	\item \textbf{I/O Thread [wątek wejścia-wyjścia]} - odpowiada za odbieranie dziennika od serwera głównego i zapisuje go w plikach tymczasowych (relay-log),
+	\item \textbf{SQL Thread [wątek SQL]} - zajmuje się parsowaniem tych plików i wykonywaniem zapytań do bazy.
+\end{itemize}
+
+System bazodanowy MySQL umożliwia trzy różne metody replikacji, co przekłada się na format
+danych zapisywanych do bin-logów. Za wybór metody replikacji odpowiada zmienna
+binlog\_format, która może przyjąć wartość: ROW, STATEMENT, MIXED. \\
+
+\textbf{Metody replikacji:}
+\begin{itemize}
+	\item \textbf{SBR (statement-based replication)} - w tym trybie, serwer do pliku zapisuje zapytania jakie
+	wykonał.
+	\item \textbf{RBR (row-based replication)} - do bin-logów zapisywane są wyniki działań zapytań na
+	serwerze master. Zapisywana jest informacja jaki rekord został w jaki sposób zmieniony.
+	\item \textbf{MFL (mixed-format logging)} - jest to połączenie dwóch powyższych typów replikacji.
+\end{itemize}
+
+Technika replikacji \textbf{SBR} jest bardzo szybka i wydajna, ponieważ w jej przypadku serwer główny
+zapisuje do pliku zapytanie jakie wykonał, następnie serwer zapasowy je odczytuje i wykonuje.
+Niestety do pliku logów zapisywane są tylko zapytania SQL, co przysporzy nam problemów, gdy
+nasze zapytania będą bardziej złożone.\\
+
+Problem ten rozwiązała metoda \textbf{RBR}, która do bin-logów zapisuje wyłącznie zmiany jakie zaszły
+po wykonaniu polecenia - logowane są informacje na temat sposobu modyfikacji konkretnych
+rekordów. Niestety metoda ta jest znacznie wolniejsza od poprzedniej oraz zwiększa ilość
+wysyłanych danych pomiędzy replikującymi się serwerami.\\
+
+Z pomocą przyszła nam metoda \textbf{MFL}, w której w większości przypadków, logowane są zapytania
+SQL tak jak w przypadku \textbf{SBR}, natomiast dla zapytań, których wynik nie jest przewidywalny,
+włączana jest replikacja \textbf{RBR}.\\
 
 \section{Testowanie mechanizmów replikacji}
 
