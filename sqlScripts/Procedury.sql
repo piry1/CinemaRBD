@@ -213,12 +213,13 @@ WHERE Id=_id;
 END
 //
 
--- Wyświetla kupione bilety
+-- Wyświetla Bilet o podanym id
 delimiter //
 DROP PROCEDURE IF EXISTS WyswietlBilet//
-CREATE PROCEDURE WyswietlBilet() 
+CREATE PROCEDURE WyswietlBilet(in _id int) 
 BEGIN
-SELECT * FROM _Bilety_;
+SELECT * FROM _Bilety_
+WHERE Id=_id;
 END
 //
 
