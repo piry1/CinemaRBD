@@ -101,7 +101,7 @@ delimiter //
 DROP PROCEDURE IF EXISTS BiletyUsera//
 CREATE PROCEDURE BiletyUsera(in _id int) 
 BEGIN
-SELECT * FROM Bilety WHERE IdKlienta=_id;
+SELECT * FROM _Bilety_ WHERE IdKlienta=_id;
 END
 //
 
@@ -213,13 +213,12 @@ WHERE Id=_id;
 END
 //
 
--- Wyświetla Bilety kupione przez konkretnego uzytkownika
+-- Wyświetla kupione bilety
 delimiter //
 DROP PROCEDURE IF EXISTS WyswietlBilet//
-CREATE PROCEDURE WyswietlBilet(in _id int) 
+CREATE PROCEDURE WyswietlBilet() 
 BEGIN
-SELECT * FROM Bilety
-WHERE Id=_id;
+SELECT * FROM _Bilety_;
 END
 //
 

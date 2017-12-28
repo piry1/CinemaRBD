@@ -95,3 +95,8 @@ LEFT JOIN Miejsca ON Miejsca.Id=Rezerwacje.IdMiejsca
 LEFT JOIN Sale ON Sale.Id=IdSali
 LEFT JOIN Seanse ON Seanse.Id=Rezerwacje.IdSeansu
 LEFT JOIN Filmy ON Filmy.Id=Seanse.IdFilmu;
+
+CREATE OR REPLACE VIEW _Bilety_ AS
+SELECT Bilety.Id, Bilety.IdKlienta, _Miejsca_.Tytul, _Miejsca_.DataSeansu, _Miejsca_.Godzina, _Miejsca_.Cena,
+_Miejsca_.NazwaSali, _Miejsca_.Rzad, _Miejsca_.NrMiejsca FROM Bilety
+LEFT JOIN _Miejsca_ ON _Miejsca_.Id=Bilety.IdRezerwacji;
