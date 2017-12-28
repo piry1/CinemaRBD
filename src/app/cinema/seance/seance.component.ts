@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DbService } from '../../db.service';
 
 @Component({
   selector: 'app-seance',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SeanceComponent implements OnInit {
 
-  constructor() { }
+  private seances: any[] = [];
+
+  constructor(private _db: DbService) { }
 
   ngOnInit() {
+    this.getSeances();
+  }
+
+  getSeances() {
+    this._db.getSeance().subscribe(res => {
+      this.seances = res;
+      console.log(res);
+    });
   }
 
 }
