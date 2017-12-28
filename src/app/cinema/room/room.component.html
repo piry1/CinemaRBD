@@ -1,3 +1,18 @@
-<p>
-  room works!
-</p>
+<h1>Sale</h1>
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Nazwa sali</th>
+      <th>Pojemność</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let room of rooms">
+      <td>{{room.Id}}</td>
+      <td>{{room.NazwaSali}}</td>
+      <td>{{room.Pojemnosc}}</td>
+    </tr>
+  </tbody>
+</table>

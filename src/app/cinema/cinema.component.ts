@@ -16,16 +16,17 @@ export class CinemaComponent implements OnInit {
   user: User;
 
 
-  side: { name: string, active: string, route: string }[] = [
-    { "name": "Moje bilety", "active": "active", "route": "tickets" },
-    { "name": "Kup bilet", "active": "", "route": "buyticket" },
-    { "name": "Filmy", "active": "", "route": "films" },
-    { "name": "Seanse", "active": "", "route": "seance" },
-    { "name": "Sale", "active": "", "route": "room" },
+  side: { name: string, active: string, route: string, onlyAdmin: string }[] = [
+    { "name": "Moje bilety", "active": "active", "route": "tickets", "onlyAdmin": "no" },
+    { "name": "Kup bilet", "active": "", "route": "buyticket", "onlyAdmin": "no" },
+    { "name": "Filmy", "active": "", "route": "films", "onlyAdmin": "no" },
+    { "name": "Seanse", "active": "", "route": "seance", "onlyAdmin": "no" },
+    { "name": "Sale", "active": "", "route": "room", "onlyAdmin": "yes" },
   ];
 
   ngOnInit() {
     this.checkUser();
+    console.log(this.user);
   }
 
   checkUser() {

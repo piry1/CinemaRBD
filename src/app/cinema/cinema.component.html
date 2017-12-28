@@ -8,7 +8,7 @@
     <ul class="sidebar-nav">
 
       <li *ngFor="let s of side; let i = index">
-        <a routerLink="/cinema/{{s.route}}" [routerLinkActive]="['active']">{{s.name}}</a>
+        <a *ngIf="s.onlyAdmin == 'no' || user.Uprawnienia == 1 " routerLink="/cinema/{{s.route}}" [routerLinkActive]="['active']">{{s.name}}</a>
       </li>
     </ul>
   </div>

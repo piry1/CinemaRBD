@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DbService } from '../../db.service';
 
 @Component({
   selector: 'app-room',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RoomComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _db: DbService) { }
+
+  private rooms: any[] = [];
 
   ngOnInit() {
+    this.getRooms();
+  }
+
+  getRooms() {
+    this._db.getRoom().subscribe(res => {
+      console.log(res);
+      this.rooms = res;
+    });
   }
 
 }
