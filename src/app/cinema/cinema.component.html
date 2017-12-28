@@ -2,7 +2,7 @@
 
   <!-- Sidebar -->
   <div id="sidebar-wrapper">
-    <button *ngIf="toogle" style="margin-left: 165px;  width: 100px;" class="btn btn-warning" (click)="toggleMenu()">
+    <button style="margin-left: 165px;  width: 100px;" class="btn btn-warning" (click)="toggleMenu()">
       <i class="fa fa-arrow-left" aria-hidden="true"></i>
     </button>
     <ul class="sidebar-nav">
@@ -17,7 +17,7 @@
   <!-- Page Content -->
   <div id="page-content-wrapper">
 
-    <button *ngIf="!toogle" class="btn btn-warning" style="left: 0; margin: -5px; margin-top: -19px; position: fixed;" (click)="toggleMenu()">
+    <button class="btn btn-warning" style="left: 0; margin: -5px; margin-top: -19px; position: fixed;" (click)="toggleMenu()">
       <i class="fa fa-arrow-right" aria-hidden="true"></i>
     </button>
     <div style="padding-left: 30px; padding-right: 30px;" class="container-fluid">

@@ -23,7 +23,7 @@ export class FilmsComponent implements OnInit {
   getFilms() {
     this._db.getFilm().subscribe((res: Film[]) => {
       this.films = res;
-      console.log(res);
+      //console.log(res);
     });
   }
 

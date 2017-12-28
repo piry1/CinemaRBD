@@ -32,7 +32,7 @@ export class TicketsComponent implements OnInit {
 
     this._bd.getUsersTickets(this.user.Id).subscribe(res => {
       this.tickets = res;
-      console.log(res);
+     // console.log(res);
     });
   }
 
