@@ -16,12 +16,13 @@
     </ul>
   </div>
 
-  <form *ngIf="showLoginInfo" class="form-inline my-2 my-lg-0">
-    <input name="login" class="form-control mr-sm-2" type="text" [(ngModel)]="user.Login" placeholder="Login">
-    <input name="pass" class="form-control mr-sm-2" type="password" [(ngModel)]="user.Haslo" placeholder="Hasło">
-    <button class="btn btn-secondary my-2 my-sm-0" (click)="login()" type="submit">Login</button>
+  <form *ngIf="showLoginInfo" #loginForm="ngForm" class="form-inline my-2 my-lg-0" (ngSubmit)="login()">
+    <input name="login" class="form-control mr-sm-2" type="text" [(ngModel)]="user.Login" placeholder="Login" required>
+    <input name="pass" class="form-control mr-sm-2" type="password" [(ngModel)]="user.Haslo" placeholder="Hasło" required>
+    <button class="btn btn-secondary my-2 my-sm-0" [disabled]="!loginForm.form.valid" type="submit">Login</button>
 
   </form>
+  
   <button *ngIf="showLoginInfo" data-toggle="modal" data-target="#myModal" style="margin-left: 5px;" class="btn btn-warning my-2 my-sm-0">Rejestracja</button>
   <h4 *ngIf="!showLoginInfo" style="margin: 5px; color: white"> {{user.Imie}} </h4>
   <h4 *ngIf="!showLoginInfo" style="margin: 5px; color: white"> {{user.Nazwisko}} </h4>
