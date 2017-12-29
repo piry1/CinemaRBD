@@ -23,3 +23,40 @@
     </tr>
   </tbody>
 </table>
+
+
+<div class="card border-primary">
+    <div class="card-header">
+      <h3>Dodaj film</h3>
+    </div>
+
+    <form (ngSubmit)="addFilm()" #filmForm="ngForm">
+
+      <div class="card-body">
+
+        <label>Tytuł</label>
+        <input name="tytul" [(ngModel)]="newFilm.Tytul" type="text" class="form-control" required>
+        <label>Reżyser</label>
+        <input name="rezyser" [(ngModel)]="newFilm.Rezyser" type="text" class="form-control" required>
+        <label>Rok produkcji</label>
+        <input name="rok" [(ngModel)]="newFilm.Rok" type="date" class="form-control" required>
+        <label>Gatunek</label>
+        <input name="gatunek" [(ngModel)]="newFilm.Gatunek" type="text" class="form-control" required>
+        <label>Długość (min)</label>
+        <input name="dlugosc" [(ngModel)]="newFilm.Dlugosc" type="number" class="form-control" required min="1">
+        
+      </div>
+
+      <div *ngIf="!processing" class="card-body">
+        <button [disabled]="!filmForm.form.valid" type="submit" class="btn btn-primary btn-lg btn-block">Dodaj film</button>
+        <h5 *ngIf="submitError" style="text-align: center" class="text-danger">Operacja nie powiodła się</h5>
+
+      </div>
+
+    </form>
+
+    <div *ngIf="processing" class="card-body" style="text-align: center;">
+      <i class="fa fa-circle-o-notch" aria-hidden="true"></i>
+    </div>
+
+  </div>

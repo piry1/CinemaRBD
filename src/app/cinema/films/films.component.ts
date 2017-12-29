@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { DbService } from '../../db.service';
 import { User } from '../../dbModel/user';
 import { Film } from '../../dbModel/film';
+import { runInContext } from 'vm';
 
 @Component({
   selector: 'app-films',
@@ -12,6 +13,10 @@ export class FilmsComponent implements OnInit {
 
   user: User;
   films: Film[] = [];
+
+  processing: boolean = false;
+  submitError: boolean = false;
+  newFilm: Film = new Film();
 
   constructor(private _db: DbService) { }
 
@@ -26,5 +31,15 @@ export class FilmsComponent implements OnInit {
       //console.log(res);
     });
   }
+
+  addFilm() {
+    this.processing = true;
+    this.submitError = false;
+
+    this._db.addFilm(this.newFilm)
+      .finally(() => { this.processing = false; })
+      .subscribe(res => { this.getFilms(); }, err => { this.submitError = true; })
+  };
+  
 
 }
