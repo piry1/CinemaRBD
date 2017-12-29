@@ -47,12 +47,12 @@
       <div class="card-body">
   
         <label>Film</label>
-        <select name="film" [(ngModel)]="newSeance.IdFilmu" class="form-control">
+        <select name="film" [(ngModel)]="newSeance.IdFilmu" class="form-control" required>
             <option *ngFor="let film of films" [ngValue]="film.Id">{{film.Tytul}}</option>
           </select>
 
         <label>Sala</label>
-        <select name="room" [(ngModel)]="newSeance.IdSali" class="form-control">
+        <select name="room" [(ngModel)]="newSeance.IdSali" class="form-control" required>
             <option *ngFor="let room of rooms" [ngValue]="room.Id">{{room.NazwaSali}}</option>    
           </select>
 
