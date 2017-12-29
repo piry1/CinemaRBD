@@ -14,6 +14,7 @@ export class RoomComponent implements OnInit {
   private rooms: any[] = [];
 
   private newRoom: Room = new Room();
+  private refreshing: boolean = false;
   private processing: boolean = false;
   private deleteProcessing: boolean = false;
   private submitError: boolean = false;
@@ -23,10 +24,13 @@ export class RoomComponent implements OnInit {
   }
 
   getRooms() {
-    this._db.getRoom().subscribe(res => {
-      console.log(res);
-      this.rooms = res;
-    });
+    this.refreshing = true;
+    this._db.getRoom()
+      .finally(() => this.refreshing = false)
+      .subscribe(res => {
+        console.log(res);
+        this.rooms = res;
+      });
   }
 
   addRoom() {
