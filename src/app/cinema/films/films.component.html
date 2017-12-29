@@ -1,5 +1,7 @@
-<h1 style="margin-bottom: 15px;">Filmy <i class="fa fa-refresh text-primary" (click)="getFilms()" [class.spin]="refreshing" [class.text-secondary]="refreshing"  aria-hidden="true"></i>
-  <div  *ngIf="deleteProcessing" style="text-align: center; margin-top: -48px;">
+<h1 style="margin-bottom: 15px;">Filmy
+  <i class="fa fa-refresh text-primary" (click)="getFilms()" [class.spin]="refreshing" [class.text-secondary]="refreshing"
+    aria-hidden="true"></i>
+  <div *ngIf="deleteProcessing" style="text-align: center; margin-top: -48px;">
     <i class="fa fa-circle-o-notch text-danger" aria-hidden="true"></i> Usuwanie
   </div>
 
@@ -13,22 +15,27 @@
       <th>Rok</th>
       <th>Gatunek</th>
       <th>Długość</th>
+      <th *ngIf="user.Uprawnienia == 1">Edytuj</th>
       <th *ngIf="user.Uprawnienia == 1">Usuń</th>
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let film of films">
+    <tr *ngFor="let film of films; let i = index">
       <td>{{film.Tytul}}</td>
       <td>{{film.Rezyser}}</td>
       <td>{{film.Rok}}</td>
       <td>{{film.Gatunek}}</td>
       <td>{{film.Dlugosc}} min</td>
       <td *ngIf="user.Uprawnienia == 1">
+        <button (click)="setEditedFilm(i)" data-toggle="modal" data-target="#editFilmModal" class="btn btn-outline-success">
+          <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+        </button>
+      </td>
+      <td *ngIf="user.Uprawnienia == 1">
         <button (click)="deleteFilm(film.Id)" class="btn btn-outline-danger">
           <i class="fa fa-times" aria-hidden="true"></i>
         </button>
       </td>
-
     </tr>
   </tbody>
 </table>
@@ -68,4 +75,51 @@
     <i class="fa fa-circle-o-notch text-success" aria-hidden="true"></i>
   </div>
 
+</div>
+
+<!-- EDIT FILM MODAL -->
+
+<div id="editFilmModal" class="modal">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header bg-primary">
+        <h3 class="modal-title" style="color: white">Edytuj {{editedFilm.Tytul}}</h3>
+
+      </div>
+      <div class="modal-body">
+        <!-- FORM -->
+        <form #editFilmForm="ngForm">
+
+          <div class="card-body">
+
+            <label>Tytuł</label>
+            <input name="tytul" [(ngModel)]="editedFilm.Tytul" type="text" class="form-control" required>
+            <label>Reżyser</label>
+            <input name="rezyser" [(ngModel)]="editedFilm.Rezyser" type="text" class="form-control" required>
+            <label>Rok produkcji</label>
+            <input name="rok" [(ngModel)]="editedFilm.Rok" type="date" class="form-control" required>
+            <label>Gatunek</label>
+            <input name="gatunek" [(ngModel)]="editedFilm.Gatunek" type="text" class="form-control" required>
+            <label>Długość (min)</label>
+            <input name="dlugosc" [(ngModel)]="editedFilm.Dlugosc" type="number" class="form-control" required min="1">
+
+          </div>
+
+          <div *ngIf="!processing" class="card-body">
+            <div class="row">
+              <div class="col-sm-6">
+                <button [disabled]="!editFilmForm.form.valid" (click)="editFilm()" data-dismiss="modal" type="submit" class="btn btn-primary btn-lg btn-block">Zapisz zmiany</button>
+              </div>
+              <div class="col-sm-6">
+                <button class="btn btn-warning btn-lg btn-block" data-dismiss="modal">Anuluj</button>
+              </div>
+            </div>
+          </div>
+
+        </form>
+        <!-- END FORM -->
+
+      </div>
+    </div>
+  </div>
 </div>

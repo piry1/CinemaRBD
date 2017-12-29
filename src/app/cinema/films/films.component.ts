@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { DbService } from '../../db.service';
 import { User } from '../../dbModel/user';
 import { Film } from '../../dbModel/film';
+import { F_OK } from 'constants';
 
 @Component({
   selector: 'app-films',
@@ -18,6 +19,7 @@ export class FilmsComponent implements OnInit {
   deleteProcessing: boolean = false;
   submitError: boolean = false;
   newFilm: Film = new Film();
+  editedFilm: Film = new Film();
 
   constructor(private _db: DbService) { }
 
@@ -45,13 +47,22 @@ export class FilmsComponent implements OnInit {
   };
 
   deleteFilm(id: number) {
-
     this.deleteProcessing = true;
 
     this._db.deleteFilm(id)
       .finally(() => this.deleteProcessing = false)
       .subscribe(res => this.getFilms())
 
+  }
+
+  setEditedFilm(index) {
+    this.editedFilm = Object.assign({}, this.films[index]);
+  }
+
+  editFilm() {
+
+    this._db.editFilm(this.editedFilm, this.editedFilm.Id)
+      .subscribe(res => this.getFilms())
   }
 
 }
