@@ -15,6 +15,7 @@ export class FilmsComponent implements OnInit {
   films: Film[] = [];
 
   processing: boolean = false;
+  deleteProcessing: boolean = false;
   submitError: boolean = false;
   newFilm: Film = new Film();
 
@@ -40,6 +41,15 @@ export class FilmsComponent implements OnInit {
       .finally(() => { this.processing = false; })
       .subscribe(res => { this.getFilms(); }, err => { this.submitError = true; })
   };
-  
+
+  deleteFilm(id: number){
+
+    this.deleteProcessing = true;
+
+    this._db.deleteFilm(id)
+    .finally(() => this.deleteProcessing = false) 
+    .subscribe(res => this.getFilms())
+
+  }
 
 }

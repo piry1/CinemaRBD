@@ -1,4 +1,9 @@
-<h1>Filmy</h1>
+<h1 style="margin-bottom: 15px;">Filmy
+  <div  *ngIf="deleteProcessing" style="text-align: center; margin-top: -48px;">
+    <i class="fa fa-circle-o-notch text-danger" aria-hidden="true"></i> Usuwanie
+  </div>
+
+</h1>
 
 <table class="table table-hover">
   <thead>
@@ -18,45 +23,49 @@
       <td>{{film.Rok}}</td>
       <td>{{film.Gatunek}}</td>
       <td>{{film.Dlugosc}} min</td>
-      <td><button (click)="deleteRoom(room.Id)" class="btn btn-outline-danger"><i class="fa fa-times" aria-hidden="true"></i></button></td>
-      
+      <td>
+        <button (click)="deleteFilm(film.Id)" class="btn btn-outline-danger">
+          <i class="fa fa-times" aria-hidden="true"></i>
+        </button>
+      </td>
+
     </tr>
   </tbody>
 </table>
 
 
 <div class="card border-primary">
-    <div class="card-header">
-      <h3>Dodaj film</h3>
-    </div>
-
-    <form (ngSubmit)="addFilm()" #filmForm="ngForm">
-
-      <div class="card-body">
-
-        <label>Tytuł</label>
-        <input name="tytul" [(ngModel)]="newFilm.Tytul" type="text" class="form-control" required>
-        <label>Reżyser</label>
-        <input name="rezyser" [(ngModel)]="newFilm.Rezyser" type="text" class="form-control" required>
-        <label>Rok produkcji</label>
-        <input name="rok" [(ngModel)]="newFilm.Rok" type="date" class="form-control" required>
-        <label>Gatunek</label>
-        <input name="gatunek" [(ngModel)]="newFilm.Gatunek" type="text" class="form-control" required>
-        <label>Długość (min)</label>
-        <input name="dlugosc" [(ngModel)]="newFilm.Dlugosc" type="number" class="form-control" required min="1">
-        
-      </div>
-
-      <div *ngIf="!processing" class="card-body">
-        <button [disabled]="!filmForm.form.valid" type="submit" class="btn btn-primary btn-lg btn-block">Dodaj film</button>
-        <h5 *ngIf="submitError" style="text-align: center" class="text-danger">Operacja nie powiodła się</h5>
-
-      </div>
-
-    </form>
-
-    <div *ngIf="processing" class="card-body" style="text-align: center;">
-      <i class="fa fa-circle-o-notch" aria-hidden="true"></i>
-    </div>
-
+  <div class="card-header">
+    <h3>Dodaj film</h3>
   </div>
+
+  <form (ngSubmit)="addFilm()" #filmForm="ngForm">
+
+    <div class="card-body">
+
+      <label>Tytuł</label>
+      <input name="tytul" [(ngModel)]="newFilm.Tytul" type="text" class="form-control" required>
+      <label>Reżyser</label>
+      <input name="rezyser" [(ngModel)]="newFilm.Rezyser" type="text" class="form-control" required>
+      <label>Rok produkcji</label>
+      <input name="rok" [(ngModel)]="newFilm.Rok" type="date" class="form-control" required>
+      <label>Gatunek</label>
+      <input name="gatunek" [(ngModel)]="newFilm.Gatunek" type="text" class="form-control" required>
+      <label>Długość (min)</label>
+      <input name="dlugosc" [(ngModel)]="newFilm.Dlugosc" type="number" class="form-control" required min="1">
+
+    </div>
+
+    <div *ngIf="!processing" class="card-body">
+      <button [disabled]="!filmForm.form.valid" type="submit" class="btn btn-primary btn-lg btn-block">Dodaj film</button>
+      <h5 *ngIf="submitError" style="text-align: center" class="text-danger">Operacja nie powiodła się</h5>
+
+    </div>
+
+  </form>
+
+  <div *ngIf="processing" class="card-body" style="text-align: center;">
+    <i class="fa fa-circle-o-notch text-success" aria-hidden="true"></i>
+  </div>
+
+</div>
