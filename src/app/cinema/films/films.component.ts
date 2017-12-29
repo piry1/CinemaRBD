@@ -13,6 +13,7 @@ export class FilmsComponent implements OnInit {
   user: User;
   films: Film[] = [];
 
+  refreshing: boolean = false;
   processing: boolean = false;
   deleteProcessing: boolean = false;
   submitError: boolean = false;
@@ -26,10 +27,12 @@ export class FilmsComponent implements OnInit {
   }
 
   getFilms() {
-    this._db.getFilm().subscribe((res: Film[]) => {
-      this.films = res;
-      //console.log(res);
-    });
+    this.refreshing = true;
+    this._db.getFilm()
+      .finally(() => this.refreshing = false)
+      .subscribe((res: Film[]) => {
+        this.films = res;
+      });
   }
 
   addFilm() {
@@ -41,13 +44,13 @@ export class FilmsComponent implements OnInit {
       .subscribe(res => { this.getFilms(); }, err => { this.submitError = true; })
   };
 
-  deleteFilm(id: number){
+  deleteFilm(id: number) {
 
     this.deleteProcessing = true;
 
     this._db.deleteFilm(id)
-    .finally(() => this.deleteProcessing = false) 
-    .subscribe(res => this.getFilms())
+      .finally(() => this.deleteProcessing = false)
+      .subscribe(res => this.getFilms())
 
   }
 

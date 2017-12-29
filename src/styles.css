@@ -28,6 +28,10 @@ label{
     font-size: 40px;
 }
 
+.spin{
+    animation: spin 1s linear infinite;
+}
+
 .ng-valid[required], .ng-valid.required  {
     border-left: 5px solid #56cc9d; 
 }
