@@ -14,7 +14,7 @@ import 'rxjs/add/operator/finally';
 export class DbService {
 
   private apiUrl: string = 'http://90.156.81.49:81/cinemaapi.php/';
- // private apiUrl: string = 'http://localhost/cinemaapi.php/';
+  // private apiUrl: string = 'http://localhost/cinemaapi.php/';
   private headers: Headers = new Headers();
 
 

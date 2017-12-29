@@ -42,6 +42,7 @@ export class SeanceComponent implements OnInit {
       .finally(() => this.refreshing = false)
       .subscribe(res => {
         this.seances = res;
+        console.log(res);
       });
   }
 
