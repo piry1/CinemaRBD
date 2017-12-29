@@ -34,3 +34,47 @@
      </tr>
     </tbody>
   </table> 
+
+
+
+<div class="card border-primary">
+    <div class="card-header">
+      <h3>Dodaj film</h3>
+    </div>
+  
+    <form (ngSubmit)="addSeance()" #seanceForm="ngForm">
+  
+      <div class="card-body">
+  
+        <label>Film</label>
+        <select name="film" [(ngModel)]="newSeance.IdFilmu" class="form-control">
+            <option *ngFor="let film of films" [ngValue]="film.Id">{{film.Tytul}}</option>
+          </select>
+
+        <label>Sala</label>
+        <select name="room" [(ngModel)]="newSeance.IdSali" class="form-control">
+            <option *ngFor="let room of rooms" [ngValue]="room.Id">{{room.NazwaSali}}</option>    
+          </select>
+
+        <label>Data</label>
+        <input name="rok" [(ngModel)]="newSeance.Data" type="date" class="form-control" required>
+        <label>Godzina</label>
+        <input name="godzina" [(ngModel)]="newSeance.Godzina" type="time" class="form-control" required>
+        <label>Cena (zł)</label>
+        <input name="cena" [(ngModel)]="newSeance.Cena" type="number" class="form-control" required min="0">
+  
+      </div>
+  
+      <div *ngIf="!processing" class="card-body">
+        <button [disabled]="!seanceForm.form.valid" type="submit" class="btn btn-primary btn-lg btn-block">Dodaj film</button>
+        <h5 *ngIf="submitError" style="text-align: center" class="text-danger">Operacja nie powiodła się</h5>
+  
+      </div>
+  
+    </form>
+  
+    <div *ngIf="processing" class="card-body" style="text-align: center;">
+      <i class="fa fa-circle-o-notch text-success" aria-hidden="true"></i>
+    </div>
+  
+  </div>
