@@ -14,6 +14,7 @@ export class SeanceComponent implements OnInit {
 
   user: User;
 
+  refreshing: boolean = false;
   processing: boolean = false;
   deleteProcessing: boolean = false;
   submitError: boolean = false;
@@ -34,10 +35,13 @@ export class SeanceComponent implements OnInit {
   }
 
   getSeances() {
-    this._db.getSeance().subscribe(res => {
-      this.seances = res;
-      console.log(res);
-    });
+    this.refreshing = true;
+    this._db.getSeance()
+      .finally(() => this.refreshing = false)
+      .subscribe(res => {
+        this.seances = res;
+        console.log(res);
+      });
   }
 
   getFilms() {

@@ -1,4 +1,4 @@
-<h1>Seanse
+<h1>Seanse <i class="fa fa-refresh text-primary" (click)="getSeances()" [class.spin]="refreshing" [class.text-secondary]="refreshing"  aria-hidden="true"></i>
   <div *ngIf="deleteProcessing" style="text-align: center; margin-top: -48px;">
     <i class="fa fa-circle-o-notch text-danger" aria-hidden="true"></i> Usuwanie
   </div>
