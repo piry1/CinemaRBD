@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.23)  29 DEC 2017 00:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.23)  29 DEC 2017 01:32
 entering extended mode
 **./praca.tex
 (praca.tex
@@ -1029,9 +1029,9 @@ Non-PDF special ignored!
 
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-(praca.lot)
-\tf@lot=\write4
-\openout4 = `praca.lot'.
+(praca.toc)
+\tf@toc=\write4
+\openout4 = `praca.toc'.
 
  [2
 
@@ -1041,11 +1041,17 @@ Non-PDF special ignored!
 
  [3
 
-] (praca.toc)
-\tf@toc=\write6
-\openout6 = `praca.toc'.
+] (praca.lot)
+\tf@lot=\write6
+\openout6 = `praca.lot'.
 
  [4
+
+] (praca.lol)
+\tf@lol=\write7
+\openout7 = `praca.lol'.
+
+ [5
 
 ]
 \openout2 = `rozdzial01.aux'.
@@ -1055,16 +1061,16 @@ Rozdzia\PlPrIeC {\l } 1.
 LaTeX Font Info:    Try loading font information for TS1+qtm on input line 14.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\tex-gyre\ts1qtm.fd"
 File: ts1qtm.fd 2009/09/25 v1.2 font definition file for TS1/qtm
-) [5
+) [6
 
 
-]) [6]
+]) [7]
 \openout2 = `rozdzial02.aux'.
 
 
 (rozdzial02.tex
 Rozdzia\PlPrIeC {\l } 2.
-[7
+[8
 
 
 
@@ -1088,12 +1094,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 54--57
 
  []
 
-[8]) [9]
+[9]) [10]
 \openout2 = `rozdzial03.aux'.
 
  (rozdzial03.tex
 Rozdzia\PlPrIeC {\l } 3.
-<rozdzial03/model_konceptualny.png, id=35, 393.1488pt x 226.6869pt>
+<rozdzial03/model_konceptualny.png, id=38, 393.1488pt x 226.6869pt>
 File: rozdzial03/model_konceptualny.png Graphic file (type png)
 
 <use rozdzial03/model_konceptualny.png>
@@ -1101,117 +1107,123 @@ Package pdftex.def Info: rozdzial03/model_konceptualny.png used on input line 7
 .
 (pdftex.def)             Requested size: 455.24408pt x 262.50386pt.
 
-<rozdzial03/model_fizyczny.png, id=37, 562.7424pt x 819.06pt>
+<rozdzial03/model_fizyczny.png, id=40, 562.7424pt x 819.06pt>
 File: rozdzial03/model_fizyczny.png Graphic file (type png)
 
 <use rozdzial03/model_fizyczny.png>
 Package pdftex.def Info: rozdzial03/model_fizyczny.png used on input line 19.
 (pdftex.def)             Requested size: 432.48048pt x 629.49086pt.
- [10
+ [11
 
 
 
  <./rozdzial03/model_konceptualny.png>]
-[11 <./rozdzial03/model_fizyczny.png>]) [12]
+[12 <./rozdzial03/model_fizyczny.png>]) [13]
 \openout2 = `rozdzial04.aux'.
 
  (rozdzial04.tex
 Rozdzia\PlPrIeC {\l } 4.
 
-Overfull \hbox (8.81857pt too wide) in paragraph at lines 14--15
+Overfull \hbox (8.81857pt too wide) in paragraph at lines 18--19
 []\T1/qtm/m/n/12 sprawdzanie czy po-da-na licz-ba na-le-»y do prze-dzia-ªu wy-k
 o-rzy-stu-j¡c sªo-wo klu-czo-we \T1/qtm/m/it/12 CHECK
  []
 
-<rozdzial04/T_Seanse.png, id=49, 252.945pt x 150.5625pt>
+<rozdzial04/T_Seanse.png, id=53, 252.945pt x 150.5625pt>
 File: rozdzial04/T_Seanse.png Graphic file (type png)
 
 <use rozdzial04/T_Seanse.png>
-Package pdftex.def Info: rozdzial04/T_Seanse.png used on input line 20.
+Package pdftex.def Info: rozdzial04/T_Seanse.png used on input line 24.
 (pdftex.def)             Requested size: 273.14922pt x 162.59128pt.
+ [14
 
-<rozdzial04/T_Bilety.png, id=50, 297.36093pt x 100.12407pt>
+
+
+]
+<rozdzial04/T_Bilety.png, id=57, 297.36093pt x 100.12407pt>
 File: rozdzial04/T_Bilety.png Graphic file (type png)
 
 <use rozdzial04/T_Bilety.png>
-Package pdftex.def Info: rozdzial04/T_Bilety.png used on input line 27.
+Package pdftex.def Info: rozdzial04/T_Bilety.png used on input line 31.
 (pdftex.def)             Requested size: 273.14922pt x 91.97621pt.
- [13
 
-
-
- <./rozdzial04/T_Seanse.png>]
-<rozdzial04/T_Sale.png, id=55, 221.32687pt x 86.57344pt>
+<rozdzial04/T_Sale.png, id=58, 221.32687pt x 86.57344pt>
 File: rozdzial04/T_Sale.png Graphic file (type png)
 
 <use rozdzial04/T_Sale.png>
-Package pdftex.def Info: rozdzial04/T_Sale.png used on input line 34.
+Package pdftex.def Info: rozdzial04/T_Sale.png used on input line 38.
 (pdftex.def)             Requested size: 227.62204pt x 89.04083pt.
 
-<rozdzial04/widoki.png, id=56, 608.2725pt x 468.24937pt>
+<rozdzial04/widoki.png, id=59, 608.2725pt x 468.24937pt>
 File: rozdzial04/widoki.png Graphic file (type png)
 
 <use rozdzial04/widoki.png>
-Package pdftex.def Info: rozdzial04/widoki.png used on input line 45.
+Package pdftex.def Info: rozdzial04/widoki.png used on input line 49.
 (pdftex.def)             Requested size: 364.19664pt x 280.36589pt.
- [14 <./rozdzial04/T_Bilety.png> <./rozdzial04/T_Sale.png> <./rozdzial04/widoki
-.png>]
-<rozdzial04/V_Seanse_.png, id=60, 307.1475pt x 100.12407pt>
+ [15 <./rozdzial04/T_Seanse.png> <./rozdzial04/T_Bilety.png> <./rozdzial04/T_Sa
+le.png>]
+<rozdzial04/V_Seanse_.png, id=63, 307.1475pt x 100.12407pt>
 File: rozdzial04/V_Seanse_.png Graphic file (type png)
 
 <use rozdzial04/V_Seanse_.png>
-Package pdftex.def Info: rozdzial04/V_Seanse_.png used on input line 58.
+Package pdftex.def Info: rozdzial04/V_Seanse_.png used on input line 62.
 (pdftex.def)             Requested size: 273.14922pt x 89.04749pt.
 
-<rozdzial04/V_Miejsca_.png, id=61, 302.63063pt x 77.53969pt>
+<rozdzial04/V_Miejsca_.png, id=64, 302.63063pt x 77.53969pt>
 File: rozdzial04/V_Miejsca_.png Graphic file (type png)
 
 <use rozdzial04/V_Miejsca_.png>
-Package pdftex.def Info: rozdzial04/V_Miejsca_.png used on input line 65.
+Package pdftex.def Info: rozdzial04/V_Miejsca_.png used on input line 69.
 (pdftex.def)             Requested size: 273.14922pt x 69.98618pt.
 
-<rozdzial04/Procedury.png, id=62, 376.40625pt x 330.48468pt>
+<rozdzial04/Procedury.png, id=65, 376.40625pt x 330.48468pt>
 File: rozdzial04/Procedury.png Graphic file (type png)
 
 <use rozdzial04/Procedury.png>
-Package pdftex.def Info: rozdzial04/Procedury.png used on input line 75.
+Package pdftex.def Info: rozdzial04/Procedury.png used on input line 79.
 (pdftex.def)             Requested size: 318.66946pt x 279.81398pt.
- [15 <./rozdzial04/V_Seanse_.png> <./rozdzial04/V_Miejsca_.png>]
-Overfull \hbox (1.83461pt too wide) in paragraph at lines 94--95
+ [16 <./rozdzial04/widoki.png> <./rozdzial04/V_Seanse_.png> <./rozdzial04/V_Mie
+jsca_.png>] [17 <./rozdzial04/Procedury.png>]
+Overfull \hbox (1.83461pt too wide) in paragraph at lines 98--99
 []\T1/qtm/m/n/12 UsunRezerwacje - usu-wa wszyst-kie bi-let, anu-lu-je trans-ak-
 cj¦ u»yt-kow-ni-ka, przy-wra-ca miej-
  []
 
-[16 <./rozdzial04/Procedury.png>]
-<rozdzial04/P_DodajSeans.png, id=69, 624.08156pt x 253.69781pt>
+<rozdzial04/P_DodajSeans.png, id=72, 624.08156pt x 253.69781pt>
 File: rozdzial04/P_DodajSeans.png Graphic file (type png)
 
 <use rozdzial04/P_DodajSeans.png>
-Package pdftex.def Info: rozdzial04/P_DodajSeans.png used on input line 104.
+Package pdftex.def Info: rozdzial04/P_DodajSeans.png used on input line 108.
 (pdftex.def)             Requested size: 455.24408pt x 185.06624pt.
-) [17 <./rozdzial04/P_DodajSeans.png>]
+) [18 <./rozdzial04/P_DodajSeans.png>]
 \openout2 = `rozdzial05.aux'.
 
 
 (rozdzial05.tex
 Rozdzia\PlPrIeC {\l } 5.
-<rozdzial05/diagram.png, id=73, 678.28406pt x 530.73282pt>
+<rozdzial05/diagram.png, id=76, 678.28406pt x 530.73282pt>
 File: rozdzial05/diagram.png Graphic file (type png)
 
 <use rozdzial05/diagram.png>
-Package pdftex.def Info: rozdzial05/diagram.png used on input line 25.
+Package pdftex.def Info: rozdzial05/diagram.png used on input line 11.
 (pdftex.def)             Requested size: 273.14922pt x 213.72276pt.
- [18
+ [19
 
 
 
-]) [19 <./rozdzial05/diagram.png>]
+ <./rozdzial05/diagram.png>] [20]
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 115.
+
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+) (rozdzial05/kod.txt))
+[21]
 \openout2 = `rozdzial06.aux'.
 
-
-(rozdzial06.tex
+ (rozdzial06.tex
 Rozdzia\PlPrIeC {\l } 6.
-) [20
+) [22
 
 
 
@@ -1240,14 +1252,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--19
 
  []
 
-) [21
+) [23
 
 
 
 ]
 \openout2 = `Bibliografia2.aux'.
 
- (Bibliografia2.tex) [22
+ (Bibliografia2.tex) [24
 
 
 ] (praca.aux (rozdzial01.aux) (rozdzial02.aux)
@@ -1255,22 +1267,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--19
 (rozdzial07.aux) (Bibliografia2.aux)) )
 (\end occurred when \iftrue on line 249 was incomplete) 
 Here is how much of TeX's memory you used:
- 6425 strings out of 493333
- 88791 string characters out of 3139194
- 154493 words of memory out of 3000000
- 9689 multiletter control sequences out of 15000+200000
- 57935 words of font info for 48 fonts, out of 3000000 for 9000
+ 6738 strings out of 493333
+ 91512 string characters out of 3139194
+ 162537 words of memory out of 3000000
+ 9990 multiletter control sequences out of 15000+200000
+ 61424 words of font info for 51 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,15n,34p,1021b,381s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,15n,41p,1021b,1078s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX
- 2.9/fonts/enc/dvips/tex-gyre/q-ec.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/d
-vips/tex-gyre/q-ts1.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/tex-gyre/q
--ec-sc.enc}<C:/Program Files/MiKTeX 2.9/fonts/type1/public/tex-gyre/qtmb.pfb><C
-:/Program Files/MiKTeX 2.9/fonts/type1/public/tex-gyre/qtmr.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/public/tex-gyre/qtmri.pfb>
-Output written on praca.pdf (22 pages, 670513 bytes).
+ 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/
+tex-gyre/q-ec.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/tex-gyre/q-ts1.e
+nc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/tex-gyre/q-ec-sc.enc}<C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb><C:/Program Files/MiKTeX 2.
+9/fonts/type1/public/tex-gyre/qtmb.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
+/public/tex-gyre/qtmr.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/tex-g
+yre/qtmri.pfb>
+Output written on praca.pdf (24 pages, 698993 bytes).
 PDF statistics:
- 107 PDF objects out of 1000 (max. 8388607)
+ 118 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  56 words of extra memory for PDF output out of 10000 (max. 10000000)
 

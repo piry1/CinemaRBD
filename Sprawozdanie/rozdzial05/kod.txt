@@ -1,0 +1,5 @@
+kawalek kodu
+piru dzialaj
+folder rozdzial05
+plik kod.txt
+uwazaj na polskie znaki bo sie sypie
