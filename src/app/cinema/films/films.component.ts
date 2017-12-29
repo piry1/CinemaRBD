@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { DbService } from '../../db.service';
 import { User } from '../../dbModel/user';
 import { Film } from '../../dbModel/film';
-import { F_OK } from 'constants';
 
 @Component({
   selector: 'app-films',
