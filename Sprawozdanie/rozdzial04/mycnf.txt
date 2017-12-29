@@ -1,0 +1,4 @@
+server-id=638926
+log_bin=mysql-bin
+log_error=mysql-bin.err
+binlog_ignore_db=Cinema

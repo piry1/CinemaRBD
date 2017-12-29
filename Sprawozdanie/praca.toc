@@ -14,17 +14,17 @@
 \contentsline {section}{\numberline {3.2}Model fizyczny}{12}
 \contentsline {chapter}{\numberline {4}Implementacja baz danych w \IeC {\'s}rodowisku MySQL}{14}
 \contentsline {section}{\numberline {4.1}Konfiguracja kontener\IeC {\'o}w z \IeC {\'s}rodowiskiem MySQL 5.7 i phpMyAdmin}{14}
-\contentsline {section}{\numberline {4.2}Realizacja bazy danych}{17}
-\contentsline {subsection}{\numberline {4.2.1}Tabele}{17}
-\contentsline {subsection}{\numberline {4.2.2}Widoki}{18}
-\contentsline {subsection}{\numberline {4.2.3}Procedury}{19}
-\contentsline {section}{\numberline {4.3}Wykorzystanie mechanizm\IeC {\'o}w replikacji master-slave}{21}
-\contentsline {chapter}{\numberline {5}Projekt i implementacja aplikacji klienckiej oraz REST API}{22}
-\contentsline {section}{\numberline {5.1}Funkcje aplikacji}{22}
-\contentsline {subsection}{\numberline {5.1.1}Diagram przypadk\IeC {\'o}w u\IeC {\.z}ycia}{22}
-\contentsline {subsection}{\numberline {5.1.2}Scenariusz wybranych przypadk\IeC {\'o}w u\IeC {\.z}ycia}{23}
-\contentsline {section}{\numberline {5.2}Realizacja wybranych funkcjonalno\IeC {\'s}ci aplikacji}{24}
-\contentsline {section}{\numberline {5.3}Realizacja REST API}{24}
-\contentsline {chapter}{\numberline {6}Wdro\IeC {\.z}enie i testowanie aplikacji}{25}
-\contentsline {chapter}{\numberline {7}Podsumowanie}{26}
-\contentsline {chapter}{Literatura}{27}
+\contentsline {section}{\numberline {4.2}Konfiguracja mechanizm\IeC {\'o}w replikacji master-slave}{17}
+\contentsline {section}{\numberline {4.3}Realizacja bazy danych}{18}
+\contentsline {subsection}{\numberline {4.3.1}Tabele}{18}
+\contentsline {subsection}{\numberline {4.3.2}Widoki}{19}
+\contentsline {subsection}{\numberline {4.3.3}Procedury}{21}
+\contentsline {chapter}{\numberline {5}Projekt i implementacja aplikacji klienckiej oraz REST API}{23}
+\contentsline {section}{\numberline {5.1}Funkcje aplikacji}{23}
+\contentsline {subsection}{\numberline {5.1.1}Diagram przypadk\IeC {\'o}w u\IeC {\.z}ycia}{23}
+\contentsline {subsection}{\numberline {5.1.2}Scenariusz wybranych przypadk\IeC {\'o}w u\IeC {\.z}ycia}{24}
+\contentsline {section}{\numberline {5.2}Realizacja wybranych funkcjonalno\IeC {\'s}ci aplikacji}{25}
+\contentsline {section}{\numberline {5.3}Realizacja REST API}{25}
+\contentsline {chapter}{\numberline {6}Wdro\IeC {\.z}enie i testowanie aplikacji}{26}
+\contentsline {chapter}{\numberline {7}Podsumowanie}{27}
+\contentsline {chapter}{Literatura}{28}

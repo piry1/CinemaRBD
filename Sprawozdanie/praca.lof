@@ -4,15 +4,17 @@
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Model konceptualny w\IeC {\k e}z\IeC {\l }a rozproszonej bazy danych wykonany w programie Microsoft Visio}}{11}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Model fizyczny w\IeC {\k e}z\IeC {\l }a rozproszonej bazy danych wykonany w programie Microsoft Visio}}{12}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Generowanie tabeli seans\IeC {\'o}w}}{17}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Generowanie tabeli bilet\IeC {\'o}w - przyk\IeC {\l }ad u\IeC {\.z}ycia klucza g\IeC {\l }\IeC {\'o}wnego, kluczy obcych i ograniczenia "not null"}}{18}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Generowanie tabeli sal - przyk\IeC {\l }ad u\IeC {\.z}ycia CHECK}}{18}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Wygenerowane widoki}}{18}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Generowanie widoku seans\IeC {\'o}w}}{19}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Generowanie widoku Miejsc}}{19}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Przyk\IeC {\l }adowa procedura}}{20}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Przyk\IeC {\l }adowa procedura}}{21}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Konfiguracja serwera master w phpmyadmin}}{17}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Konfiguracja serwera slave w phpmyadmin}}{18}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Generowanie tabeli seans\IeC {\'o}w}}{19}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Generowanie tabeli bilet\IeC {\'o}w - przyk\IeC {\l }ad u\IeC {\.z}ycia klucza g\IeC {\l }\IeC {\'o}wnego, kluczy obcych i ograniczenia "not null"}}{19}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Generowanie tabeli sal - przyk\IeC {\l }ad u\IeC {\.z}ycia CHECK}}{19}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Wygenerowane widoki}}{20}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Generowanie widoku seans\IeC {\'o}w}}{20}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Generowanie widoku Miejsc}}{20}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Przyk\IeC {\l }adowa procedura}}{21}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Przyk\IeC {\l }adowa procedura}}{22}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Diagram przypadk\IeC {\'o}w u\IeC {\.z}ycia}}{22}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Diagram przypadk\IeC {\'o}w u\IeC {\.z}ycia}}{23}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

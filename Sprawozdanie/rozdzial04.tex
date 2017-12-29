@@ -25,6 +25,36 @@ W poniższym listingu zamieszczona została zawartość pliku docker-compose.yml
 
 Generowanie serwisów z pliku odbywa się poprzez wydanie komendy \textit{docker-compose up} znajdując się w katalogu z plikiem docker-compose.uml.
 
+\section{Konfiguracja mechanizmów replikacji master-slave}
+By móc skorzystać z replikacji master-slave każdy węzeł rozproszonej bazy danych musi utworzoną bazę. Dodatkowo trzeba dla każdego węzła zmodyfikować plik konfiguracyjny my.cnf serwisu z MySQl. W pliku tym należy nadać każdemu węzłowi unikalny parametr server-id. Dodatkowo w węźle master w zakładce [mysqld] należy dodać linie z listingu \ref{lst:my.cnf}, a następnie w phpmyadmin  wcisnąć przycisk "GO"
+
+\lssetdef
+\lstinputlisting[captionpos=b,caption={Konfiguracja serwera master- modyfikacja pliku my.cnf},label={lst:my.cnf},basicstyle={\footnotesize\ttfamily}]{rozdzial04/mycnf.txt}
+
+\begin{figure} [H]
+	\centering
+	\includegraphics[width=1\linewidth]{rozdzial04/4.png}
+	\caption{Konfiguracja serwera master w phpmyadmin}
+	\label{fig:phpmyadmin2}
+\end{figure}
+
+
+By ustawić serwer jako slave, należy podać login i hasło do konta w węźle master, podać adres hosta oraz port, a następnie wcisnąć przycisk "GO".
+
+\begin{figure} [H]
+	\centering
+	\includegraphics[width=1\linewidth]{rozdzial04/3.png}
+	\caption{Konfiguracja serwera slave w phpmyadmin}
+	\label{fig:phpmyadmin1}
+\end{figure}
+
+By dodać opóźnienie do węzła slave można z poziomu panelu phpmyadmin w zakładce SQL wydać komendę:
+
+\lssetdef
+\lstinputlisting[captionpos=b,caption={Konfiguracja opóźnienia dla węzła slave},label={lst:slave},basicstyle={\footnotesize\ttfamily}]{rozdzial04/slave.txt}
+
+Dla takich danych opóźnienie wyniesie 120 sekund.
+
 \section{Realizacja bazy danych}
 
 \subsection{Tabele}
@@ -130,6 +160,3 @@ Rysunek \ref{fig:procedury} przedstawia wszystkie procedury jakie zostały zaimp
 	\caption{Przykładowa procedura}
 	\label{fig:p_DodajSeans}
 \end{figure}
-
-\section{Wykorzystanie mechanizmów replikacji master-slave}
-%TODO: napisać - ja
