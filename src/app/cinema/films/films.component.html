@@ -13,7 +13,7 @@
       <th>Rok</th>
       <th>Gatunek</th>
       <th>Długość</th>
-      <th>Usuń</th>
+      <th *ngIf="user.Uprawnienia == 1">Usuń</th>
     </tr>
   </thead>
   <tbody>
@@ -23,7 +23,7 @@
       <td>{{film.Rok}}</td>
       <td>{{film.Gatunek}}</td>
       <td>{{film.Dlugosc}} min</td>
-      <td>
+      <td *ngIf="user.Uprawnienia == 1">
         <button (click)="deleteFilm(film.Id)" class="btn btn-outline-danger">
           <i class="fa fa-times" aria-hidden="true"></i>
         </button>
@@ -34,7 +34,7 @@
 </table>
 
 
-<div class="card border-primary">
+<div *ngIf="user.Uprawnienia == 1" class="card border-primary">
   <div class="card-header">
     <h3>Dodaj film</h3>
   </div>

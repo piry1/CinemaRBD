@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DbService } from '../../db.service';
 import { Seance } from '../../dbModel/seance';
+import { User } from '../../dbModel/user';
 
 @Component({
   selector: 'app-seance',
@@ -10,6 +11,8 @@ import { Seance } from '../../dbModel/seance';
 export class SeanceComponent implements OnInit {
 
   private seances: any[] = [];
+
+  user: User;
 
   processing: boolean = false;
   deleteProcessing: boolean = false;
@@ -21,12 +24,10 @@ export class SeanceComponent implements OnInit {
   selectedFilm;
   selectedRoom;
 
-
   constructor(private _db: DbService) { }
 
-
-
   ngOnInit() {
+    this.user = User.getCurrentUser();
     this.getSeances();
     this.getFilms();
     this.getRooms();
