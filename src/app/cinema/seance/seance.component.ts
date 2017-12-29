@@ -58,4 +58,13 @@ export class SeanceComponent implements OnInit {
       .subscribe(res => this.getSeances(), err => this.submitError = true);
   }
 
+  deleteSeance(id: number) {
+
+    this.deleteProcessing = true;
+
+    this._db.deleteSeance(id)
+      .finally(() => this.deleteProcessing = false)
+      .subscribe(res => this.getSeances());
+  }
+
 }
