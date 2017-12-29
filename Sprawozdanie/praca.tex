@@ -43,6 +43,8 @@
 %\usepackage{soul} % pakiet z komendami do podkreślania tekstu
 
 \usepackage{ebgaramond} % pakiet z czcionkami garamond, potrzebny tylko do strony tytułowej, musi wystąpić przed pakietem tgtermes
+%\usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+\topmargin -10mm
 
 %% Aby uzyskać polskie literki w pdfie (a nie zlepki) korzystamy z pakietu czcionek tgterms. 
 %% W pakiecie tym są zdefiniowane klony czcionek Times o kształtach: normalny, pogrubiony, italic, italic pogrubiony.
@@ -98,7 +100,7 @@
 %tutaj zaczyna się właściwa treść dokumentu
 \begin{document}
 	%\bibliographystyle{unsrt} %tylko gdy używamy BibTeXa, ustawia polski styl bibliografii
-	
+
 	\maketitle %polecenie generujące stronę tytułową
 	
 	%TODO: ten fragment do wersji archiwalnej
@@ -108,15 +110,21 @@
 	%\newpage	
 	
 	\setcounter{page}{2}
-		
-	\listoftables
+	\tableofcontents %spis treści
+	
 	
 	%\linespread{1.5}
 	%opcjonalnie może się tu pojawić spis rysunków i tabel
 	\listoffigures
 	\addcontentsline{toc}{chapter}{Spis rysunków} %utworzenie w spisie treści pozycji Spis rysunków
-	\tableofcontents %spis treści
+	\listoftables
 	\addcontentsline{toc}{chapter}{Spis tabel} %utworzenie w spisie treści pozycji Spis tabel
+	\renewcommand\lstlistingname{Listing}
+	\renewcommand\lstlistlistingname{Spis listingów}
+	\newpage
+	%\mbox{}\pdfbookmark[0]{Spis listingów}{spisListingow.1}
+	\lstlistoflistings
+	\addcontentsline{toc}{chapter}{Spis listingów} %utworzenie w spisie treści	pozycji Spis listingów
 	
 	\include{rozdzial01}
 	\include{rozdzial02}
@@ -130,7 +138,5 @@
 	
 	%\include{Bibliografia2}
 	%\bibliography{bibliografia} % wstawia bibliografię korzystając z pliku bibliografia.bib - dotyczy BibTeXa, jeżeli nie korzystamy z BibTeXa należy użyć otoczenia thebibliography
-	
-	
 	
 \end{document}

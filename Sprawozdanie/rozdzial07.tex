@@ -1,3 +1,21 @@
 \chapter{Podsumowanie}
 
-aaa
+Z powodzeniem zaprojektowano oraz zaimplementowano system obsługi bazodanowej kina.
+Wszelkie problemy związane z projektem zostały wyjaśniane i wnikliwie konsultowane z prowadzącym
+zajęcia projektowe. Mechanizmy wykorzystywane były skrupulatnie prezentowane na zajęciach,
+po drobnych korektach wprowadzono je do systemu bazodanowego tak, aby dążyć do
+implementacji pozbawionej błędów formalnych.
+System po wykonaniu testów -dodawania tabel, wypełniania ich rekordami działał poprawnie.
+Przetestowano moduły zabezpieczeń wspomniane w całym sprawozdaniu projektowym, również
+funkcjonowały poprawnie (zabezpieczenia m.in. przed SQLInjection).Projekt całościowo prezentowano
+na zajęciach projektowych.\\
+
+W trakcie prac nad realizacją projektu udało się wykorzystać mechanizm replikacji \textit{master-slave} oraz \textit{master-slave} z opóźnieniem. Do ich konfiguracji wykorzystane zostało narzędzie \textit{phpMyAdmin}. \\
+
+Podczas prac nad projektem próbowano wykorzystać jako węzły rozproszonej bazy danych serwery na fizycznych urządzeniach \textit{Raspberry PI}, jednak ilość dostępnych przez nas urządzeń nie pozwalała w pełni pokazać możliwości replikacji w systemie bazodanowym MySQL. Dodatkowo również na system operacyjny \textit{raspbian} nie była dostępna najnowsza wersja MySQL, przez co nie było możliwości m.in. wykonania replikacji z opóźnieniem. Również by replikacja działała wymagane było połączenie internetowe we wszystkich urządzeniach, łącznie z urządzeniem, na którym demonstrowane było działanie. W związku z tym w trakcie prac zrezygnowano z fizycznych urządzeń, a do stworzenia węzłów wykorzystano wirtualne kontenery stworzone w programie \textit{docker}, przez co rozproszona baza danych działa w pełni lokalnie. W każdym kontenerze można było dodać dowolną wersję MySQL oraz \textit{phpMyAdmin}.\\
+
+
+Interfejs aplikacji bazodanowej jest przejrzysty i intuicyjny, nie jest skomplikowany, dodawanie kolejnych informacji – rekordów nie stanowi żadnych problemów, co jest ważnym atrybutem ze strony spojrzenia konsumenckiego. Implementacja całego projektu pozwoliła na swobodne korzystanie ze strony aktora pracownik jak i aktora klient. Klient posiada inne uprawnienia(na płaszczyźnie szeroko rozumianej rezerwacji seansu w kinie wraz z możliwością opłacenia). Pracownik ma możliwość przeglądania tych rezerwacji, dokonywać ich modyfikacji (np. nagła zmiana repertuaru). Zgodnie z warunkami zadania zaimplementowano możliwość wyświetlania odpowiednich widoków – lista filmów, seansów i biletów.\\
+
+Spełniono wszystkie założenia projektowe postawione przez prowadzącego zajęcia
+jak i własne.

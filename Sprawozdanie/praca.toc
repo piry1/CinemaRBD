@@ -1,25 +1,30 @@
 \contentsline {chapter}{Spis rysunk\IeC {\'o}w}{3}
 \contentsline {chapter}{Spis tabel}{4}
-\contentsline {chapter}{\numberline {1}Wst\IeC {\k e}p}{5}
-\contentsline {section}{\numberline {1.1}Cele projektu}{5}
-\contentsline {section}{\numberline {1.2}Za\IeC {\l }o\IeC {\.z}enia projektowe}{5}
-\contentsline {section}{\numberline {1.3}Zakres projektu}{5}
-\contentsline {chapter}{\numberline {2}Replikacja w systemie baz danych MySQL}{7}
-\contentsline {section}{\numberline {2.1}Poj\IeC {\k e}cie replikacji i podstawowe informacje}{7}
-\contentsline {section}{\numberline {2.2}Replikacja master-slave}{7}
-\contentsline {section}{\numberline {2.3}Testowanie mechanizm\IeC {\'o}w replikacji}{7}
-\contentsline {chapter}{\numberline {3}Model konceptualny i fizyczny baz danych}{8}
-\contentsline {section}{\numberline {3.1}Model konceptualny}{8}
-\contentsline {section}{\numberline {3.2}Model fizyczny}{9}
-\contentsline {chapter}{\numberline {4}Implementacja baz danych w \IeC {\'s}rodowisku MySQL}{11}
-\contentsline {section}{\numberline {4.1}Realizacja bazy danych}{11}
-\contentsline {subsection}{\numberline {4.1.1}Tabele}{11}
-\contentsline {subsection}{\numberline {4.1.2}Widoki}{12}
-\contentsline {subsection}{\numberline {4.1.3}Procedury}{13}
-\contentsline {section}{\numberline {4.2}Wykorzystanie mechanizm\IeC {\'o}w replikacji master-slave}{15}
-\contentsline {chapter}{\numberline {5}Projekt i implementacja aplikacji klienckiej}{16}
-\contentsline {section}{\numberline {5.1}Funkcje aplikacji - diagram przypadk\IeC {\'o}w u\IeC {\.z}ycia}{16}
-\contentsline {section}{\numberline {5.2}Realizacja wybranych funkcjonalno\IeC {\'s}ci}{17}
-\contentsline {chapter}{\numberline {6}Wdro\IeC {\.z}enie i testowanie aplikacji}{18}
-\contentsline {chapter}{\numberline {7}Podsumowanie}{19}
-\contentsline {chapter}{Literatura}{20}
+\contentsline {chapter}{Spis listing\IeC {\'o}w}{5}
+\contentsline {chapter}{\numberline {1}Wst\IeC {\k e}p}{6}
+\contentsline {section}{\numberline {1.1}Cele projektu}{6}
+\contentsline {section}{\numberline {1.2}Za\IeC {\l }o\IeC {\.z}enia projektowe}{6}
+\contentsline {section}{\numberline {1.3}Zakres projektu}{6}
+\contentsline {chapter}{\numberline {2}Replikacja w systemie baz danych MySQL}{8}
+\contentsline {section}{\numberline {2.1}Poj\IeC {\k e}cie replikacji i podstawowe informacje}{8}
+\contentsline {section}{\numberline {2.2}Replikacja master-slave}{8}
+\contentsline {section}{\numberline {2.3}Testowanie mechanizm\IeC {\'o}w replikacji}{9}
+\contentsline {chapter}{\numberline {3}Model konceptualny i fizyczny baz danych}{11}
+\contentsline {section}{\numberline {3.1}Model konceptualny}{11}
+\contentsline {section}{\numberline {3.2}Model fizyczny}{12}
+\contentsline {chapter}{\numberline {4}Implementacja baz danych w \IeC {\'s}rodowisku MySQL}{14}
+\contentsline {section}{\numberline {4.1}Konfiguracja kontener\IeC {\'o}w z \IeC {\'s}rodowiskiem MySQL 5.7 i phpMyAdmin}{14}
+\contentsline {section}{\numberline {4.2}Realizacja bazy danych}{14}
+\contentsline {subsection}{\numberline {4.2.1}Tabele}{14}
+\contentsline {subsection}{\numberline {4.2.2}Widoki}{15}
+\contentsline {subsection}{\numberline {4.2.3}Procedury}{17}
+\contentsline {section}{\numberline {4.3}Wykorzystanie mechanizm\IeC {\'o}w replikacji master-slave}{18}
+\contentsline {chapter}{\numberline {5}Projekt i implementacja aplikacji klienckiej oraz REST API}{19}
+\contentsline {section}{\numberline {5.1}Funkcje aplikacji}{19}
+\contentsline {subsection}{\numberline {5.1.1}Diagram przypadk\IeC {\'o}w u\IeC {\.z}ycia}{19}
+\contentsline {subsection}{\numberline {5.1.2}Scenariusz wybranych przypadk\IeC {\'o}w u\IeC {\.z}ycia}{20}
+\contentsline {section}{\numberline {5.2}Realizacja wybranych funkcjonalno\IeC {\'s}ci aplikacji}{21}
+\contentsline {section}{\numberline {5.3}Realizacja REST API}{21}
+\contentsline {chapter}{\numberline {6}Wdro\IeC {\.z}enie i testowanie aplikacji}{22}
+\contentsline {chapter}{\numberline {7}Podsumowanie}{23}
+\contentsline {chapter}{Literatura}{24}

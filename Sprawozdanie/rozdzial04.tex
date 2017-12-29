@@ -1,5 +1,9 @@
 \chapter{Implementacja baz danych w środowisku MySQL}
 
+\section{Konfiguracja kontenerów z środowiskiem MySQL 5.7 i phpMyAdmin}
+
+%TODO: napisać - ja
+
 \section{Realizacja bazy danych}
 
 \subsection{Tabele}
@@ -38,7 +42,7 @@ Tabele generowano za pomocą skryptów MySQL.
 
 \subsection{Widoki}
 
-\textbf{Utworzono trzy widoki:} %TODO:uaktualnić
+\textbf{Utworzono trzy widoki:}
 
 \begin{figure} [H]
 	\centering
@@ -50,6 +54,7 @@ Tabele generowano za pomocą skryptów MySQL.
 \begin{itemize}
 	\item \_Seanse\_ - rozszerza tabelę \textit{Seanse} o dodatkowe informacje o filmie, którego dotyczy seans i sali, na której seans zostanie wyświetlony;
 	\item \_Miejsca\_ - rozszerza tabelę \textit{Rezerwacje} o informacje takie jak nazwa sali, rząd i numer miejsca.
+	\item \_Bilety\_ - rozszerza tabelę \textit{Bilety} o informacje takie jak tytuł filmu, data, cena, nazwa sali, rząd oraz numer miejsca
 \end{itemize}
 
 \begin{figure} [H]
@@ -106,3 +111,4 @@ Rysunek \ref{fig:procedury} przedstawia wszystkie procedury jakie zostały zaimp
 \end{figure}
 
 \section{Wykorzystanie mechanizmów replikacji master-slave}
+%TODO: napisać - ja
