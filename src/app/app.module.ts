@@ -16,7 +16,8 @@ import { BuyticketComponent } from './cinema/buyticket/buyticket.component';
 import { FilmsComponent } from './cinema/films/films.component';
 import { SeanceComponent } from './cinema/seance/seance.component';
 import { RoomComponent } from './cinema/room/room.component';
-
+import { AuthGuard } from './auth.guard';
+import { AdminGuard } from './admin.guard';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,7 @@ import { RoomComponent } from './cinema/room/room.component';
     FormsModule,
     CustomFormsModule
   ],
-  providers: [],
+  providers: [AuthGuard, AdminGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
