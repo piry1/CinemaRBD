@@ -13,7 +13,7 @@ export class AdminGuard implements CanActivate {
     next: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean> | Promise<boolean> | boolean {
 
-    if (User.getCurrentUser().Id == "1")
+    if (User.getCurrentUser().Uprawnienia == "1")
       return true;
     else {
       this.router.navigateByUrl("cinema");

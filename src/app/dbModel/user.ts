@@ -4,7 +4,7 @@ export class User {
     Nazwisko: String;
     Login: String;
     Haslo: String;
-    Kot: String;
+    Uprawnienia: String;
 
     static setCurrentUser(user: User) {
         localStorage.setItem('currentUser', JSON.stringify(user));
