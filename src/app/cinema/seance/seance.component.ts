@@ -19,6 +19,8 @@ export class SeanceComponent implements OnInit {
   deleteProcessing: boolean = false;
   submitError: boolean = false;
 
+
+  editedSeance: Seance = new Seance();
   newSeance: Seance = new Seance();
   films;
   rooms;
@@ -40,7 +42,6 @@ export class SeanceComponent implements OnInit {
       .finally(() => this.refreshing = false)
       .subscribe(res => {
         this.seances = res;
-        console.log(res);
       });
   }
 
@@ -69,6 +70,16 @@ export class SeanceComponent implements OnInit {
 
     this._db.deleteSeance(id)
       .finally(() => this.deleteProcessing = false)
+      .subscribe(res => this.getSeances());
+  }
+
+  setEditedSeance(index) {
+    this.editedSeance = Object.assign({}, this.seances[index]);
+    this.editedSeance.Data = this.seances[index].DataSeansu;
+  }
+
+  editSeance() {
+    this._db.editSeance(this.editedSeance, this.editedSeance.Id)
       .subscribe(res => this.getSeances());
   }
 
