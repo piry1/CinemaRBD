@@ -1,3 +1,75 @@
-<p>
-  buyticket works!
-</p>
+<h1>Kup bilet
+  <div *ngIf="processing" style="text-align: center; margin-top: -48px;">
+    <i class="fa fa-circle-o-notch text-info" aria-hidden="true"></i> Rezerwowanie
+  </div>
+  <div *ngIf="submitSuccess" style="text-align: center; margin-top: -48px;">
+    <i class="fa fa-check text-success" aria-hidden="true"></i> Zarezerwowano
+  </div>
+</h1>
+
+<div class="card border-primary" style="margin-top: 30px;">
+
+  <form (ngSubmit)="buyTicket()" #buyTicketForm="ngForm">
+
+    <div class="card-body">
+
+      <label>Film</label>
+      <select name="films" [(ngModel)]="selectedFilm" (change)="onSelectedFilmChange()" class="form-control" required>
+        <option *ngFor="let film of seancesNames; let i = index" [ngValue]="i">{{film}}</option>
+      </select>
+
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th>Tytuł</th>
+            <th>Długość</th>
+            <th>Data seansu</th>
+            <th>Godzina</th>
+            <th>Sala</th>
+            <th>Wolne miejsca</th>
+            <th>Cena</th>
+            <th>Wybierz</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let seance of availableSeances">
+            <td>{{seance.Tytul}}</td>
+            <td>{{seance.Dlugosc}} min</td>
+            <td>{{seance.DataSeansu}}</td>
+            <td>{{seance.Godzina}}</td>
+            <td>{{seance.NazwaSali}}</td>
+            <td>{{seance.WolneMiejsca}}</td>
+            <td>{{seance.Cena}} zł</td>
+            <td>
+              <div class="form-check">
+                <input type="radio" class="form-check-input" name="optionsRadios" (change)="onSeanceChange(seance.Id)" style="margin-left: 30px"
+                  value="option1">
+              </div>
+            </td>
+
+          </tr>
+        </tbody>
+      </table>
+
+
+      <label>Miejsce</label>
+      <select name="seat" [(ngModel)]="ticket.Rezerwacja" class="form-control" required>
+        <option *ngFor="let seat of seats" [ngValue]="seat.Id">Rząd: {{seat.Rzad}} Miejsce: {{seat.NrMiejsca}}</option>
+      </select>
+
+    </div>
+
+    <div *ngIf="!processing" class="card-body">
+      <button [disabled]="!buyTicketForm.form.valid" type="submit" class="btn btn-primary btn-lg btn-block">Zarezerwuj miejsce</button>
+      <h5 *ngIf="submitError" style="text-align: center" class="text-danger">Operacja nie powiodła się</h5>
+
+    </div>
+
+  </form>
+
+  <div *ngIf="processing" class="card-body" style="text-align: center;">
+    <i class="fa fa-circle-o-notch text-success" aria-hidden="true"></i>
+  </div>
+
+</div>

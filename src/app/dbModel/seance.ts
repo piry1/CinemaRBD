@@ -5,4 +5,5 @@ export class Seance {
     Data: String;
     Godzina: String;
     Cena: String;
+    Tytul: String;
 }
