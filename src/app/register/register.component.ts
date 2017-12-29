@@ -22,27 +22,14 @@ export class RegisterComponent implements OnInit {
     console.log(this.user);
     var user = this.user;
 
-    if (user.Imie != undefined && user.Nazwisko != undefined && user.Haslo != undefined && user.Login != undefined)
-      if (user.Imie != "" && user.Nazwisko != "" && user.Haslo != "" && user.Login != "") {
-        this._db.addUser(user).subscribe(res => {
-          if (res === 0) {
-            console.log("Zarejestrowano");
-          } else {
-            console.log("ERROR: Nie zarejestrowano");
-          }
-        });
+    this._db.addUser(user).subscribe(res => {
+      if (res === 0) {
+        console.log("Zarejestrowano");
+      } else {
+        console.log("ERROR: Nie zarejestrowano");
       }
+    });
   }
 
-  valuechange($event) {
-    if (this.user.Haslo.length <= this.haslo.length) {
-      if (this.user.Haslo == this.haslo)
-        this.passValid = "is-valid";
-      else
-        this.passValid = "is-invalid";
-    }
-    else
-      this.passValid = "";
-  }
 
 }

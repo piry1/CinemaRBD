@@ -1,17 +1,20 @@
-<div class="form-signin">
-  <div style="text-align: center">
-    <img class="rounded-circle" style="margin-bottom: 20px; margin-top: -65px;" src="/assets/images/popcorn.png" width="140" height="140">
-  </div>
-  <input name="imie" type="text" class="form-control" minlength="3" [(ngModel)]="user.Imie" style="border-bottom-left-radius: 0; border-bottom-right-radius: 0"
-    placeholder="imie" required="" autofocus="">
-  <input name="nazwisko" type="text" class="form-control" minlength="3" [(ngModel)]="user.Nazwisko" style="border-radius: 0; margin-top: -1px;"
-    placeholder="nazwisko" required="" autofocus="">
-  <input name="login" type="text" class="form-control" minlength="3" [(ngModel)]="user.Login" style="border-radius: 0; margin-top: -1px;"
-    placeholder="login" required="" autofocus="">
-  <input name="haslo" type="password" class="form-control" [ngClass]="passValid" minlength="3" [(ngModel)]="user.Haslo" style="border-radius: 0; margin-top: -1px; margin-bottom: -1px;"
-    placeholder="hasło" required="" autofocus="">
-  <input name="haslo2" type="password" [ngClass]="passValid" class="form-control" minlength="3" [(ngModel)]="haslo" placeholder="powtórz hasło"
-    (input)="valuechange($event)" required="" autofocus="">
+<form (ngSubmit)="register()" #registerForm="ngForm">
+  <div class="form-signin">
+    <div style="text-align: center">
+      <img class="rounded-circle" style="margin-bottom: 20px; margin-top: -65px;" src="/assets/images/popcorn.png" width="140"
+        height="140">
+    </div>
+    <input name="imie" type="text" class="form-control" minlength="3" [(ngModel)]="user.Imie" style="border-bottom-left-radius: 0; border-bottom-right-radius: 0"
+      placeholder="imie" required autofocus="">
+    <input name="nazwisko" type="text" class="form-control" minlength="3" [(ngModel)]="user.Nazwisko" style="border-radius: 0; margin-top: -1px;"
+      placeholder="nazwisko" required autofocus="">
+    <input name="login" type="text" class="form-control" minlength="3" [(ngModel)]="user.Login" style="border-radius: 0; margin-top: -1px;"
+      placeholder="login" required autofocus="">
+    <input name="haslo" type="password" class="form-control" [ngClass]="passValid" minlength="3" required [(ngModel)]="user.Haslo" style="border-radius: 0; margin-top: -1px; margin-bottom: -1px;"
+      placeholder="hasło" required="" autofocus="">
+    <input name="haslo2" type="password" [ngClass]="passValid" class="form-control" minlength="3" required [(ngModel)]="haslo" placeholder="powtórz hasło"
+      [equal]="user.Haslo"  autofocus="">
 
-  <button class="btn btn-lg btn-primary btn-block" data-dismiss="modal" (click)="register()">Zarejestruj się</button>
-</div>
+    <button class="btn btn-lg btn-primary btn-block" [disabled]="!registerForm.form.valid" (click)="register()" type="submit" data-dismiss="modal">Zarejestruj się</button>
+  </div>
+</form>

@@ -64,12 +64,10 @@ export class BuyticketComponent implements OnInit {
           if (this.seancesNames.indexOf(seance.Tytul) == -1)
             this.seancesNames[this.seancesNames.length] = seance.Tytul;
         });
-        console.log(this.seancesNames);
       });
   }
 
   onSelectedFilmChange() {
-
     var title = this.seancesNames[this.selectedFilm];
     this.availableSeances = [];
 
@@ -77,8 +75,6 @@ export class BuyticketComponent implements OnInit {
       if (seance.Tytul == title)
         this.availableSeances[this.availableSeances.length] = seance;
     });
-
-    console.log(this.availableSeances);
   }
 
   checkUser() {
@@ -90,9 +86,7 @@ export class BuyticketComponent implements OnInit {
   }
 
   getFreeSeats(id: string) {
-
     this._db.getFreeSeats(id).subscribe(res => {
-      console.log(res);
       this.seats = res;
     });
   }
