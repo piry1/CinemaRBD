@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { DbService } from '../../db.service';
 import { User } from '../../dbModel/user';
 import { Film } from '../../dbModel/film';
-import { runInContext } from 'vm';
 
 @Component({
   selector: 'app-films',
