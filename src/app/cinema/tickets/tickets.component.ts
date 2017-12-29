@@ -13,6 +13,7 @@ export class TicketsComponent implements OnInit {
 
   user: User;
   tickets: Ticket[];
+  refreshing: boolean = false;
 
   constructor(private router: Router, private _bd: DbService) { }
 
@@ -29,11 +30,13 @@ export class TicketsComponent implements OnInit {
   }
 
   getTickets() {
-
-    this._bd.getUsersTickets(this.user.Id).subscribe(res => {
-      this.tickets = res;
-     // console.log(res);
-    });
+    this.refreshing = true;
+    this._bd.getUsersTickets(this.user.Id)
+      .finally(() => this.refreshing = false)
+      .subscribe(res => {
+        this.tickets = res;
+        // console.log(res);
+      });
   }
 
 }
