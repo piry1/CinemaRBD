@@ -1,0 +1,121 @@
+version: "2"
+services:
+    db_master:
+        image: mysql
+        ports: 
+            - "3307:3306"
+        environment:
+            MYSQL_USER: user
+            MYSQL_PASSWORD: test
+            MYSQL_ROOT_PASSWORD: master
+        volumes:
+            - master:/var/lib/mysql
+        networks:
+            - default
+    db_slave1:
+        image: mysql
+        ports: 
+            - "3308:3306"
+        environment:
+            MYSQL_USER: user
+            MYSQL_PASSWORD: test
+            MYSQL_ROOT_PASSWORD: slave1
+        volumes:
+            - slave1:/var/lib/mysql
+        networks:
+            - default
+    db_slave2:
+        image: mysql
+        ports: 
+            - "3309:3306"
+        environment:
+            MYSQL_USER: user
+            MYSQL_PASSWORD: test
+            MYSQL_ROOT_PASSWORD: slave2
+        volumes:
+            - slave2:/var/lib/mysql
+        networks:
+            - default
+    db_slave3:
+        image: mysql
+        ports: 
+            - "3310:3306"
+        environment:
+            MYSQL_USER: user
+            MYSQL_PASSWORD: test
+            MYSQL_ROOT_PASSWORD: slave3
+        volumes:
+            - slave3:/var/lib/mysql
+        networks:
+            - default
+    db_slave4:
+        image: mysql
+        ports: 
+            - "3311:3306"
+        environment:
+            MYSQL_USER: user
+            MYSQL_PASSWORD: test
+            MYSQL_ROOT_PASSWORD: slave4
+        volumes:
+            - slave4:/var/lib/mysql
+        networks:
+            - default
+    phpmyadminMaster:
+        image: phpmyadmin/phpmyadmin
+        links:
+            - db_master:db
+        ports:
+            - "8082:80"
+        environment:
+            MYSQL_USER: user
+            MYSQL_PASSWORD: test
+            MYSQL_ROOT_PASSWORD: master
+    phpmyadminSlave1:
+        image: phpmyadmin/phpmyadmin
+        links:
+            - db_slave1:db
+        ports:
+            - "8083:80"
+        environment:
+            MYSQL_USER: user
+            MYSQL_PASSWORD: test
+            MYSQL_ROOT_PASSWORD: slave1
+    phpmyadminSlave2:
+        image: phpmyadmin/phpmyadmin
+        links:
+            - db_slave2:db
+        ports:
+            - "8084:80"
+        environment:
+            MYSQL_USER: user
+            MYSQL_PASSWORD: test
+            MYSQL_ROOT_PASSWORD: slave2
+    phpmyadminSlave3:
+        image: phpmyadmin/phpmyadmin
+        links:
+            - db_slave3:db
+        ports:
+            - "8085:80"
+        environment:
+            MYSQL_USER: user
+            MYSQL_PASSWORD: test
+            MYSQL_ROOT_PASSWORD: slave3
+    phpmyadminSlave4:
+        image: phpmyadmin/phpmyadmin
+        links:
+            - db_slave4:db
+        ports:
+            - "8086:80"
+        environment:
+            MYSQL_USER: user
+            MYSQL_PASSWORD: test
+            MYSQL_ROOT_PASSWORD: slave4    
+volumes:
+    master:
+    slave1:
+    slave2:
+    slave3:
+    slave4:
+
+
+

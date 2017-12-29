@@ -1,8 +1,29 @@
 \chapter{Implementacja baz danych w środowisku MySQL}
 
-\section{Konfiguracja kontenerów z środowiskiem MySQL 5.7 i phpMyAdmin}
+By zaimplementować kilka rozproszonych węzłów bazy danych posłużono się programem docker, który określany jest jako narzędzie pozwalające umieścić program oraz jego zależności w lekkim, przenośnym, wirtualnym kontenerze, który można uruchomić na prawie każdym serwerze z systemem. 
 
-%TODO: napisać - ja
+\section{Konfiguracja kontenerów z środowiskiem MySQL 5.7 i phpMyAdmin}
+W celu instalacji programu \textit{Docker} w systemie ubuntu16.04 posłużyłem się poniższymi komendami.
+
+\lssetdef
+\lstinputlisting[captionpos=b,caption={Instalacja programu docker w systemie ubuntu 16.04},label={lst:docker},basicstyle={\footnotesize\ttfamily}]{rozdzial04/docker.txt}
+
+Następnie zostały pobrane obrazy \textit{MySQL 5.7} oraz \textit{phpmyadmin}
+
+\lssetdef
+\lstinputlisting[captionpos=b,caption={Pobranie obrazów z repozytorium},label={lst:images},basicstyle={\footnotesize\ttfamily}]{rozdzial04/images.txt}
+
+Kolejnym krokiem było zapewnienie by można było uruchomić kilka identycznych kontenerów jednocześnie. W tym celu skorzystano z narzędzia Docker Compose. By je zainstalować użyto poniższe komendy.
+
+\lssetdef
+\lstinputlisting[captionpos=b,caption={Instalacja narzędzia Docker Compose},label={lst:compose1},basicstyle={\footnotesize\ttfamily}]{rozdzial04/docker-compose.txt}
+
+W poniższym listingu zamieszczona została zawartość pliku docker-compose.yml. Narzędzie dzięki temu plikowi generuje pięć kontenerów z MySQL 5.7 oraz pięć instancji narzędzia phpmyadmin. Czyli w sumie dziesięć serwisów. Każdy został przekierowany na osobny port. Przez co z łatwością można operować tymi serwisami z poziomu przeglądarki internetowej poprzez localhost.
+
+\lssetdef
+\lstinputlisting[captionpos=b,caption={Utworzony plik docker-compose.yml},label={lst:compose1},basicstyle={\footnotesize\ttfamily}]{rozdzial04/docker-compose.yml}
+
+Generowanie serwisów z pliku odbywa się poprzez wydanie komendy \textit{docker-compose up} znajdując się w katalogu z plikiem docker-compose.uml.
 
 \section{Realizacja bazy danych}
 
