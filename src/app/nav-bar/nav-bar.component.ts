@@ -30,17 +30,18 @@ export class NavBarComponent implements OnInit {
 
   login() {
     var u = this.user;
-    if (u.Login != undefined && u.Haslo != undefined && u.Login != "" && u.Haslo != "") {
-      this._bd.checkUser(u).subscribe((res: User[]) => {
-         console.log(res);
-        if (res != undefined) {
-          this.user = res[0];
-          //console.log(this.user);
-          User.setCurrentUser(this.user);
-          this.router.navigateByUrl('/cinema');
-        }
-      });
-    }
+    this._bd.checkUser(u).subscribe((res: User[]) => {
+     // console.log(res);
+      if (res != undefined && res.length > 0) {
+        this.user = res[0];
+        //console.log(this.user);
+        User.setCurrentUser(this.user);
+        this.router.navigateByUrl('/cinema');
+      }else{
+        console.log("Niepoprawny login lub hasło")
+      }
+    });
+
 
   }
 
