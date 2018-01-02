@@ -13,6 +13,8 @@ export class NavBarComponent implements OnInit {
 
   showLoginInfo: boolean;
   user: User = new User();
+  loginError: boolean = false;
+  loginErrorMessage: string = "";
 
   constructor(private router: Router, private _bd: DbService) {
 
@@ -29,20 +31,24 @@ export class NavBarComponent implements OnInit {
   }
 
   login() {
+    this.loginError = false;
     var u = this.user;
     this._bd.checkUser(u).subscribe((res: User[]) => {
-     // console.log(res);
+      // console.log(res);
       if (res != undefined && res.length > 0) {
         this.user = res[0];
         //console.log(this.user);
         User.setCurrentUser(this.user);
         this.router.navigateByUrl('/cinema');
-      }else{
-        console.log("Niepoprawny login lub hasło")
+      } else {
+        console.log("Niepoprawny login lub hasło");
+        this.loginError = true;
+        this.loginErrorMessage = "Niepoprawny login lub hasło.";
       }
+    }, err => {
+      this.loginError = true;
+      this.loginErrorMessage = "Błąd komunikacji z serwerem.";
     });
-
-
   }
 
   logout() {

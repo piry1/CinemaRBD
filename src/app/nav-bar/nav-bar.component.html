@@ -22,7 +22,7 @@
     <button class="btn btn-secondary my-2 my-sm-0" [disabled]="!loginForm.form.valid" type="submit">Login</button>
 
   </form>
-  
+
   <button *ngIf="showLoginInfo" data-toggle="modal" data-target="#myModal" style="margin-left: 5px;" class="btn btn-warning my-2 my-sm-0">Rejestracja</button>
   <h4 *ngIf="!showLoginInfo" style="margin: 5px; color: white"> {{user.Imie}} </h4>
   <h4 *ngIf="!showLoginInfo" style="margin: 5px; color: white"> {{user.Nazwisko}} </h4>
@@ -31,6 +31,11 @@
   </button>
 </nav>
 
+<div *ngIf="loginError" class="alert alert-dismissible alert-danger" style="position: fixed; top: 80px; width: 300px; right: 30px;">
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+  <h4 class="alert-heading">Błąd logowania!</h4>
+  <p class="mb-0">{{loginErrorMessage}}</p>
+</div>
 
 <div id="myModal" class="modal">
   <div class="modal-dialog" role="document">
