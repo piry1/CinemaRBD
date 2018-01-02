@@ -7,4 +7,4 @@
 \contentsline {lstlisting}{\numberline {5.1}Implementacja funkcji GET po stronie aplikacji}{26}
 \contentsline {lstlisting}{\numberline {5.2}Implementacja funkcji POST po stronie aplikacji}{27}
 \contentsline {lstlisting}{\numberline {5.3}Skrypt PHP API aplikacji}{33}
-\contentsline {lstlisting}{\numberline {5.4}Skrypt PHP obs\IeC {\l }uguj\IeC {\k a}cy zapytania GET}{34}
+\contentsline {lstlisting}{\numberline {5.4}Skrypt PHP obs\IeC {\l }uguj\IeC {\k a}cy zapytania GET}{35}

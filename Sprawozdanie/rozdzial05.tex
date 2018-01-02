@@ -114,9 +114,9 @@ W poniższych tabelach umieszczone zostały scenariusze wybranych przypadków u�
 Aplikacja internetowa powstała z wykorzystaniem platformy programistycznej Angular 2. Jest to framework odpowiedzialny za tworzenia aplikacji po stronie klienta. Do zaprogramowania części funkcjonalnej aplikacji wykorzystuje on TypeScript czyli wolny i otwartoźródłowy język programowania stworzony przez firmę Microsoft jako nadzbiór języka JavaScript. Umożliwia on opcjonalne statyczne typowanie oraz programowanie zorientowane obiektowo oparte na klasach. TypeScript jest nadzbiorem JavaScript, a więc potencjalnie każdy program napisany w języku JavaScript jest poprawnym programem TypeScript. Aplikacje napisane w TypeScript kompilują się bezpośrednio do języka JavaScript. Poniżej znajdują się przykładowe fragmenty kodu napisane w tym języku odpowiedzialne za komunikację z API bazy danych.  
 
 \lssetdef
-\lstinputlisting[captionpos=b,caption={Implementacja funkcji GET po stronie aplikacji},label={lst:1},basicstyle={\footnotesize\ttfamily}]{rozdzial05/GET.txt}
+\lstinputlisting[captionpos=b,caption={Implementacja funkcji GET po stronie aplikacji},label={lst:Get},basicstyle={\footnotesize\ttfamily}]{rozdzial05/GET.txt}
 
-\lstinputlisting[captionpos=b,caption={Implementacja funkcji POST po stronie aplikacji},label={lst:1},basicstyle={\footnotesize\ttfamily}]{rozdzial05/POST.txt}
+\lstinputlisting[captionpos=b,caption={Implementacja funkcji POST po stronie aplikacji},label={lst:Post},basicstyle={\footnotesize\ttfamily}]{rozdzial05/POST.txt}
 
 \subsection{Interfejs aplikacji}
 
@@ -193,6 +193,22 @@ Aplikacja została napisana tak aby blokować widok niedozwolonych operacji jeś
 	\label{fig:screen10}
 \end{figure}
 
+Aplikacja również informuje o błędach z łącznością z serwerem (rysunek \ref{fig:alert2}) oraz o podaniu błędnego loginu lub hasła (rysunek \ref{fig:alert1})
+
+\begin{figure} [H]
+	\centering
+	\includegraphics[width=1\linewidth]{rozdzial05/interfejs/alert1.png}
+	\caption{Podanie błędnego loginu i hasła}
+	\label{fig:alert1}
+\end{figure}
+		
+\begin{figure} [H]
+	\centering
+	\includegraphics[width=1\linewidth]{rozdzial05/interfejs/alert2.png}
+	\caption{Błąd komunikacji z serwerem}
+	\label{fig:alert2}
+\end{figure}
+
 \section{Realizacja REST API}
 
 REST (ang. Representational State Transfer) jest wzorcem narzucającym dobre praktyki tworzenia architektury aplikacji rozproszonych. RESTful Webservices (inaczej RESTful web API) jest usługą sieciową zaimplementowaną na bazie protokołu HTTP i głównych zasad wzorca REST. Ważnym założeniem REST jest istnienie zasobów (ang. resources) jako źródeł danych a także żądana akcja. API aplikacji zostało stworzone w postaci skryptu w PHP.
@@ -215,6 +231,6 @@ http://90.156.81.49:81/cinemaapi.php/film/1  & DELETE          & usunięcie film
 
 Poniżej znajdują się fragmenty skryptu odpowiedzialnego za obsługę zapytań.
 
-\lstinputlisting[captionpos=b,caption={Skrypt PHP API aplikacji},label={lst:1},basicstyle={\footnotesize\ttfamily}]{rozdzial05/cinemaApi.txt}
+\lstinputlisting[captionpos=b,caption={Skrypt PHP API aplikacji},label={lst:api},basicstyle={\footnotesize\ttfamily}]{rozdzial05/cinemaApi.txt}
 
-\lstinputlisting[captionpos=b,caption={Skrypt PHP obsługujący zapytania GET},label={lst:1},basicstyle={\footnotesize\ttfamily}]{rozdzial05/getApi.txt}
+\lstinputlisting[captionpos=b,caption={Skrypt PHP obsługujący zapytania GET},label={lst:php},basicstyle={\footnotesize\ttfamily}]{rozdzial05/getApi.txt}

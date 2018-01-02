@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2018/dev/Debian) (preloaded format=pdflatex 2017.9.27)  2 JAN 2018 17:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2018/dev/Debian) (preloaded format=pdflatex 2017.9.27)  2 JAN 2018 18:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -933,17 +933,8 @@ Package: tgtermes 2009/09/27 v1.2 TeX Gyre Termes as default roman family
 
 LaTeX Warning: Label `lst:compose1' multiply defined.
 
-) (./rozdzial05.aux
-
-LaTeX Warning: Label `lst:1' multiply defined.
-
-
-LaTeX Warning: Label `lst:1' multiply defined.
-
-
-LaTeX Warning: Label `lst:1' multiply defined.
-
-) (./rozdzial06.aux) (./rozdzial07.aux) (./Bibliografia2.aux))
+) (./rozdzial05.aux) (./rozdzial06.aux) (./rozdzial07.aux) (./Bibliografia2.aux
+))
 \openout1 = `praca.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 101.
@@ -963,8 +954,7 @@ LaTeX Font Info:    ... okay on input line 101.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 101.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 101.
 
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 101.
@@ -1335,17 +1325,33 @@ Package pdftex.def Info: rozdzial05/interfejs/sale.png  used on input line 191.
  on input line 191.
 Package pdftex.def Info: Requested size: 455.24408pt x 178.07677pt on input lin
 e 191.
+<rozdzial05/interfejs/alert1.png, id=142, 749.80125pt x 189.70876pt>
+File: rozdzial05/interfejs/alert1.png Graphic file (type png)
+<use rozdzial05/interfejs/alert1.png>
+Package pdftex.def Info: rozdzial05/interfejs/alert1.png  used on input line 20
+0. on input line 200.
+Package pdftex.def Info: Requested size: 455.24408pt x 115.18375pt on input lin
+e 200.
+ [32 <./rozdzial05/interfejs/edytujSeans.png> <./rozdzial05/interfejs/sale.png>
+]
+<rozdzial05/interfejs/alert2.png, id=148, 749.80125pt x 189.70876pt>
+File: rozdzial05/interfejs/alert2.png Graphic file (type png)
+<use rozdzial05/interfejs/alert2.png>
+Package pdftex.def Info: rozdzial05/interfejs/alert2.png  used on input line 20
+7. on input line 207.
+Package pdftex.def Info: Requested size: 455.24408pt x 115.18375pt on input lin
+e 207.
 
-Overfull \hbox (30.4239pt too wide) in paragraph at lines 204--213
+Overfull \hbox (30.4239pt too wide) in paragraph at lines 220--229
  [][] 
  []
 
-[32 <./rozdzial05/interfejs/edytujSeans.png> <./rozdzial05/interfejs/sale.png>]
-(./rozdzial05/cinemaApi.txt [33]) (./rozdzial05/getApi.txt [34])) [35]
+(./rozdzial05/cinemaApi.txt [33 <./rozdzial05/interfejs/alert1.png (PNG copy)> 
+<./rozdzial05/interfejs/alert2.png (PNG copy)>] [34]) (./rozdzial05/getApi.txt)
+) [35]
 \openout2 = `rozdzial06.aux'.
 
-
-(./rozdzial06.tex
+ (./rozdzial06.tex
 Rozdzia\PlPrIeC {\l } 6.
 
 Underfull \hbox (badness 10000) in paragraph at lines 3--5
@@ -1357,14 +1363,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 6--7
 
  []
 
-<rozdzial06/5.png, id=156, 1839.87375pt x 957.5775pt>
+<rozdzial06/5.png, id=158, 1839.87375pt x 957.5775pt>
 File: rozdzial06/5.png Graphic file (type png)
 <use rozdzial06/5.png>
 Package pdftex.def Info: rozdzial06/5.png  used on input line 12. on input line
  12.
 Package pdftex.def Info: Requested size: 455.24408pt x 236.92445pt on input lin
 e 12.
-<rozdzial06/7.png, id=157, 1442.38875pt x 727.71875pt>
+<rozdzial06/7.png, id=159, 1442.38875pt x 727.71875pt>
 File: rozdzial06/7.png Graphic file (type png)
 <use rozdzial06/7.png>
 Package pdftex.def Info: rozdzial06/7.png  used on input line 19. on input line
@@ -1376,14 +1382,14 @@ e 19.
 
 
  <./rozdzial06/5.png (PNG copy)>]
-<rozdzial06/8.png, id=161, 1421.31pt x 804.00375pt>
+<rozdzial06/8.png, id=163, 1421.31pt x 804.00375pt>
 File: rozdzial06/8.png Graphic file (type png)
 <use rozdzial06/8.png>
 Package pdftex.def Info: rozdzial06/8.png  used on input line 26. on input line
  26.
 Package pdftex.def Info: Requested size: 455.24408pt x 257.51955pt on input lin
 e 26.
-<rozdzial06/6.png, id=162, 1843.88875pt x 956.57375pt>
+<rozdzial06/6.png, id=164, 1843.88875pt x 956.57375pt>
 File: rozdzial06/6.png Graphic file (type png)
 <use rozdzial06/6.png>
 Package pdftex.def Info: rozdzial06/6.png  used on input line 33. on input line
@@ -1442,10 +1448,10 @@ LaTeX Warning: There were multiply-defined labels.
  )
 (\end occurred when \iftrue on line 249 was incomplete) 
 Here is how much of TeX's memory you used:
- 6823 strings out of 492990
- 94143 string characters out of 6134997
- 300758 words of memory out of 5000000
- 10056 multiletter control sequences out of 15000+600000
+ 6839 strings out of 492990
+ 94524 string characters out of 6134997
+ 307825 words of memory out of 5000000
+ 10070 multiletter control sequences out of 15000+600000
  61424 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,15n,41p,1019b,1702s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1456,10 +1462,10 @@ ips/tex-gyre/q-ec-sc.enc}</usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></u
 sr/share/texmf/fonts/type1/public/tex-gyre/qtmb.pfb></usr/share/texmf/fonts/typ
 e1/public/tex-gyre/qtmr.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qtmri
 .pfb>
-Output written on praca.pdf (40 pages, 2443065 bytes).
+Output written on praca.pdf (40 pages, 2640942 bytes).
 PDF statistics:
- 200 PDF objects out of 1000 (max. 8388607)
+ 202 PDF objects out of 1000 (max. 8388607)
  112 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 136 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 146 words of extra memory for PDF output out of 10000 (max. 10000000)
 
