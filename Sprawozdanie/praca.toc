@@ -27,5 +27,5 @@
 \contentsline {subsection}{\numberline {5.2.1}Interfejs aplikacji}{28}
 \contentsline {section}{\numberline {5.3}Realizacja REST API}{32}
 \contentsline {chapter}{\numberline {6}Wdro\IeC {\.z}enie i testowanie aplikacji}{36}
-\contentsline {chapter}{\numberline {7}Podsumowanie}{37}
-\contentsline {chapter}{Literatura}{38}
+\contentsline {chapter}{\numberline {7}Podsumowanie}{39}
+\contentsline {chapter}{Literatura}{40}
