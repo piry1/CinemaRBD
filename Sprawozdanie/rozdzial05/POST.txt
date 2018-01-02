@@ -1,0 +1,25 @@
+private post(str: string, data: any) {
+  var url = this.apiUrl + str;
+  return this._http.post(url, JSON.stringify(data), { headers: this.headers })
+    .map((res: Response) => res.json())
+}
+
+addFilm(film: Film) {
+  return this.post('film', film);
+}
+
+addSeance(seance: Seance) {
+  return this.post('seans', seance);
+}
+
+addRoom(room: Room) {
+  return this.post('sala', room);
+}
+
+addUser(user: User) {
+  return this.post('uzytkownik', user);
+}
+
+addTicket(ticket: Ticket) {
+  return this.post('bilet', ticket);
+}

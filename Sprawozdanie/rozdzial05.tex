@@ -110,12 +110,112 @@ W poniższych tabelach umieszczone zostały scenariusze wybranych przypadków u�
 \end{table}
 
 \section{Realizacja wybranych funkcjonalności aplikacji}
-%TODO: usunąć wzór
-\lssetdef
-\lstinputlisting[captionpos=b,caption={Przykładowy listing},label={lst:1},basicstyle={\footnotesize\ttfamily}]{rozdzial05/kod.txt}
 
-%TODO: napisać - PIRU
+Aplikacja internetowa powstała z wykorzystaniem platformy programistycznej Angular 2. Jest to framework odpowiedzialny za tworzenia aplikacji po stronie klienta. Do zaprogramowania części funkcjonalnej aplikacji wykorzystuje on TypeScript czyli wolny i otwartoźródłowy język programowania stworzony przez firmę Microsoft jako nadzbiór języka JavaScript. Umożliwia on opcjonalne statyczne typowanie oraz programowanie zorientowane obiektowo oparte na klasach. TypeScript jest nadzbiorem JavaScript, a więc potencjalnie każdy program napisany w języku JavaScript jest poprawnym programem TypeScript. Aplikacje napisane w TypeScript kompilują się bezpośrednio do języka JavaScript. Poniżej znajdują się przykładowe fragmenty kodu napisane w tym języku odpowiedzialne za komunikację z API bazy danych.  
+
+\lssetdef
+\lstinputlisting[captionpos=b,caption={Implementacja funkcji GET po stronie aplikacji},label={lst:1},basicstyle={\footnotesize\ttfamily}]{rozdzial05/GET.txt}
+
+\lstinputlisting[captionpos=b,caption={Implementacja funkcji POST po stronie aplikacji},label={lst:1},basicstyle={\footnotesize\ttfamily}]{rozdzial05/POST.txt}
+
+\subsection{Interfejs aplikacji}
+
+Aplikacja została napisana tak aby blokować widok niedozwolonych operacji jeśli użytkownik nie ma odpowiednich uprawnień. Poniżej znajdują się zrzuty ekranu widoku interfejsu z konta administracyjnego. 
+
+\begin{figure} [H]
+	\centering
+	\includegraphics[width=1\linewidth]{rozdzial05/interfejs/rejestracja.png}
+	\caption{Rejestracja użytkownika}
+	\label{fig:schem}
+\end{figure}
+
+
+\begin{figure} [H]
+	\centering
+	\includegraphics[width=1\linewidth]{rozdzial05/interfejs/kupBilet.png}
+	\caption{Rezerwacja biletów}
+	\label{fig:schem}
+\end{figure}
+
+\begin{figure} [H]
+	\centering
+	\includegraphics[width=1\linewidth]{rozdzial05/interfejs/mojeBilety.png}
+	\caption{Widok biletów zarezerwowanych przez użytkownika}
+	\label{fig:schem}
+\end{figure}
+
+\begin{figure} [H]
+	\centering
+	\includegraphics[width=1\linewidth]{rozdzial05/interfejs/filmy.png}
+	\caption{Widok filmów dostępnych w kinie}
+	\label{fig:schem}
+\end{figure}
+
+\begin{figure} [H]
+	\centering
+	\includegraphics[width=1\linewidth]{rozdzial05/interfejs/dadajFilm.png}
+	\caption{Dodawanie nowego filmu}
+	\label{fig:schem}
+\end{figure}
+
+\begin{figure} [H]
+	\centering
+	\includegraphics[width=1\linewidth]{rozdzial05/interfejs/edytujFilm.png}
+	\caption{Edycja filmu}
+	\label{fig:schem}
+\end{figure}
+
+\begin{figure} [H]
+	\centering
+	\includegraphics[width=1\linewidth]{rozdzial05/interfejs/seanse.png}
+	\caption{Widok seansów dostępnych w kinie}
+	\label{fig:schem}
+\end{figure}
+
+\begin{figure} [H]
+	\centering
+	\includegraphics[width=1\linewidth]{rozdzial05/interfejs/dodajSeans.png}
+	\caption{Dodawanie seansu}
+	\label{fig:schem}
+\end{figure}
+
+\begin{figure} [H]
+	\centering
+	\includegraphics[width=1\linewidth]{rozdzial05/interfejs/edytujSeans.png}
+	\caption{Edycja seansu}
+	\label{fig:schem}
+\end{figure}
+
+\begin{figure} [H]
+	\centering
+	\includegraphics[width=1\linewidth]{rozdzial05/interfejs/sale.png}
+	\caption{Widok sal dostępnych w kinie}
+	\label{fig:schem}
+\end{figure}
 
 \section{Realizacja REST API}
 
+REST (ang. Representational State Transfer) jest wzorcem narzucającym dobre praktyki tworzenia architektury aplikacji rozproszonych. RESTful Webservices (inaczej RESTful web API) jest usługą sieciową zaimplementowaną na bazie protokołu HTTP i głównych zasad wzorca REST. Ważnym założeniem REST jest istnienie zasobów (ang. resources) jako źródeł danych a także żądana akcja. API aplikacji zostało stworzone w postaci skryptu w PHP.
+
+\begin{table}[H]
+\centering
+
+\label{restApi}
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{zasób}                               & \textbf{metoda} & \textbf{zastosowanie}                \\ \hline
+http://90.156.81.49:81/cinemaapi.php/filmy   & GET             & zostanie zwrócona lista filmów       \\ \hline
+http://90.156.81.49:81/cinemaapi.php/filmy/1 & GET             & zostanie zwrócony film o id równym 1 \\ \hline
+http://90.156.81.49:81/cinemaapi.php/film    & PUT             & dodanie nowego filmu                 \\ \hline
+http://90.156.81.49:81/cinemaapi.php/film/1  & POST            & edycja filmu o id równym 1           \\ \hline
+http://90.156.81.49:81/cinemaapi.php/film/1  & DELETE          & usunięcie filmu o id równym 1        \\ \hline
+\end{tabular}
+\caption{Przykładowe zastosowanie REST API}
+\end{table}
+
+Poniżej znajdują się fragmenty skryptu odpowiedzialnego za obsługę zapytań.
+
+\lstinputlisting[captionpos=b,caption={Skrypt PHP API aplikacji},label={lst:1},basicstyle={\footnotesize\ttfamily}]{rozdzial05/cinemaApi.txt}
+
+\lstinputlisting[captionpos=b,caption={Skrypt PHP obsługujący zapytania GET},label={lst:1},basicstyle={\footnotesize\ttfamily}]{rozdzial05/getApi.txt}
 %TODO: napisać - PIRU

@@ -1,0 +1,45 @@
+private getData(str: string, id?: string) {
+    var url = this.apiUrl + str + '/' + (id ? id : "");
+    return this._http.get(url)
+      .map(res => res.json());
+}
+
+getTickets(id?: string) {
+   return this.getData('bilety', id);
+}
+
+getSeat(id?: string) {
+   return this.getData('miejsca', id);
+}
+
+getFilm(id?: string) {
+   return this.getData('filmy', id);
+}
+
+getReservation(id?: string) {
+  return this.getData('rezerwacje', id);
+}
+
+getRoom(id?: string) {
+  return this.getData('sale', id);
+}
+
+getSeance(id?: string) {
+  return this.getData('seanse', id);
+}
+
+getTicket(id: string) {
+  return this.getData('bilet', id);
+}
+
+getFilmSeance(filmId: string) {
+  return this.getData('seansefilmu', filmId);
+}
+
+getFreeSeats(seanceId: string) {
+  return this.getData('wolnemiejsca', seanceId);
+}
+
+getUsersTickets(id: string) {
+  return this.getData('biletyusera', id);
+}
