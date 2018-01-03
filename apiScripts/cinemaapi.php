@@ -14,11 +14,13 @@ require_once("./CinemaApi/get.php");
 require_once("./CinemaApi/delete.php");
 require_once("./CinemaApi/put.php");
 require_once("./CinemaApi/post.php");
+require_once("./CinemaApi/databases.php");
 
 // get the HTTP method, path and body of the request
 $method = $_SERVER['REQUEST_METHOD'];
 $request = explode('/', trim($_SERVER['PATH_INFO'],'/'));
 $input = json_decode(file_get_contents('php://input'));
+$masterAdress = 'localhost:3307';
 
 // in case of SQL injection
 function clear($data){
@@ -37,10 +39,12 @@ if($table == ""){
 
 // connect to the mysql database
 if($method == 'GET'){
-  $link = mysqli_connect('localhost:3308', 'root', 'slave1', 'Cinema')
+  $i = rand(0, count($databases) -1);
+ // die($i . "  " . var_dump($databases[$i]));
+  $link = mysqli_connect($databases[$i]->adress, $databases[$i]->login, $databases[$i]->password, 'Cinema')
   or die('Error connecting to MySQL server.');
 } else{
-  $link = mysqli_connect('localhost:3307', 'root', 'master', 'Cinema')
+  $link = mysqli_connect($masterAdress, 'root', 'master', 'Cinema')
   or die('Error connectiong to MySQL server');
 }
 mysqli_set_charset($link,'utf8');
