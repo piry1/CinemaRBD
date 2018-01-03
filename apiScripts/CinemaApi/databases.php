@@ -6,28 +6,18 @@ class database{
     public $login;
 }
 
-$db1 = new database;
-$db2 = new database;
-$db3 = new database;
+function createDb($adress, $password, $login){
+    $db = new database;
+    $db->adress = $adress;
+    $db->password = $password;
+    $db->login = $login;
+    return $db;
+}
+
 $databases = array();
 
-$db1->adress = 'localhost:3308';
-$db1->password = 'slave1';
-$db1->login = 'root';
+$databases[] = createDb('localhost:3308', 'slave1', 'root');
+$databases[] = createDb('localhost:3310', 'slave3', 'root');
+$databases[] = createDb('localhost:3311', 'slave4', 'root');
 
-$databases[] = $db1;
-
-$db2->adress = 'localhost:3310';
-$db2->password = 'slave3';
-$db2->login = 'root';
-
-$databases[] = $db2;
-
-$db3->adress = 'localhost:3311';
-$db3->password = 'slave4';
-$db3->login = 'root';
-
-$databases[] = $db3;
-
-//echo  var_dump($databases);
 ?>
