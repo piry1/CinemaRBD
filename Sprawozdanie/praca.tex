@@ -44,7 +44,7 @@
 
 \usepackage{ebgaramond} % pakiet z czcionkami garamond, potrzebny tylko do strony tytułowej, musi wystąpić przed pakietem tgtermes
 %\usepackage[left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm]{geometry}
-\topmargin -10mm
+
 
 %% Aby uzyskać polskie literki w pdfie (a nie zlepki) korzystamy z pakietu czcionek tgterms. 
 %% W pakiecie tym są zdefiniowane klony czcionek Times o kształtach: normalny, pogrubiony, italic, italic pogrubiony.
@@ -83,7 +83,7 @@
 		showstringspaces=false,          % underline spaces within strings only
 		showtabs=false,                  % show tabs within strings adding particular underscores
 }}
-
+	
 %dane do złożenia strony tytułowej
 \title{Rozproszony system bazodanowy przeznaczony do obsługi kina}
 \engtitle{}
@@ -102,18 +102,17 @@
 	%\bibliographystyle{unsrt} %tylko gdy używamy BibTeXa, ustawia polski styl bibliografii
 
 	\maketitle %polecenie generujące stronę tytułową
-	
+	\topmargin -12mm
 	%TODO: ten fragment do wersji archiwalnej
 	%\newpage 
 	%\thispagestyle{empty}
 	%\ 
-	%\newpage	
-	
+	%\newpage
+	\linespread{0.8}	
+
 	\setcounter{page}{2}
 	\tableofcontents %spis treści
-	
-	
-	%\linespread{1.5}
+	\linespread{1}
 	%opcjonalnie może się tu pojawić spis rysunków i tabel
 	\listoffigures
 	\addcontentsline{toc}{chapter}{Spis rysunków} %utworzenie w spisie treści pozycji Spis rysunków
@@ -121,11 +120,11 @@
 	\addcontentsline{toc}{chapter}{Spis tabel} %utworzenie w spisie treści pozycji Spis tabel
 	\renewcommand\lstlistingname{Listing}
 	\renewcommand\lstlistlistingname{Spis listingów}
-	\newpage
+	
 	%\mbox{}\pdfbookmark[0]{Spis listingów}{spisListingow.1}
 	\lstlistoflistings
 	\addcontentsline{toc}{chapter}{Spis listingów} %utworzenie w spisie treści	pozycji Spis listingów
-	
+
 	\include{rozdzial01}
 	\include{rozdzial02}
 	\include{rozdzial03}
