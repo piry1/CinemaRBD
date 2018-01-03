@@ -6,7 +6,9 @@ class database{
     public $login;
 }
 
-$db = new database;
+$db1 = new database;
+$db2 = new database;
+$db3 = new database;
 $databases = array();
 
 $db1->adress = 'localhost:3308';
