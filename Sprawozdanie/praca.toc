@@ -4,7 +4,7 @@
 \contentsline {chapter}{\numberline {1}Wst\IeC {\k e}p}{6}
 \contentsline {section}{\numberline {1.1}Cele projektu}{6}
 \contentsline {section}{\numberline {1.2}Za\IeC {\l }o\IeC {\.z}enia projektowe}{6}
-\contentsline {section}{\numberline {1.3}Zakres projektu}{6}
+\contentsline {section}{\numberline {1.3}Zakres projektu}{7}
 \contentsline {chapter}{\numberline {2}Replikacja w systemie baz danych MySQL}{8}
 \contentsline {section}{\numberline {2.1}Poj\IeC {\k e}cie replikacji i podstawowe informacje}{8}
 \contentsline {section}{\numberline {2.2}Replikacja master-slave}{8}

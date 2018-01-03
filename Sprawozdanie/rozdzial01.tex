@@ -5,7 +5,25 @@ Celem projektu jest stworzenie systemu wspomagającego obsługę kina w oparciu 
 na sali już zajęte – miejsca zawarte na biletach, poszukiwanie rezerwacji wykonanej na konkretna osobę (po imieniu lub nazwisku, czy tez numerze rezerwacji). Użytkownik(Klient) będzie mógł rezerwować konkretne miejsce na określony seans.
 
 \section{Założenia projektowe}
-Projekt został wykonany przy użyciu MySQL 5.7. Rozproszoność systemu oparta została o dockery, na których skonfigurowane zostały węzły zarówno slave jak i master. W trakcie realizacji projektu zostały wykorzystane mechanizmy replikacji master-slave oraz master-slave z opóźnieniem. Do wykonania projektu bazy danych wykorzystane zostało narzędzie Microsoft Visio. Zarządzanie bazą danych odbywało się z poziomu narzędzia zwanego phpMyAdmin. Aplikacja kliencka została wykonana w technologii webowej, z wykorzystaniem platformy programistycznej Angular2 oraz języka programowania TypeScript. Komunikacja między bazą danych a aplikacją kliencką zapewnia api restowe napisane w języku PHP. 
+Projekt został wykonany przy użyciu MySQL 5.7. Rozproszoność systemu oparta została o kontenery programu docker, na których skonfigurowane zostały węzły zarówno \textit{slave} jak i \textit{master}. W trakcie realizacji projektu zostały wykorzystane mechanizmy replikacji master-slave oraz master-slave z opóźnieniem. Do wykonania projektu bazy danych wykorzystane zostało narzędzie Microsoft Visio. Zarządzanie bazą danych odbywało się z poziomu narzędzia zwanego phpMyAdmin. Aplikacja kliencka została wykonana w technologii webowej, z wykorzystaniem platformy programistycznej Angular2 oraz języka programowania TypeScript. Komunikacja między bazą danych a aplikacją kliencką zapewnia API REST-owe napisane w języku PHP. \\
+
+System składa się z:
+\begin{itemize}
+	\item jednego węzła master;
+	\item trzech zwyczajnych węzłów slave;
+	\item jednego węzła slave z opóźnieniem;
+	\item aplikacji klienckiej;
+	\item API REST-owego.
+\end{itemize}
+
+API REST-owe dodaje dane wysłane z aplikacji klienckiej do węzła master, natomiast odczyt danych dokonuje się losowo z jednego z trzech zwyczajnych węzłów slave. Węzeł opóźniony służy jako kopia zapasowa danych, głównie na wypadek wystąpienia poleceń typu DROP w węźle master. Struktura systemu została przedstawiona na rysunku~\ref{fig:diagram}.
+
+\begin{figure} [H]
+	\centering
+	\includegraphics[width=0.6\linewidth]{rozdzial01/diagram.png}
+	\caption{Struktura systemu}
+	\label{fig:diagram}
+\end{figure}
 
 \section{Zakres projektu}
 Zakres projektu dotyczy zaprojektowania i implementacji rozproszonego systemu bazodanowego dla kina. Projekt składa sę z kilku etapów.
