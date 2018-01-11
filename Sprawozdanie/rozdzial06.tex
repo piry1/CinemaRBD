@@ -1,7 +1,7 @@
 \chapter{Wdrożenie i testowanie aplikacji klienckiej}
 
 \section{Wdrożenie aplikacji klienckiej}
-
+\subsection{Konfigurowanie środowiska wirtualnego}
 Aplikacja kliencka została stworzona jako aplikacja webowa z wykorzystaniem platformy programistycznej \textit{Angular 2}. By móc skorzystać z tego frameworku należy odpowiednio skonfigurować środowisko.
 
 W pierwszej kolejności wymagane jest zainstalowanie środowiska uruchomieniowego Node.js, które zaprojektowane zostało do tworzenia wysoce skalowalnych aplikacji internetowych, szczególnie pod kątem serwisów www napisanych w języku JavaScript. \'Srodowisko to jest dostępne do pobrania ze strony internetowej node.js [6]. Bądź też jak to zostało wykonane w ramach projektu na systemie operacyjnym Ubuntu 16.04 poprzez komendy na listingu~\ref{lst:node}.
@@ -40,9 +40,9 @@ Po utworzeniu tych plików uruchomienie aplikacji klienckiej na nowym porcie odb
 \subsection{Wdrożenie API REST-owego}
 Do poprawnego działania aplikacji potrzebne jest również API REST-owe pośredniczące w komunikacji aplikacji klienckiej z rozproszoną bazą danych. Podczas wdrażania projektu na systemie operacyjnym Ubuntu 16.04, API zostało umieszczone na serwerze HTTP- \textit{APACHE2}.
 
-\section{Testy działania}
+\section{Testy działania aplikacji}
 
-W tej części zostały zamieszczone obrazy działania wprowadzonej aplikacji. Aplikacja działa poprawnie i zgodnie z przewidywaniami. \\
+W tej części zostały zamieszczone obrazy działania wprowadzonej aplikacji, a tym samym również poprawność działania replikacji między węzłami rozproszonej bazy danych. Aplikacja działa poprawnie i zgodnie z przewidywaniami. \\
 
 Tak jak to już zostało wspomniane w podrozdziale \ref{chap:testReplikacji}, by replikacja mogła przebiegać prawidłowo, bazy na węzłach \textit{slave} muszą być spójne z bazą na węźle \textit{master}, a co z tego poniekąd wynika bazy na wezłach \textit{slave} muszą być utworzone i muszą posiadać taką samą strukturę tabel.
 

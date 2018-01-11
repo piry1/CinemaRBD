@@ -55,24 +55,4 @@ Z pomocą przyszła nam metoda \textbf{MFL}, w której w większości przypadkó
 SQL tak jak w przypadku \textbf{SBR}, natomiast dla zapytań, których wynik nie jest przewidywalny,
 włączana jest replikacja \textbf{RBR}.\\
 
-\section{Testowanie mechanizmów replikacji}
-\label{chap:testReplikacji}
-
-W projekcie użyta zostanie konfiguracja Master-Slave. Poniżej wypunktowane zostały wnioski z przeprowadzonych testów replikacji bazodanowej MySql.
-
-\begin{itemize}
-	\item Po skonfigurowaniu replikacji wymagane jest utworzenie bazy danych \textit{slave}, która posiada
-	tą samą strukturę co \textit{master}
-	\item Dane zawarte w bazie \textit{master} nie zostaną automatycznie skopiowane do bazy \textit{slave} po
-	skonfigurowaniu replikacji. Należy ręcznie zsynchronizować dane w tabelach.
-	\item W przypadku wyłączenia bazy danych \textit{slave} i modyfikacji bazy \textit{master} baza \textit{slave} zostanie
-	zsynchronizowana po ponownym podłączeniu do sieci.
-	\item \textit{Slave} – odczyt; \textit{master} – zapis, modyfikacja, usuwanie. Gdy \textit{slave} jest wyłączony zapytania
-	GET są wysyłane do innego \textit{slave}, a w ostateczności \textit{mastera}. Gdy jest wyłączony \textit{master}
-	można jedynie odczytywać dane z serwera. Natomiast na ten czas jakakolwiek modyfikacja
-	danych jest niemożliwa.
-	\item Od wersji\textit{ MySQL 5.7} możliwa jest replikacja Master-Slave z opóźnieniem. Domyślnie master natychmiastowo wysyła bin-log do węzłów typu \textit{slave}, jednak możliwe jest celowe wprowadzenie opóźnienia, np. w celu ochrony bazy danych przed poleceniem DROP, który wykonany na \textit{masterze}, usunie również bazę/ tabele na standardowych węzłach \textit{slave}. Odpowiednio duże opóźnienie daje możliwość na reakcję ze strony admina, tak aby w razie konieczności ocalić opóźniony węzeł.
-\end{itemize}
-
-
 
