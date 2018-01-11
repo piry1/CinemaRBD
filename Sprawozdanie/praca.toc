@@ -29,6 +29,7 @@
 \contentsline {chapter}{\numberline {6}Wdro\IeC {\.z}enie i testowanie aplikacji klienckiej}{37}
 \contentsline {section}{\numberline {6.1}Wdro\IeC {\.z}enie}{37}
 \contentsline {subsection}{\numberline {6.1.1}Zmiana domy\IeC {\'s}lnego portu}{37}
+\contentsline {subsection}{\numberline {6.1.2}Wdra\IeC {\.z}anie API REST-owego}{39}
 \contentsline {section}{\numberline {6.2}Testy dzia\IeC {\l }ania}{39}
 \contentsline {subsection}{\numberline {6.2.1}Dodawanie rekordu do rozproszonej bazy danych}{39}
 \contentsline {subsection}{\numberline {6.2.2}Usuwanie rekordu z rozproszonej bazy danych}{41}

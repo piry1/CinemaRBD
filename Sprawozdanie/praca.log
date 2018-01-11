@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.23)  11 JAN 2018 14:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.23)  11 JAN 2018 14:34
 entering extended mode
 **./praca.tex
 (praca.tex
@@ -1377,39 +1377,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
 
 ] (rozdzial06/server.txt) (rozdzial06/api.txt [38]) (rozdzial06/run.txt)
-Underfull \hbox (badness 10000) in paragraph at lines 42--43
+Underfull \hbox (badness 10000) in paragraph at lines 45--46
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 47--48
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
 
  []
 
 <rozdzial06/5.png, id=168, 1839.87375pt x 957.5775pt>
 File: rozdzial06/5.png Graphic file (type png)
  <use rozdzial06/5.png>
-Package pdftex.def Info: rozdzial06/5.png used on input line 53.
+Package pdftex.def Info: rozdzial06/5.png used on input line 56.
 (pdftex.def)             Requested size: 455.24408pt x 236.92445pt.
 
 [39] <rozdzial06/7.png, id=172, 1442.38875pt x 727.71875pt>
 File: rozdzial06/7.png Graphic file (type png)
 
 <use rozdzial06/7.png>
-Package pdftex.def Info: rozdzial06/7.png used on input line 60.
+Package pdftex.def Info: rozdzial06/7.png used on input line 63.
 (pdftex.def)             Requested size: 455.24408pt x 229.67677pt.
  <rozdzial06/8.png, id=173, 1421.31pt x 804.00375pt>
 File: rozdzial06/8.png Graphic file (type png)
 
 <use rozdzial06/8.png>
-Package pdftex.def Info: rozdzial06/8.png used on input line 67.
+Package pdftex.def Info: rozdzial06/8.png used on input line 70.
 (pdftex.def)             Requested size: 455.24408pt x 257.51955pt.
  [40 <./rozdzial06/5.png (PNG copy)> <./rozdzial06/7.png (PNG copy)>] <rozdzial
 06/6.png, id=177, 1843.88875pt x 956.57375pt>
 File: rozdzial06/6.png Graphic file (type png)
 
 <use rozdzial06/6.png>
-Package pdftex.def Info: rozdzial06/6.png used on input line 74.
+Package pdftex.def Info: rozdzial06/6.png used on input line 77.
 (pdftex.def)             Requested size: 455.24408pt x 236.16524pt.
 ) [41 <./rozdzial06/8.png (PNG copy)> <./rozdzial06/6.png (PNG copy)>]
 \openout2 = `rozdzial07.aux'.
@@ -1463,7 +1463,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  6914 strings out of 493333
  95338 string characters out of 3139194
- 307949 words of memory out of 3000000
+ 307957 words of memory out of 3000000
  10100 multiletter control sequences out of 15000+200000
  61424 words of font info for 51 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1476,7 +1476,7 @@ m Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb><C:/Program Files/MiKTeX 2.
 9/fonts/type1/public/tex-gyre/qtmb.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
 /public/tex-gyre/qtmr.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/tex-g
 yre/qtmri.pfb>
-Output written on praca.pdf (43 pages, 2697904 bytes).
+Output written on praca.pdf (43 pages, 2698245 bytes).
 PDF statistics:
  210 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
