@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.23)  3 JAN 2018 20:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.23)  11 JAN 2018 14:20
 entering extended mode
 **./praca.tex
 (praca.tex
@@ -927,7 +927,11 @@ Package: tgtermes 2009/09/27 v1.2 TeX Gyre Termes as default roman family
 
 LaTeX Warning: Label `lst:compose1' multiply defined.
 
-) (rozdzial05.aux) (rozdzial06.aux) (rozdzial07.aux) (Bibliografia2.aux))
+) (rozdzial05.aux) (rozdzial06.aux
+
+LaTeX Warning: Label `lst:api' multiply defined.
+
+) (rozdzial07.aux) (Bibliografia2.aux))
 \openout1 = `praca.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 101.
@@ -1033,34 +1037,35 @@ Non-PDF special ignored!
 
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-(praca.toc)
+(praca.toc [2
+
+])
 \tf@toc=\write4
 \openout4 = `praca.toc'.
 
- [2
-
-] (praca.lof)
+ [3] (praca.lof)
 \tf@lof=\write5
 \openout5 = `praca.lof'.
 
- [3
+ [4
 
 ] (praca.lot)
 \tf@lot=\write6
 \openout6 = `praca.lot'.
 
- [4
+ [5
 
 ] (praca.lol)
 \tf@lol=\write7
 \openout7 = `praca.lol'.
 
- [5
+ [6
 
 ]
 \openout2 = `rozdzial01.aux'.
 
- (rozdzial01.tex
+
+(rozdzial01.tex
 Rozdzia\PlPrIeC {\l } 1.
 
 Underfull \hbox (badness 10000) in paragraph at lines 8--9
@@ -1070,22 +1075,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--9
 LaTeX Font Info:    Try loading font information for TS1+qtm on input line 12.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\tex-gyre\ts1qtm.fd"
 File: ts1qtm.fd 2009/09/25 v1.2 font definition file for TS1/qtm
-) [6
+) [7
 
 
 ]
-<rozdzial01/diagram.png, id=25, 406.51875pt x 249.93375pt>
+<rozdzial01/diagram.png, id=29, 406.51875pt x 249.93375pt>
 File: rozdzial01/diagram.png Graphic file (type png)
 
 <use rozdzial01/diagram.png>
 Package pdftex.def Info: rozdzial01/diagram.png used on input line 23.
 (pdftex.def)             Requested size: 273.14922pt x 167.94289pt.
-) [7 <./rozdzial01/diagram.png>]
+) [8 <./rozdzial01/diagram.png>]
 \openout2 = `rozdzial02.aux'.
 
  (rozdzial02.tex
 Rozdzia\PlPrIeC {\l } 2.
-[8
+[9
 
 
 
@@ -1109,12 +1114,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 54--57
 
  []
 
-[9]) [10]
+[10]) [11]
 \openout2 = `rozdzial03.aux'.
 
  (rozdzial03.tex
 Rozdzia\PlPrIeC {\l } 3.
-<rozdzial03/model_konceptualny.png, id=39, 393.1488pt x 226.6869pt>
+<rozdzial03/model_konceptualny.png, id=42, 393.1488pt x 226.6869pt>
 File: rozdzial03/model_konceptualny.png Graphic file (type png)
 
 <use rozdzial03/model_konceptualny.png>
@@ -1122,18 +1127,18 @@ Package pdftex.def Info: rozdzial03/model_konceptualny.png used on input line 7
 .
 (pdftex.def)             Requested size: 455.24408pt x 262.50386pt.
 
-<rozdzial03/model_fizyczny.png, id=41, 562.7424pt x 819.06pt>
+<rozdzial03/model_fizyczny.png, id=44, 562.7424pt x 819.06pt>
 File: rozdzial03/model_fizyczny.png Graphic file (type png)
 
 <use rozdzial03/model_fizyczny.png>
 Package pdftex.def Info: rozdzial03/model_fizyczny.png used on input line 19.
 (pdftex.def)             Requested size: 432.48048pt x 629.49086pt.
- [11
+ [12
 
 
 
  <./rozdzial03/model_konceptualny.png>]
-[12 <./rozdzial03/model_fizyczny.png>]) [13]
+[13 <./rozdzial03/model_fizyczny.png>]) [14]
 \openout2 = `rozdzial04.aux'.
 
  (rozdzial04.tex
@@ -1142,112 +1147,112 @@ LaTeX Font Info:    Try loading font information for T1+lmtt on input line 9.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) (rozdzial04/docker.txt)
-(rozdzial04/images.txt) (rozdzial04/docker-compose.txt) [14
+(rozdzial04/images.txt) (rozdzial04/docker-compose.txt) [15
 
 
 
 ]
-(rozdzial04/docker-compose.yml [15] [16]) (rozdzial04/mycnf.txt)
-<rozdzial04/4.png, id=64, 1848.9075pt x 697.60625pt>
+(rozdzial04/docker-compose.yml [16] [17]) (rozdzial04/mycnf.txt)
+<rozdzial04/4.png, id=67, 1848.9075pt x 697.60625pt>
 File: rozdzial04/4.png Graphic file (type png)
  <use rozdzial04/4.png>
 Package pdftex.def Info: rozdzial04/4.png used on input line 36.
 (pdftex.def)             Requested size: 455.24408pt x 171.76126pt.
 
-[17] <rozdzial04/3.png, id=68, 1843.88875pt x 566.115pt>
+[18] <rozdzial04/3.png, id=71, 1843.88875pt x 566.115pt>
 File: rozdzial04/3.png Graphic file (type png)
 
 <use rozdzial04/3.png>
 Package pdftex.def Info: rozdzial04/3.png used on input line 46.
 (pdftex.def)             Requested size: 455.24408pt x 139.7662pt.
- (rozdzial04/slave.txt) [18 <./rozdzial04/4.png (PNG copy)> <./rozdzial04/3.png
+ (rozdzial04/slave.txt) [19 <./rozdzial04/4.png (PNG copy)> <./rozdzial04/3.png
  (PNG copy)>]
 Overfull \hbox (8.81857pt too wide) in paragraph at lines 69--70
 []\T1/qtm/m/n/12 sprawdzanie czy po-da-na licz-ba na-le-»y do prze-dzia-ªu wy-k
 o-rzy-stu-j¡c sªo-wo klu-czo-we \T1/qtm/m/it/12 CHECK
  []
 
-<rozdzial04/T_Seanse.png, id=72, 252.945pt x 150.5625pt>
+<rozdzial04/T_Seanse.png, id=76, 252.945pt x 150.5625pt>
 File: rozdzial04/T_Seanse.png Graphic file (type png)
 
 <use rozdzial04/T_Seanse.png>
 Package pdftex.def Info: rozdzial04/T_Seanse.png used on input line 75.
 (pdftex.def)             Requested size: 273.14922pt x 162.59128pt.
 
-<rozdzial04/T_Bilety.png, id=73, 297.36093pt x 100.12407pt>
+<rozdzial04/T_Bilety.png, id=77, 297.36093pt x 100.12407pt>
 File: rozdzial04/T_Bilety.png Graphic file (type png)
 
 <use rozdzial04/T_Bilety.png>
 Package pdftex.def Info: rozdzial04/T_Bilety.png used on input line 82.
 (pdftex.def)             Requested size: 273.14922pt x 91.97621pt.
 
-<rozdzial04/T_Sale.png, id=74, 221.32687pt x 86.57344pt>
+<rozdzial04/T_Sale.png, id=78, 221.32687pt x 86.57344pt>
 File: rozdzial04/T_Sale.png Graphic file (type png)
 
 <use rozdzial04/T_Sale.png>
 Package pdftex.def Info: rozdzial04/T_Sale.png used on input line 89.
 (pdftex.def)             Requested size: 227.62204pt x 89.04083pt.
 
-<rozdzial04/widoki.png, id=75, 608.2725pt x 468.24937pt>
+<rozdzial04/widoki.png, id=79, 608.2725pt x 468.24937pt>
 File: rozdzial04/widoki.png Graphic file (type png)
 
 <use rozdzial04/widoki.png>
 Package pdftex.def Info: rozdzial04/widoki.png used on input line 100.
 (pdftex.def)             Requested size: 364.19664pt x 280.36589pt.
- [19 <./rozdzial04/T_Seanse.png> <./rozdzial04/T_Bilety.png> <./rozdzial04/T_Sa
+ [20 <./rozdzial04/T_Seanse.png> <./rozdzial04/T_Bilety.png> <./rozdzial04/T_Sa
 le.png>]
-<rozdzial04/V_Seanse_.png, id=80, 307.1475pt x 100.12407pt>
+<rozdzial04/V_Seanse_.png, id=83, 307.1475pt x 100.12407pt>
 File: rozdzial04/V_Seanse_.png Graphic file (type png)
 
 <use rozdzial04/V_Seanse_.png>
 Package pdftex.def Info: rozdzial04/V_Seanse_.png used on input line 113.
 (pdftex.def)             Requested size: 273.14922pt x 89.04749pt.
 
-<rozdzial04/V_Miejsca_.png, id=81, 302.63063pt x 77.53969pt>
+<rozdzial04/V_Miejsca_.png, id=84, 302.63063pt x 77.53969pt>
 File: rozdzial04/V_Miejsca_.png Graphic file (type png)
 
 <use rozdzial04/V_Miejsca_.png>
 Package pdftex.def Info: rozdzial04/V_Miejsca_.png used on input line 120.
 (pdftex.def)             Requested size: 273.14922pt x 69.98618pt.
 
-<rozdzial04/Procedury.png, id=82, 376.40625pt x 330.48468pt>
+<rozdzial04/Procedury.png, id=85, 376.40625pt x 330.48468pt>
 File: rozdzial04/Procedury.png Graphic file (type png)
 
 <use rozdzial04/Procedury.png>
 Package pdftex.def Info: rozdzial04/Procedury.png used on input line 130.
 (pdftex.def)             Requested size: 318.66946pt x 279.81398pt.
- [20 <./rozdzial04/widoki.png> <./rozdzial04/V_Seanse_.png> <./rozdzial04/V_Mie
-jsca_.png>] [21 <./rozdzial04/Procedury.png>]
+ [21 <./rozdzial04/widoki.png> <./rozdzial04/V_Seanse_.png> <./rozdzial04/V_Mie
+jsca_.png>] [22 <./rozdzial04/Procedury.png>]
 Overfull \hbox (1.83461pt too wide) in paragraph at lines 149--150
 []\T1/qtm/m/n/12 UsunRezerwacje - usu-wa wszyst-kie bi-let, anu-lu-je trans-ak-
 cj¦ u»yt-kow-ni-ka, przy-wra-ca miej-
  []
 
-<rozdzial04/P_DodajSeans.png, id=89, 624.08156pt x 253.69781pt>
+<rozdzial04/P_DodajSeans.png, id=92, 624.08156pt x 253.69781pt>
 File: rozdzial04/P_DodajSeans.png Graphic file (type png)
 
 <use rozdzial04/P_DodajSeans.png>
 Package pdftex.def Info: rozdzial04/P_DodajSeans.png used on input line 159.
 (pdftex.def)             Requested size: 455.24408pt x 185.06624pt.
-) [22 <./rozdzial04/P_DodajSeans.png>]
+) [23 <./rozdzial04/P_DodajSeans.png>]
 \openout2 = `rozdzial05.aux'.
 
 
 (rozdzial05.tex
 Rozdzia\PlPrIeC {\l } 5.
-<rozdzial05/diagram.png, id=93, 678.28406pt x 530.73282pt>
+<rozdzial05/diagram.png, id=96, 678.28406pt x 530.73282pt>
 File: rozdzial05/diagram.png Graphic file (type png)
 
 <use rozdzial05/diagram.png>
 Package pdftex.def Info: rozdzial05/diagram.png used on input line 11.
 (pdftex.def)             Requested size: 273.14922pt x 213.72276pt.
- [23
+ [24
 
 
 
- <./rozdzial05/diagram.png>] [24]
-(rozdzial05/GET.txt [25]) (rozdzial05/POST.txt [26])
-<rozdzial05/interfejs/rejestracja.png, id=108, 974.13937pt x 478.03593pt>
+ <./rozdzial05/diagram.png>] [25]
+(rozdzial05/GET.txt [26]) (rozdzial05/POST.txt [27])
+<rozdzial05/interfejs/rejestracja.png, id=111, 974.13937pt x 478.03593pt>
 File: rozdzial05/interfejs/rejestracja.png Graphic file (type png)
 
 <use rozdzial05/interfejs/rejestracja.png>
@@ -1255,15 +1260,15 @@ Package pdftex.def Info: rozdzial05/interfejs/rejestracja.png used on input lin
 e 127.
 (pdftex.def)             Requested size: 455.24408pt x 223.40042pt.
 
-<rozdzial05/interfejs/kupBilet.png, id=109, 974.13937pt x 456.95718pt>
+<rozdzial05/interfejs/kupBilet.png, id=112, 974.13937pt x 456.95718pt>
 File: rozdzial05/interfejs/kupBilet.png Graphic file (type png)
 
 <use rozdzial05/interfejs/kupBilet.png>
 Package pdftex.def Info: rozdzial05/interfejs/kupBilet.png used on input line 1
 35.
 (pdftex.def)             Requested size: 455.24408pt x 213.5497pt.
- [27 <./rozdzial05/interfejs/rejestracja.png>] <rozdzial05/interfejs/mojeBilety
-.png, id=114, 963.6pt x 384.6872pt>
+ [28 <./rozdzial05/interfejs/rejestracja.png>] <rozdzial05/interfejs/mojeBilety
+.png, id=117, 963.6pt x 384.6872pt>
 File: rozdzial05/interfejs/mojeBilety.png Graphic file (type png)
 
 <use rozdzial05/interfejs/mojeBilety.png>
@@ -1271,7 +1276,7 @@ Package pdftex.def Info: rozdzial05/interfejs/mojeBilety.png used on input line
  142.
 (pdftex.def)             Requested size: 455.24408pt x 181.74217pt.
 
-<rozdzial05/interfejs/filmy.png, id=115, 962.84718pt x 384.6872pt>
+<rozdzial05/interfejs/filmy.png, id=118, 962.84718pt x 384.6872pt>
 File: rozdzial05/interfejs/filmy.png Graphic file (type png)
 
 <use rozdzial05/interfejs/filmy.png>
@@ -1279,16 +1284,16 @@ Package pdftex.def Info: rozdzial05/interfejs/filmy.png used on input line 149.
 
 (pdftex.def)             Requested size: 455.24408pt x 181.88306pt.
 
-<rozdzial05/interfejs/dadajFilm.png, id=116, 750.55406pt x 416.30531pt>
+<rozdzial05/interfejs/dadajFilm.png, id=119, 750.55406pt x 416.30531pt>
 File: rozdzial05/interfejs/dadajFilm.png Graphic file (type png)
 
 <use rozdzial05/interfejs/dadajFilm.png>
 Package pdftex.def Info: rozdzial05/interfejs/dadajFilm.png used on input line 
 156.
 (pdftex.def)             Requested size: 455.24408pt x 252.51024pt.
- [28 <./rozdzial05/interfejs/kupBilet.png> <./rozdzial05/interfejs/mojeBilety.p
+ [29 <./rozdzial05/interfejs/kupBilet.png> <./rozdzial05/interfejs/mojeBilety.p
 ng> <./rozdzial05/interfejs/filmy.png>] <rozdzial05/interfejs/edytujFilm.png, i
-d=123, 617.30624pt x 436.63126pt>
+d=126, 617.30624pt x 436.63126pt>
 File: rozdzial05/interfejs/edytujFilm.png Graphic file (type png)
 
 <use rozdzial05/interfejs/edytujFilm.png>
@@ -1296,16 +1301,16 @@ Package pdftex.def Info: rozdzial05/interfejs/edytujFilm.png used on input line
  163.
 (pdftex.def)             Requested size: 455.24408pt x 322.00943pt.
 
-<rozdzial05/interfejs/seanse.png, id=124, 960.58875pt x 426.09187pt>
+<rozdzial05/interfejs/seanse.png, id=127, 960.58875pt x 426.09187pt>
 File: rozdzial05/interfejs/seanse.png Graphic file (type png)
 
 <use rozdzial05/interfejs/seanse.png>
 Package pdftex.def Info: rozdzial05/interfejs/seanse.png used on input line 170
 .
 (pdftex.def)             Requested size: 455.24408pt x 201.93411pt.
- [29 <./rozdzial05/interfejs/dadajFilm.png> <./rozdzial05/interfejs/edytujFilm.
+ [30 <./rozdzial05/interfejs/dadajFilm.png> <./rozdzial05/interfejs/edytujFilm.
 png>]
-<rozdzial05/interfejs/dodajSeans.png, id=130, 746.79pt x 413.29407pt>
+<rozdzial05/interfejs/dodajSeans.png, id=133, 746.79pt x 413.29407pt>
 File: rozdzial05/interfejs/dodajSeans.png Graphic file (type png)
 
 <use rozdzial05/interfejs/dodajSeans.png>
@@ -1313,32 +1318,32 @@ Package pdftex.def Info: rozdzial05/interfejs/dodajSeans.png used on input line
  177.
 (pdftex.def)             Requested size: 455.24408pt x 251.94504pt.
 
-<rozdzial05/interfejs/edytujSeans.png, id=131, 569.87906pt x 356.83313pt>
+<rozdzial05/interfejs/edytujSeans.png, id=134, 569.87906pt x 356.83313pt>
 File: rozdzial05/interfejs/edytujSeans.png Graphic file (type png)
 
 <use rozdzial05/interfejs/edytujSeans.png>
 Package pdftex.def Info: rozdzial05/interfejs/edytujSeans.png used on input lin
 e 184.
 (pdftex.def)             Requested size: 455.24408pt x 285.05307pt.
- [30 <./rozdzial05/interfejs/seanse.png> <./rozdzial05/interfejs/dodajSeans.png
+ [31 <./rozdzial05/interfejs/seanse.png> <./rozdzial05/interfejs/dodajSeans.png
 >]
-<rozdzial05/interfejs/sale.png, id=137, 971.88094pt x 380.17032pt>
+<rozdzial05/interfejs/sale.png, id=141, 971.88094pt x 380.17032pt>
 File: rozdzial05/interfejs/sale.png Graphic file (type png)
 
 <use rozdzial05/interfejs/sale.png>
 Package pdftex.def Info: rozdzial05/interfejs/sale.png used on input line 191.
 (pdftex.def)             Requested size: 455.24408pt x 178.07677pt.
 
-<rozdzial05/interfejs/alert1.png, id=138, 749.80125pt x 189.70876pt>
+<rozdzial05/interfejs/alert1.png, id=142, 749.80125pt x 189.70876pt>
 File: rozdzial05/interfejs/alert1.png Graphic file (type png)
 
 <use rozdzial05/interfejs/alert1.png>
 Package pdftex.def Info: rozdzial05/interfejs/alert1.png used on input line 200
 .
 (pdftex.def)             Requested size: 455.24408pt x 115.18375pt.
- [31 <./rozdzial05/interfejs/edytujSeans.png> <./rozdzial05/interfejs/sale.png>
+ [32 <./rozdzial05/interfejs/edytujSeans.png> <./rozdzial05/interfejs/sale.png>
 ]
-<rozdzial05/interfejs/alert2.png, id=145, 749.80125pt x 189.70876pt>
+<rozdzial05/interfejs/alert2.png, id=148, 749.80125pt x 189.70876pt>
 File: rozdzial05/interfejs/alert2.png Graphic file (type png)
 
 <use rozdzial05/interfejs/alert2.png>
@@ -1350,54 +1355,63 @@ Overfull \hbox (30.4239pt too wide) in paragraph at lines 220--229
  [][] 
  []
 
-(rozdzial05/cinemaApi.txt [32 <./rozdzial05/interfejs/alert1.png (PNG copy)> <.
-/rozdzial05/interfejs/alert2.png (PNG copy)>] [33]) (rozdzial05/getApi.txt
-[34])) [35]
+(rozdzial05/cinemaApi.txt [33 <./rozdzial05/interfejs/alert1.png (PNG copy)> <.
+/rozdzial05/interfejs/alert2.png (PNG copy)>] [34]) (rozdzial05/getApi.txt
+[35])) [36]
 \openout2 = `rozdzial06.aux'.
 
  (rozdzial06.tex
 Rozdzia\PlPrIeC {\l } 6.
+(rozdzial06/node.txt) (rozdzial06/angular2.txt) (rozdzial06/localhost.txt)
+Underfull \hbox (badness 10000) in paragraph at lines 23--24
 
-Underfull \hbox (badness 10000) in paragraph at lines 3--5
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
+
+ []
+
+[37
+
+
+
+] (rozdzial06/server.txt) (rozdzial06/api.txt [38]) (rozdzial06/run.txt)
+Underfull \hbox (badness 10000) in paragraph at lines 42--43
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 6--7
+Underfull \hbox (badness 10000) in paragraph at lines 47--48
 
  []
 
-<rozdzial06/5.png, id=158, 1839.87375pt x 957.5775pt>
+<rozdzial06/5.png, id=168, 1839.87375pt x 957.5775pt>
 File: rozdzial06/5.png Graphic file (type png)
  <use rozdzial06/5.png>
-Package pdftex.def Info: rozdzial06/5.png used on input line 12.
+Package pdftex.def Info: rozdzial06/5.png used on input line 53.
 (pdftex.def)             Requested size: 455.24408pt x 236.92445pt.
 
-<rozdzial06/7.png, id=159, 1442.38875pt x 727.71875pt>
+[39] <rozdzial06/7.png, id=172, 1442.38875pt x 727.71875pt>
 File: rozdzial06/7.png Graphic file (type png)
- <use rozdzial06/7.png>
-Package pdftex.def Info: rozdzial06/7.png used on input line 19.
+
+<use rozdzial06/7.png>
+Package pdftex.def Info: rozdzial06/7.png used on input line 60.
 (pdftex.def)             Requested size: 455.24408pt x 229.67677pt.
-
-[36
-
-
-
- <./rozdzial06/5.png (PNG copy)>]
-<rozdzial06/8.png, id=163, 1421.31pt x 804.00375pt>
+ <rozdzial06/8.png, id=173, 1421.31pt x 804.00375pt>
 File: rozdzial06/8.png Graphic file (type png)
- <use rozdzial06/8.png>
-Package pdftex.def Info: rozdzial06/8.png used on input line 26.
+
+<use rozdzial06/8.png>
+Package pdftex.def Info: rozdzial06/8.png used on input line 67.
 (pdftex.def)             Requested size: 455.24408pt x 257.51955pt.
-
-<rozdzial06/6.png, id=164, 1843.88875pt x 956.57375pt>
+ [40 <./rozdzial06/5.png (PNG copy)> <./rozdzial06/7.png (PNG copy)>] <rozdzial
+06/6.png, id=177, 1843.88875pt x 956.57375pt>
 File: rozdzial06/6.png Graphic file (type png)
- <use rozdzial06/6.png>
-Package pdftex.def Info: rozdzial06/6.png used on input line 33.
-(pdftex.def)             Requested size: 455.24408pt x 236.16524pt.
 
-[37 <./rozdzial06/7.png (PNG copy)> <./rozdzial06/8.png (PNG copy)>]) [38 <./ro
-zdzial06/6.png (PNG copy)>]
+<use rozdzial06/6.png>
+Package pdftex.def Info: rozdzial06/6.png used on input line 74.
+(pdftex.def)             Requested size: 455.24408pt x 236.16524pt.
+) [41 <./rozdzial06/8.png (PNG copy)> <./rozdzial06/6.png (PNG copy)>]
 \openout2 = `rozdzial07.aux'.
 
  (rozdzial07.tex
@@ -1428,14 +1442,14 @@ Overfull \hbox (0.51273pt too wide) in paragraph at lines 20--134
 przez pro-wa-dz¡-ce-go za-j¦-cia jak i spro-
  []
 
-[39
+[42
 
 
 
 ]
 \openout2 = `Bibliografia2.aux'.
 
- (Bibliografia2.tex) [40
+ (Bibliografia2.tex) [43
 
 
 ] (praca.aux (rozdzial01.aux) (rozdzial02.aux)
@@ -1447,10 +1461,10 @@ LaTeX Warning: There were multiply-defined labels.
  )
 (\end occurred when \iftrue on line 249 was incomplete) 
 Here is how much of TeX's memory you used:
- 6891 strings out of 493333
- 95000 string characters out of 3139194
- 307904 words of memory out of 3000000
- 10095 multiletter control sequences out of 15000+200000
+ 6914 strings out of 493333
+ 95338 string characters out of 3139194
+ 307949 words of memory out of 3000000
+ 10100 multiletter control sequences out of 15000+200000
  61424 words of font info for 51 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  42i,15n,41p,1021b,1700s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1462,9 +1476,9 @@ m Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb><C:/Program Files/MiKTeX 2.
 9/fonts/type1/public/tex-gyre/qtmb.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
 /public/tex-gyre/qtmr.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/tex-g
 yre/qtmri.pfb>
-Output written on praca.pdf (40 pages, 2688421 bytes).
+Output written on praca.pdf (43 pages, 2697904 bytes).
 PDF statistics:
- 200 PDF objects out of 1000 (max. 8388607)
+ 210 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  151 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,31 +1,36 @@
-\contentsline {chapter}{Spis rysunk\IeC {\'o}w}{3}
-\contentsline {chapter}{Spis tabel}{4}
-\contentsline {chapter}{Spis listing\IeC {\'o}w}{5}
-\contentsline {chapter}{\numberline {1}Wst\IeC {\k e}p}{6}
-\contentsline {section}{\numberline {1.1}Cele projektu}{6}
-\contentsline {section}{\numberline {1.2}Za\IeC {\l }o\IeC {\.z}enia projektowe}{6}
-\contentsline {section}{\numberline {1.3}Zakres projektu}{7}
-\contentsline {chapter}{\numberline {2}Replikacja w systemie baz danych MySQL}{8}
-\contentsline {section}{\numberline {2.1}Poj\IeC {\k e}cie replikacji i podstawowe informacje}{8}
-\contentsline {section}{\numberline {2.2}Replikacja master-slave}{8}
-\contentsline {section}{\numberline {2.3}Testowanie mechanizm\IeC {\'o}w replikacji}{9}
-\contentsline {chapter}{\numberline {3}Model konceptualny i fizyczny baz danych}{11}
-\contentsline {section}{\numberline {3.1}Model konceptualny}{11}
-\contentsline {section}{\numberline {3.2}Model fizyczny}{12}
-\contentsline {chapter}{\numberline {4}Implementacja baz danych w \IeC {\'s}rodowisku MySQL}{14}
-\contentsline {section}{\numberline {4.1}Konfiguracja kontener\IeC {\'o}w z \IeC {\'s}rodowiskiem MySQL 5.7 i phpMyAdmin}{14}
-\contentsline {section}{\numberline {4.2}Konfiguracja mechanizm\IeC {\'o}w replikacji master-slave}{17}
-\contentsline {section}{\numberline {4.3}Realizacja bazy danych}{18}
-\contentsline {subsection}{\numberline {4.3.1}Tabele}{18}
-\contentsline {subsection}{\numberline {4.3.2}Widoki}{19}
-\contentsline {subsection}{\numberline {4.3.3}Procedury}{21}
-\contentsline {chapter}{\numberline {5}Projekt i implementacja aplikacji klienckiej oraz REST API}{23}
-\contentsline {section}{\numberline {5.1}Funkcje aplikacji}{23}
-\contentsline {subsection}{\numberline {5.1.1}Diagram przypadk\IeC {\'o}w u\IeC {\.z}ycia}{23}
-\contentsline {subsection}{\numberline {5.1.2}Scenariusz wybranych przypadk\IeC {\'o}w u\IeC {\.z}ycia}{24}
-\contentsline {section}{\numberline {5.2}Realizacja wybranych funkcjonalno\IeC {\'s}ci aplikacji}{25}
-\contentsline {subsection}{\numberline {5.2.1}Interfejs aplikacji}{27}
-\contentsline {section}{\numberline {5.3}Realizacja REST API}{32}
-\contentsline {chapter}{\numberline {6}Wdro\IeC {\.z}enie i testowanie aplikacji}{36}
-\contentsline {chapter}{\numberline {7}Podsumowanie}{39}
-\contentsline {chapter}{Literatura}{40}
+\contentsline {chapter}{Spis rysunk\IeC {\'o}w}{4}
+\contentsline {chapter}{Spis tabel}{5}
+\contentsline {chapter}{Spis listing\IeC {\'o}w}{6}
+\contentsline {chapter}{\numberline {1}Wst\IeC {\k e}p}{7}
+\contentsline {section}{\numberline {1.1}Cele projektu}{7}
+\contentsline {section}{\numberline {1.2}Za\IeC {\l }o\IeC {\.z}enia projektowe}{7}
+\contentsline {section}{\numberline {1.3}Zakres projektu}{8}
+\contentsline {chapter}{\numberline {2}Replikacja w systemie baz danych MySQL}{9}
+\contentsline {section}{\numberline {2.1}Poj\IeC {\k e}cie replikacji i podstawowe informacje}{9}
+\contentsline {section}{\numberline {2.2}Replikacja master-slave}{9}
+\contentsline {section}{\numberline {2.3}Testowanie mechanizm\IeC {\'o}w replikacji}{10}
+\contentsline {chapter}{\numberline {3}Model konceptualny i fizyczny baz danych}{12}
+\contentsline {section}{\numberline {3.1}Model konceptualny}{12}
+\contentsline {section}{\numberline {3.2}Model fizyczny}{13}
+\contentsline {chapter}{\numberline {4}Implementacja baz danych w \IeC {\'s}rodowisku MySQL}{15}
+\contentsline {section}{\numberline {4.1}Konfiguracja kontener\IeC {\'o}w z \IeC {\'s}rodowiskiem MySQL 5.7 i phpMyAdmin}{15}
+\contentsline {section}{\numberline {4.2}Konfiguracja mechanizm\IeC {\'o}w replikacji master-slave}{18}
+\contentsline {section}{\numberline {4.3}Realizacja bazy danych}{19}
+\contentsline {subsection}{\numberline {4.3.1}Tabele}{19}
+\contentsline {subsection}{\numberline {4.3.2}Widoki}{20}
+\contentsline {subsection}{\numberline {4.3.3}Procedury}{22}
+\contentsline {chapter}{\numberline {5}Projekt i implementacja aplikacji klienckiej oraz REST API}{24}
+\contentsline {section}{\numberline {5.1}Funkcje aplikacji}{24}
+\contentsline {subsection}{\numberline {5.1.1}Diagram przypadk\IeC {\'o}w u\IeC {\.z}ycia}{24}
+\contentsline {subsection}{\numberline {5.1.2}Scenariusz wybranych przypadk\IeC {\'o}w u\IeC {\.z}ycia}{25}
+\contentsline {section}{\numberline {5.2}Realizacja wybranych funkcjonalno\IeC {\'s}ci aplikacji}{26}
+\contentsline {subsection}{\numberline {5.2.1}Interfejs aplikacji}{28}
+\contentsline {section}{\numberline {5.3}Realizacja REST API}{33}
+\contentsline {chapter}{\numberline {6}Wdro\IeC {\.z}enie i testowanie aplikacji klienckiej}{37}
+\contentsline {section}{\numberline {6.1}Wdro\IeC {\.z}enie}{37}
+\contentsline {subsection}{\numberline {6.1.1}Zmiana domy\IeC {\'s}lnego portu}{37}
+\contentsline {section}{\numberline {6.2}Testy dzia\IeC {\l }ania}{39}
+\contentsline {subsection}{\numberline {6.2.1}Dodawanie rekordu do rozproszonej bazy danych}{39}
+\contentsline {subsection}{\numberline {6.2.2}Usuwanie rekordu z rozproszonej bazy danych}{41}
+\contentsline {chapter}{\numberline {7}Podsumowanie}{42}
+\contentsline {chapter}{Literatura}{43}
