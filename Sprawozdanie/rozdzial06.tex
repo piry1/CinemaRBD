@@ -1,6 +1,6 @@
 \chapter{Wdrożenie i testowanie aplikacji klienckiej}
 
-\section{Wdrożenie}
+\section{Wdrożenie aplikacji klienckiej}
 
 Aplikacja kliencka została stworzona jako aplikacja webowa z wykorzystaniem platformy programistycznej \textit{Angular 2}. By móc skorzystać z tego frameworku należy odpowiednio skonfigurować środowisko.
 
@@ -19,7 +19,7 @@ Tak przygotowane środowisko umożliwia już uruchomienie aplikacji klienckiej. 
 \lssetdef
 \lstinputlisting[captionpos=b,caption={Uruchomienie aplikacji na localhost:4200 16.04},label={lst:localhost},basicstyle={\footnotesize\ttfamily}]{rozdzial06/localhost.txt}
 
-\subsection{Zmiana domyślnego portu}
+\subsection{Zmiana domyślnego portu działania aplikacji}
 Zmiana portu umożliwia uruchomienie projektu na serwerze, tak by mógł być widoczny bądź w sieci lokalnej bądź globalnie. \\
 
 W tym celu w głównym katalogu aplikacji umieszczony został plik \textit{server.js} oraz katalog \textit{server}, w którym z kolei umieszczony został plik \textit{api.js}\\
@@ -37,7 +37,7 @@ Po utworzeniu tych plików uruchomienie aplikacji klienckiej na nowym porcie odb
 \lssetdef
 \lstinputlisting[captionpos=b,caption={Uruchomienie aplikacji klienckiej na własnym porcie},label={lst:run},basicstyle={\footnotesize\ttfamily}]{rozdzial06/run.txt}
 
-\subsection{Wdrażanie API REST-owego}
+\subsection{Wdrożenie API REST-owego}
 Do poprawnego działania aplikacji potrzebne jest również API REST-owe pośredniczące w komunikacji aplikacji klienckiej z rozproszoną bazą danych. Podczas wdrażania projektu na systemie operacyjnym Ubuntu 16.04, API zostało umieszczone na serwerze HTTP- \textit{APACHE2}.
 
 \section{Testy działania}
@@ -68,7 +68,7 @@ Na rysunku \ref{fig:addFilm} wpisane zostały dane przykładowego filmu, a po na
 \begin{figure} [H]
 	\centering
 	\includegraphics[width=1\linewidth]{rozdzial06/8.png}
-	\caption{Tabela Filmy na węźle \textit{slave} 1 o porcie 8083}
+	\caption{Tabela Filmy na węźle \textit{slave1} o porcie 8083}
 	\label{fig:FilmSlave}
 \end{figure}
 
@@ -80,6 +80,38 @@ Na rysunku \ref{fig:addFilm} wpisane zostały dane przykładowego filmu, a po na
 \end{figure}
 
 \subsection{Usuwanie rekordu z rozproszonej bazy danych}
+
+Na rysunkach od \ref{fig:removeFilm} do \ref{fig:endRemoveFilm} zademonstrowane zostało działanie replikacji na przykładzie dodawania filmu do bazy z poziomu aplikacji webowej.\\
+
+Na rysunku \ref{fig:removeFilm} przedstawione zostały filmy znajdujące się w bazie danych wyświetlane poprzez aplikację kliencką. Będąc zalogowanym na konto administratorskie można usunąć film znajdujący się w bazie. Można tego dokonać poprzez kliknięcie czerwonego przycisku "X" obok wybranego filmu. Aplikacja wtedy łączy się poprzez API REST z węzłem master rozproszonej bazy danych, gdyż wprowadzana będzie modyfikacja, a następnie usunięty zostaje wybrany film z tabeli Filmy (rysunek \ref{fig:FilmMasterRemove}), dzięki procedurze SQL 'UsunFilm'. Wykonana procedura zostaje zreplikowana do wszystkich węzłów Slave. Tabela Filmy dla wybranego węzła Slave na porcie 8083 została pokazana na rysunku \ref{fig:FilmSlaveRemove}. Z węzła Slave również odczytywane są dane poprzez aplikację kliencką, a poprawnie odczytane dane z takiego węzła zostały przedstawione na rysunku \ref{fig:endRemoveFilm}. W przedstawionym przykładzie usunięty został film, który na rysunku~\ref{fig:FilmMaster} widoczny jest pod ID = 27. Jest to film o nazwie \textit{Jumanji: Przygoda w dżungli}.
+
+\begin{figure} [H]
+	\centering
+	\includegraphics[width=1\linewidth]{rozdzial06/r1.png}
+	\caption{Usunięcie filmu poprzez aplikację}
+	\label{fig:removeFilm}
+\end{figure}
+
+\begin{figure} [H]
+	\centering
+	\includegraphics[width=1\linewidth]{rozdzial06/r2.png}
+	\caption{Tabela Filmy na węźle \textit{master} o porcie 8082}
+	\label{fig:FilmMasterRemove}
+\end{figure}
+
+\begin{figure} [H]
+	\centering
+	\includegraphics[width=1\linewidth]{rozdzial06/r3.png}
+	\caption{Tabela Filmy na węźle \textit{slave1} o porcie 8083}
+	\label{fig:FilmSlaveRemove}
+\end{figure}
+
+\begin{figure} [H]
+	\centering
+	\includegraphics[width=1\linewidth]{rozdzial06/r4.png}
+	\caption{Brak usuniętego filmu w aplikacji}
+	\label{fig:endRemoveFilm}
+\end{figure}
 
 
 

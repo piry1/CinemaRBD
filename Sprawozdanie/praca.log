@@ -1,12 +1,14 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.23)  11 JAN 2018 14:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2018/dev/Debian) (preloaded format=pdflatex 2017.9.27)  11 JAN 2018 15:36
 entering extended mode
-**./praca.tex
-(praca.tex
-LaTeX2e <2017/01/01> patch level 1
-Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
-(mgr2.cls
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**praca.tex
+(./praca.tex
+LaTeX2e <2017-04-15>
+Babel <3.13> and hyphenation patterns for 84 language(s) loaded.
+(./mgr2.cls
 Document Class: mgr2 2005/12/01 Non-Standard LaTeX document class
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\bk12.clo"
+(/usr/share/texlive/texmf-dist/tex/latex/base/bk12.clo
 File: bk12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -22,67 +24,65 @@ File: bk12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\polski\polski.sty"
-Package: polski 2008/02/24 v1.3.3 Polish language package
+(/usr/share/texlive/texmf-dist/tex/latex/polski/polski.sty
+Package: polski 2017/05/04 v1.3.4 Polish language package
 
-Document language package `polski' v1.3.3 <2008/02/24>
-\l@nohyphenation=\language75
    Switching to Polish text encoding and Polish maths fonts.
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\ot4enc.def"
-File: ot4enc.def 2017/01/24 v2.0c Standard LaTeX file
+(/usr/share/texlive/texmf-dist/tex/latex/base/ot4enc.def
+File: ot4enc.def 2017/04/05 v2.0i Standard LaTeX file
 )
-LaTeX Font Info:    Try loading font information for OT4+cmr on input line 346.
+LaTeX Font Info:    Try loading font information for OT4+cmr on input line 360.
 
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\polski\ot4cmr.fd"
+(/usr/share/texlive/texmf-dist/tex/latex/polski/ot4cmr.fd
 File: ot4cmr.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT4/cmr/bx/n on input line 346.
+(Font)                  OT1/cmr/bx/n --> OT4/cmr/bx/n on input line 360.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT4/cmss/m/n on input line 346.
+(Font)                  OT1/cmss/m/n --> OT4/cmss/m/n on input line 360.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT4/cmr/m/it on input line 346.
+(Font)                  OT1/cmr/m/it --> OT4/cmr/m/it on input line 360.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT4/cmtt/m/n on input line 346.
+(Font)                  OT1/cmtt/m/n --> OT4/cmtt/m/n on input line 360.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT4/cmss/bx/n on input line 346.
+(Font)                  OT1/cmss/bx/n --> OT4/cmss/bx/n on input line 360.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT4/cmr/bx/it on input line 346.
+(Font)                  OT1/cmr/bx/it --> OT4/cmr/bx/it on input line 360.
 LaTeX Font Info:    Encoding `OT1' has changed to `OT4' for symbol font
-(Font)              `operators' in the math version `normal' on input line 346.
+(Font)              `operators' in the math version `normal' on input line 360.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT4/cmr/m/n on input line 346.
+(Font)                  OT1/cmr/m/n --> OT4/cmr/m/n on input line 360.
 LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
-(Font)                  OML/cmm/m/it --> OML/plm/m/it on input line 346.
+(Font)                  OML/cmm/m/it --> OML/plm/m/it on input line 360.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/cmsy/m/n --> OMS/plsy/m/n on input line 346.
+(Font)                  OMS/cmsy/m/n --> OMS/plsy/m/n on input line 360.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/cmex/m/n --> OMX/plex/m/n on input line 346.
+(Font)                  OMX/cmex/m/n --> OMX/plex/m/n on input line 360.
 LaTeX Font Info:    Encoding `OT1' has changed to `OT4' for symbol font
-(Font)              `operators' in the math version `bold' on input line 346.
+(Font)              `operators' in the math version `bold' on input line 360.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT4/cmr/bx/n on input line 346.
+(Font)                  OT1/cmr/bx/n --> OT4/cmr/bx/n on input line 360.
 LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
-(Font)                  OML/cmm/b/it --> OML/plm/b/it on input line 346.
+(Font)                  OML/cmm/b/it --> OML/plm/b/it on input line 360.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/cmsy/b/n --> OMS/plsy/b/n on input line 346.
+(Font)                  OMS/cmsy/b/n --> OMS/plsy/b/n on input line 360.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
-File: utf8.def 2016/02/28 v1.1s UTF-8 support for inputenc
+(/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2017/01/28 v1.1t UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
-File: t1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.dfu
+File: t1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -294,6 +294,8 @@ File: t1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
    defining Unicode char U+0219 (decimal 537)
    defining Unicode char U+021A (decimal 538)
    defining Unicode char U+021B (decimal 539)
+   defining Unicode char U+0232 (decimal 562)
+   defining Unicode char U+0233 (decimal 563)
    defining Unicode char U+1E02 (decimal 7682)
    defining Unicode char U+1E03 (decimal 7683)
    defining Unicode char U+200C (decimal 8204)
@@ -314,12 +316,14 @@ File: t1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
    defining Unicode char U+2039 (decimal 8249)
    defining Unicode char U+203A (decimal 8250)
    defining Unicode char U+2423 (decimal 9251)
+   defining Unicode char U+1E20 (decimal 7712)
+   defining Unicode char U+1E21 (decimal 7713)
 )
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
-File: ot1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
+(/usr/share/texlive/texmf-dist/tex/latex/base/ot1enc.dfu
+File: ot1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
@@ -359,8 +363,8 @@ File: ot1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
-File: omsenc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
+(/usr/share/texlive/texmf-dist/tex/latex/base/omsenc.dfu
+File: omsenc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
    defining Unicode char U+00B7 (decimal 183)
@@ -385,14 +389,14 @@ Now handling font encoding OT4 ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\fontenc.sty"
-Package: fontenc 2017/01/24 v2.0c Standard LaTeX package
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\t1enc.def"
-File: t1enc.def 2017/01/24 v2.0c Standard LaTeX file
+(/usr/share/texlive/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\lm\lmodern.sty"
+(/usr/share/texmf/tex/latex/lm/lmodern.sty
 Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
 LaTeX Font Info:    Encoding `OT4' has changed to `OT1' for symbol font
 (Font)              `operators' in the math version `normal' on input line 22.
@@ -431,91 +435,83 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
-Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks16
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
-Package: graphics 2016/10/09 v1.0u Standard LaTeX Graphics (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\graphics.cfg"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-def\pdftex.def"
-File: pdftex.def 2017/01/12 v0.06k Graphics/color for pdfTeX
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-)
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-)
-\Gread@gobject=\count88
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2017/06/24 v1.0g Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\subfigure\subfigure.sty"
-Package: subfigure 2002/07/30 v2.1.4 subfigure package
+(/usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.sty
+Package: subfigure 2002/03/15 v2.1.5 subfigure package
 \subfigtopskip=\skip43
 \subfigcapskip=\skip44
 \subfigcaptopadj=\dimen105
 \subfigbottomskip=\skip45
 \subfigcapmargin=\dimen106
 \subfiglabelskip=\skip46
-\c@subfigure=\count89
-\c@lofdepth=\count90
-\c@subtable=\count91
-\c@lotdepth=\count92
+\c@subfigure=\count88
+\c@lofdepth=\count89
+\c@subtable=\count90
+\c@lotdepth=\count91
 
 ****************************************
 * Local config file subfigure.cfg used *
 ****************************************
-("C:\Program Files\MiKTeX 2.9\tex\latex\subfigure\subfigure.cfg")
+(/usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.cfg)
 \subfig@top=\skip47
 \subfig@bottom=\skip48
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\psfrag\psfrag.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/psfrag/psfrag.sty
 Package: psfrag 1998/04/11 v3.04 PSfrag (MCG)
-\pfg@pcount=\count93
-\pfg@scount=\count94
+\pfg@pcount=\count92
+\pfg@scount=\count93
 \pfg@temp=\write3
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
-Package: amsmath 2016/11/05 v2.16a AMS math features
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2017/09/02 v2.17a AMS math features
 \@mathmargin=\skip49
 
 For additional information on amsmath, use the `?' option.
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks17
 \ex@=\dimen107
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen108
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count95
+\inf@bad=\count94
 LaTeX Info: Redefining \frac on input line 213.
-\uproot@=\count96
-\leftroot@=\count97
+\uproot@=\count95
+\leftroot@=\count96
 LaTeX Info: Redefining \overline on input line 375.
-\classnum@=\count98
-\DOTSCASE@=\count99
+\classnum@=\count97
+\DOTSCASE@=\count98
 LaTeX Info: Redefining \ldots on input line 472.
 LaTeX Info: Redefining \dots on input line 475.
 LaTeX Info: Redefining \cdots on input line 596.
@@ -524,15 +520,15 @@ LaTeX Info: Redefining \cdots on input line 596.
 \big@size=\dimen109
 LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
-\macc@depth=\count100
-\c@MaxMatrixCols=\count101
+\macc@depth=\count99
+\c@MaxMatrixCols=\count100
 \dotsspace@=\muskip10
-\c@parentequation=\count102
-\dspbrk@lvl=\count103
+\c@parentequation=\count101
+\dspbrk@lvl=\count102
 \tag@help=\toks18
-\row@=\count104
-\column@=\count105
-\maxfields@=\count106
+\row@=\count103
+\column@=\count104
+\maxfields@=\count105
 \andhelp@=\toks19
 \eqnshift@=\dimen110
 \alignsep@=\dimen111
@@ -547,16 +543,16 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\supertabular\supertabular.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/supertabular/supertabular.sty
 Package: supertabular 2004/02/20 v4.1e the supertabular environment
-\c@tracingst=\count107
+\c@tracingst=\count106
 \ST@wd=\dimen116
 \ST@rightskip=\skip52
 \ST@leftskip=\skip53
@@ -573,7 +569,7 @@ Package: supertabular 2004/02/20 v4.1e the supertabular environment
 \ST@dimen=\dimen126
 \ST@pbox=\box28
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\tools\array.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
 Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
 \col@sep=\dimen127
 \extrarowheight=\dimen128
@@ -581,128 +577,134 @@ Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
 \extratabsurround=\skip55
 \backup@length=\skip56
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\tools\tabularx.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
 Package: tabularx 2016/02/03 v2.11 `tabularx' package (DPC)
 \TX@col@width=\dimen129
 \TX@old@table=\dimen130
 \TX@old@col=\dimen131
 \TX@target=\dimen132
 \TX@delta=\dimen133
-\TX@cols=\count108
+\TX@cols=\count107
 \TX@ftn=\toks23
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\tools\hhline.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/tools/hhline.sty
 Package: hhline 2014/10/28 v2.03 Table rule package (DPC)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.sty"
-\lst@mode=\count109
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count108
 \lst@gtempboxa=\box29
 \lst@token=\toks24
-\lst@length=\count110
+\lst@length=\count109
 \lst@currlwidth=\dimen134
-\lst@column=\count111
-\lst@pos=\count112
+\lst@column=\count110
+\lst@pos=\count111
 \lst@lostspace=\dimen135
 \lst@width=\dimen136
-\lst@newlines=\count113
-\lst@lineno=\count114
+\lst@newlines=\count112
+\lst@lineno=\count113
 \lst@maxwidth=\dimen137
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-\c@lstnumber=\count115
-\lst@skipnumbers=\count116
+\c@lstnumber=\count114
+\lst@skipnumbers=\count115
 \lst@framebox=\box30
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.cfg"
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\float\float.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count117
+\c@float@type=\count116
 \float@exts=\toks25
 \float@box=\box31
 \@float@everytoks=\toks26
 \@floatcapt=\box32
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\tools\indentfirst.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/tools/indentfirst.sty
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\color.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\color.cfg"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\tools\enumerate.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/tools/enumerate.sty
 Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
 \@enLab=\toks27
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\setspace\setspace.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\tools\calc.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count118
-\calc@Bcount=\count119
+\calc@Acount=\count117
+\calc@Bcount=\count118
 \calc@Adimen=\dimen138
 \calc@Bdimen=\dimen139
 \calc@Askip=\skip57
 \calc@Bskip=\skip58
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count120
+\calc@Ccount=\count119
 \calc@Cskip=\skip59
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\wrapfig\wrapfig.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/wrapfig/wrapfig.sty
 \wrapoverhang=\dimen140
 \WF@size=\dimen141
-\c@WF@wrappedlines=\count121
+\c@WF@wrappedlines=\count120
 \WF@box=\box33
 \WF@everypar=\toks28
 Package: wrapfig 2003/01/31  v 3.6
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\lscape.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/lscape.sty
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\rotating.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/rotating.sty
 Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-\c@r@tfl@t=\count122
+\c@r@tfl@t=\count121
 \rotFPtop=\skip60
 \rotFPbot=\skip61
 \rot@float@box=\box34
 \rot@mess@toks=\toks29
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf.sty
 Package: epstopdf 2016/05/15 v2.6 Conversion with epstopdf on the fly (HO)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty"
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-))
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
@@ -711,12 +713,12 @@ Package etexcmds Info: Could not find \expanded.
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
 )))
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
-Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
-Package: ifpdf 2016/05/14 v3.1 Provides the ifpdf switch
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
@@ -726,30 +728,34 @@ Package pdftexcmds Info: \pdfdraftmode found.
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 38.
 Package grfext Info: Graphics extension search list:
-(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
-))
-("C:\Program Files\MiKTeX 2.9\tex\latex\ebgaramond\ebgaramond.sty"
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+)))
+(/usr/share/texlive/texmf-dist/tex/latex/ebgaramond/ebgaramond.sty
 Package: ebgaramond 2014/11/25 (Bob Tennent and autoinst) Style file for EB Gar
 amond fonts.
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\xkeyval\xkeyval.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 
-("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkeyval.tex"
-("C:\Program Files\MiKTeX 2.9\tex\generic\xkeyval\xkvutils.tex"
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
 \XKV@toks=\toks30
 \XKV@tempa@toks=\toks31
 )
-\XKV@depth=\count123
+\XKV@depth=\count122
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\textcomp.sty"
-Package: textcomp 2017/01/24 v2.0c Standard LaTeX package
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2017/04/05 v2.0i Standard LaTeX package
 Package textcomp Info: Sub-encoding information:
 (textcomp)               5 = only ISO-Adobe without \textcurrency
 (textcomp)               4 = 5 + \texteuro
@@ -763,13 +769,13 @@ Package textcomp Info: Sub-encoding information:
 (textcomp)             See the documentation for details.
 Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1enc.def"
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 Now handling font encoding TS1 ...
 ... processing UTF-8 mapping file for font encoding TS1
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1enc.dfu"
-File: ts1enc.dfu 2016/02/28 v1.1s UTF-8 support for inputenc
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.dfu
+File: ts1enc.dfu 2017/01/28 v1.1t UTF-8 support for inputenc
    defining Unicode char U+00A2 (decimal 162)
    defining Unicode char U+00A3 (decimal 163)
    defining Unicode char U+00A4 (decimal 164)
@@ -904,10 +910,10 @@ Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\fontenc.sty"
-Package: fontenc 2017/01/24 v2.0c Standard LaTeX package
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\fontaxes\fontaxes.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/fontaxes/fontaxes.sty
 Package: fontaxes 2014/03/23 v1.0d Font selection axes
 LaTeX Info: Redefining \upshape on input line 29.
 LaTeX Info: Redefining \itshape on input line 31.
@@ -918,20 +924,20 @@ LaTeX Info: Redefining \swshape on input line 134.
 LaTeX Info: Redefining \oldstylenums on input line 149.
 LaTeX Info: Redefining \textsw on input line 156.
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\tex-gyre\tgtermes.sty"
+(/usr/share/texmf/tex/latex/tex-gyre/tgtermes.sty
 Package: tgtermes 2009/09/27 v1.2 TeX Gyre Termes as default roman family
 )
-\c@theorem=\count124
- (praca.aux
-(rozdzial01.aux) (rozdzial02.aux) (rozdzial03.aux) (rozdzial04.aux
+\c@theorem=\count123
+ (./praca.aux
+(./rozdzial01.aux) (./rozdzial02.aux) (./rozdzial03.aux) (./rozdzial04.aux
 
 LaTeX Warning: Label `lst:compose1' multiply defined.
 
-) (rozdzial05.aux) (rozdzial06.aux
+) (./rozdzial05.aux) (./rozdzial06.aux
 
 LaTeX Warning: Label `lst:api' multiply defined.
 
-) (rozdzial07.aux) (Bibliografia2.aux))
+) (./rozdzial07.aux) (./Bibliografia2.aux))
 \openout1 = `praca.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 101.
@@ -952,34 +958,34 @@ LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 101.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 101.
 
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
+(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 101.
 LaTeX Font Info:    Try loading font information for T1+qtm on input line 101.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\tex-gyre\t1qtm.fd"
+(/usr/share/texmf/tex/latex/tex-gyre/t1qtm.fd
 File: t1qtm.fd 2009/09/25 v1.2 font definition file for T1/qtm
 )
-("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count125
+\scratchcounter=\count124
 \scratchdimen=\dimen142
 \scratchbox=\box35
-\nofMPsegments=\count126
-\nofMParguments=\count127
+\nofMPsegments=\count125
+\nofMParguments=\count126
 \everyMPshowfont=\toks32
-\MPscratchCnt=\count128
+\MPscratchCnt=\count127
 \MPscratchDim=\dimen143
-\MPnumerator=\count129
-\makeMPintoPDFobject=\count130
+\MPnumerator=\count128
+\makeMPintoPDFobject=\count129
 \everyMPtoPDFconversion=\toks33
 )
-\c@lstlisting=\count131
-\c@mv@tabular=\count132
-\c@mv@boldtabular=\count133
-\@temphbadness=\count134
-\@tempvbadness=\count135
+\c@lstlisting=\count130
+\c@mv@tabular=\count131
+\c@mv@boldtabular=\count132
+\@temphbadness=\count133
+\@tempvbadness=\count134
 \@temphfuzz=\skip62
 \@temptextwidth=\skip63
 \@temptextheight=\skip64
@@ -990,25 +996,25 @@ File: t1qtm.fd 2009/09/25 v1.2 font definition file for T1/qtm
 \@tempevensidemargin=\skip69
 LaTeX Font Info:    Try loading font information for OT1+lmr on input line 104.
 
- ("C:\Program Files\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd"
+ (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Try loading font information for OML+lmm on input line 104.
 
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omllmm.fd"
+(/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 104
 .
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omslmsy.fd"
+(/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Try loading font information for OMX+lmex on input line 104
 .
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\lm\omxlmex.fd"
+(/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -1019,12 +1025,12 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 104.
 LaTeX Font Info:    Try loading font information for U+msa on input line 104.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 104.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 \@tempheightkier=\skip70
@@ -1036,36 +1042,36 @@ Non-PDF special ignored!
 
 
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-(praca.toc [2
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+(./praca.toc [2
 
 ])
 \tf@toc=\write4
 \openout4 = `praca.toc'.
 
- [3] (praca.lof)
+ [3] (./praca.lof)
 \tf@lof=\write5
 \openout5 = `praca.lof'.
 
  [4
 
-] (praca.lot)
+] [5] (./praca.lot)
 \tf@lot=\write6
 \openout6 = `praca.lot'.
 
- [5
+ [6
 
-] (praca.lol)
+] (./praca.lol)
 \tf@lol=\write7
 \openout7 = `praca.lol'.
 
- [6
+
+[7
 
 ]
 \openout2 = `rozdzial01.aux'.
 
-
-(rozdzial01.tex
+ (./rozdzial01.tex
 Rozdzia\PlPrIeC {\l } 1.
 
 Underfull \hbox (badness 10000) in paragraph at lines 8--9
@@ -1073,24 +1079,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--9
  []
 
 LaTeX Font Info:    Try loading font information for TS1+qtm on input line 12.
-("C:\Program Files\MiKTeX 2.9\tex\latex\tex-gyre\ts1qtm.fd"
+(/usr/share/texmf/tex/latex/tex-gyre/ts1qtm.fd
 File: ts1qtm.fd 2009/09/25 v1.2 font definition file for TS1/qtm
-) [7
+) [8
 
 
 ]
-<rozdzial01/diagram.png, id=29, 406.51875pt x 249.93375pt>
+<rozdzial01/diagram.png, id=33, 406.51875pt x 249.93375pt>
 File: rozdzial01/diagram.png Graphic file (type png)
-
 <use rozdzial01/diagram.png>
-Package pdftex.def Info: rozdzial01/diagram.png used on input line 23.
-(pdftex.def)             Requested size: 273.14922pt x 167.94289pt.
-) [8 <./rozdzial01/diagram.png>]
+Package pdftex.def Info: rozdzial01/diagram.png  used on input line 23. on inpu
+t line 23.
+Package pdftex.def Info: Requested size: 273.14922pt x 167.94289pt on input lin
+e 23.
+) [9 <./rozdzial01/diagram.png>]
 \openout2 = `rozdzial02.aux'.
 
- (rozdzial02.tex
+ (./rozdzial02.tex
 Rozdzia\PlPrIeC {\l } 2.
-[9
+[10
 
 
 
@@ -1114,255 +1121,259 @@ Underfull \hbox (badness 10000) in paragraph at lines 54--57
 
  []
 
-[10]) [11]
+[11]) [12]
 \openout2 = `rozdzial03.aux'.
 
- (rozdzial03.tex
+ (./rozdzial03.tex
 Rozdzia\PlPrIeC {\l } 3.
-<rozdzial03/model_konceptualny.png, id=42, 393.1488pt x 226.6869pt>
+<rozdzial03/model_konceptualny.png, id=46, 393.1488pt x 226.6869pt>
 File: rozdzial03/model_konceptualny.png Graphic file (type png)
-
 <use rozdzial03/model_konceptualny.png>
-Package pdftex.def Info: rozdzial03/model_konceptualny.png used on input line 7
-.
-(pdftex.def)             Requested size: 455.24408pt x 262.50386pt.
-
-<rozdzial03/model_fizyczny.png, id=44, 562.7424pt x 819.06pt>
+Package pdftex.def Info: rozdzial03/model_konceptualny.png  used on input line 
+7. on input line 7.
+Package pdftex.def Info: Requested size: 455.24408pt x 262.50386pt on input lin
+e 7.
+<rozdzial03/model_fizyczny.png, id=48, 562.7424pt x 819.06pt>
 File: rozdzial03/model_fizyczny.png Graphic file (type png)
-
 <use rozdzial03/model_fizyczny.png>
-Package pdftex.def Info: rozdzial03/model_fizyczny.png used on input line 19.
-(pdftex.def)             Requested size: 432.48048pt x 629.49086pt.
- [12
+Package pdftex.def Info: rozdzial03/model_fizyczny.png  used on input line 19. 
+on input line 19.
+Package pdftex.def Info: Requested size: 432.48048pt x 629.49086pt on input lin
+e 19.
+[13
 
 
 
- <./rozdzial03/model_konceptualny.png>]
-[13 <./rozdzial03/model_fizyczny.png>]) [14]
+ <./rozdzial03/model_konceptualny.png>] [14 <./rozdzial03/model_fizyczny.png>])
+ [15]
 \openout2 = `rozdzial04.aux'.
 
- (rozdzial04.tex
+ (./rozdzial04.tex
 Rozdzia\PlPrIeC {\l } 4.
 LaTeX Font Info:    Try loading font information for T1+lmtt on input line 9.
-("C:\Program Files\MiKTeX 2.9\tex\latex\lm\t1lmtt.fd"
+(/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) (rozdzial04/docker.txt)
-(rozdzial04/images.txt) (rozdzial04/docker-compose.txt) [15
+) (./rozdzial04/docker.txt)
+(./rozdzial04/images.txt) (./rozdzial04/docker-compose.txt) [16
 
 
 
 ]
-(rozdzial04/docker-compose.yml [16] [17]) (rozdzial04/mycnf.txt)
-<rozdzial04/4.png, id=67, 1848.9075pt x 697.60625pt>
+(./rozdzial04/docker-compose.yml [17] [18]) (./rozdzial04/mycnf.txt)
+<rozdzial04/4.png, id=71, 1848.9075pt x 697.60625pt>
 File: rozdzial04/4.png Graphic file (type png)
- <use rozdzial04/4.png>
-Package pdftex.def Info: rozdzial04/4.png used on input line 36.
-(pdftex.def)             Requested size: 455.24408pt x 171.76126pt.
-
-[18] <rozdzial04/3.png, id=71, 1843.88875pt x 566.115pt>
+<use rozdzial04/4.png>
+Package pdftex.def Info: rozdzial04/4.png  used on input line 36. on input line
+ 36.
+Package pdftex.def Info: Requested size: 455.24408pt x 171.76126pt on input lin
+e 36.
+ [19]
+<rozdzial04/3.png, id=76, 1843.88875pt x 566.115pt>
 File: rozdzial04/3.png Graphic file (type png)
-
 <use rozdzial04/3.png>
-Package pdftex.def Info: rozdzial04/3.png used on input line 46.
-(pdftex.def)             Requested size: 455.24408pt x 139.7662pt.
- (rozdzial04/slave.txt) [19 <./rozdzial04/4.png (PNG copy)> <./rozdzial04/3.png
- (PNG copy)>]
+Package pdftex.def Info: rozdzial04/3.png  used on input line 46. on input line
+ 46.
+Package pdftex.def Info: Requested size: 455.24408pt x 139.7662pt on input line
+ 46.
+
+(./rozdzial04/slave.txt) [20 <./rozdzial04/4.png (PNG copy)> <./rozdzial04/3.pn
+g (PNG copy)>]
 Overfull \hbox (8.81857pt too wide) in paragraph at lines 69--70
 []\T1/qtm/m/n/12 sprawdzanie czy po-da-na licz-ba na-le-»y do prze-dzia-ªu wy-k
 o-rzy-stu-j¡c sªo-wo klu-czo-we \T1/qtm/m/it/12 CHECK
  []
 
-<rozdzial04/T_Seanse.png, id=76, 252.945pt x 150.5625pt>
+<rozdzial04/T_Seanse.png, id=80, 252.945pt x 150.5625pt>
 File: rozdzial04/T_Seanse.png Graphic file (type png)
-
 <use rozdzial04/T_Seanse.png>
-Package pdftex.def Info: rozdzial04/T_Seanse.png used on input line 75.
-(pdftex.def)             Requested size: 273.14922pt x 162.59128pt.
-
-<rozdzial04/T_Bilety.png, id=77, 297.36093pt x 100.12407pt>
+Package pdftex.def Info: rozdzial04/T_Seanse.png  used on input line 75. on inp
+ut line 75.
+Package pdftex.def Info: Requested size: 273.14922pt x 162.59128pt on input lin
+e 75.
+<rozdzial04/T_Bilety.png, id=81, 297.36093pt x 100.12407pt>
 File: rozdzial04/T_Bilety.png Graphic file (type png)
-
 <use rozdzial04/T_Bilety.png>
-Package pdftex.def Info: rozdzial04/T_Bilety.png used on input line 82.
-(pdftex.def)             Requested size: 273.14922pt x 91.97621pt.
-
-<rozdzial04/T_Sale.png, id=78, 221.32687pt x 86.57344pt>
+Package pdftex.def Info: rozdzial04/T_Bilety.png  used on input line 82. on inp
+ut line 82.
+Package pdftex.def Info: Requested size: 273.14922pt x 91.97621pt on input line
+ 82.
+<rozdzial04/T_Sale.png, id=82, 221.32687pt x 86.57344pt>
 File: rozdzial04/T_Sale.png Graphic file (type png)
-
 <use rozdzial04/T_Sale.png>
-Package pdftex.def Info: rozdzial04/T_Sale.png used on input line 89.
-(pdftex.def)             Requested size: 227.62204pt x 89.04083pt.
-
-<rozdzial04/widoki.png, id=79, 608.2725pt x 468.24937pt>
+Package pdftex.def Info: rozdzial04/T_Sale.png  used on input line 89. on input
+ line 89.
+Package pdftex.def Info: Requested size: 227.62204pt x 89.04083pt on input line
+ 89.
+<rozdzial04/widoki.png, id=83, 608.2725pt x 468.24937pt>
 File: rozdzial04/widoki.png Graphic file (type png)
-
 <use rozdzial04/widoki.png>
-Package pdftex.def Info: rozdzial04/widoki.png used on input line 100.
-(pdftex.def)             Requested size: 364.19664pt x 280.36589pt.
- [20 <./rozdzial04/T_Seanse.png> <./rozdzial04/T_Bilety.png> <./rozdzial04/T_Sa
-le.png>]
-<rozdzial04/V_Seanse_.png, id=83, 307.1475pt x 100.12407pt>
+Package pdftex.def Info: rozdzial04/widoki.png  used on input line 100. on inpu
+t line 100.
+Package pdftex.def Info: Requested size: 364.19664pt x 280.36589pt on input lin
+e 100.
+[21 <./rozdzial04/T_Seanse.png> <./rozdzial04/T_Bilety.png> <./rozdzial04/T_Sal
+e.png>]
+<rozdzial04/V_Seanse_.png, id=87, 307.1475pt x 100.12407pt>
 File: rozdzial04/V_Seanse_.png Graphic file (type png)
-
 <use rozdzial04/V_Seanse_.png>
-Package pdftex.def Info: rozdzial04/V_Seanse_.png used on input line 113.
-(pdftex.def)             Requested size: 273.14922pt x 89.04749pt.
-
-<rozdzial04/V_Miejsca_.png, id=84, 302.63063pt x 77.53969pt>
+Package pdftex.def Info: rozdzial04/V_Seanse_.png  used on input line 113. on i
+nput line 113.
+Package pdftex.def Info: Requested size: 273.14922pt x 89.04749pt on input line
+ 113.
+<rozdzial04/V_Miejsca_.png, id=88, 302.63063pt x 77.53969pt>
 File: rozdzial04/V_Miejsca_.png Graphic file (type png)
-
 <use rozdzial04/V_Miejsca_.png>
-Package pdftex.def Info: rozdzial04/V_Miejsca_.png used on input line 120.
-(pdftex.def)             Requested size: 273.14922pt x 69.98618pt.
-
-<rozdzial04/Procedury.png, id=85, 376.40625pt x 330.48468pt>
+Package pdftex.def Info: rozdzial04/V_Miejsca_.png  used on input line 120. on 
+input line 120.
+Package pdftex.def Info: Requested size: 273.14922pt x 69.98618pt on input line
+ 120.
+<rozdzial04/Procedury.png, id=89, 376.40625pt x 330.48468pt>
 File: rozdzial04/Procedury.png Graphic file (type png)
-
 <use rozdzial04/Procedury.png>
-Package pdftex.def Info: rozdzial04/Procedury.png used on input line 130.
-(pdftex.def)             Requested size: 318.66946pt x 279.81398pt.
- [21 <./rozdzial04/widoki.png> <./rozdzial04/V_Seanse_.png> <./rozdzial04/V_Mie
-jsca_.png>] [22 <./rozdzial04/Procedury.png>]
+Package pdftex.def Info: rozdzial04/Procedury.png  used on input line 130. on i
+nput line 130.
+Package pdftex.def Info: Requested size: 318.66946pt x 279.81398pt on input lin
+e 130.
+ [22 <./rozdzial04/widoki.png> <./rozdzial04/V_Seanse_.png> <./rozdzial04/V_Mie
+jsca_.png>] [23 <./rozdzial04/Procedury.png>]
 Overfull \hbox (1.83461pt too wide) in paragraph at lines 149--150
 []\T1/qtm/m/n/12 UsunRezerwacje - usu-wa wszyst-kie bi-let, anu-lu-je trans-ak-
 cj¦ u»yt-kow-ni-ka, przy-wra-ca miej-
  []
 
-<rozdzial04/P_DodajSeans.png, id=92, 624.08156pt x 253.69781pt>
+<rozdzial04/P_DodajSeans.png, id=96, 624.08156pt x 253.69781pt>
 File: rozdzial04/P_DodajSeans.png Graphic file (type png)
-
 <use rozdzial04/P_DodajSeans.png>
-Package pdftex.def Info: rozdzial04/P_DodajSeans.png used on input line 159.
-(pdftex.def)             Requested size: 455.24408pt x 185.06624pt.
-) [23 <./rozdzial04/P_DodajSeans.png>]
+Package pdftex.def Info: rozdzial04/P_DodajSeans.png  used on input line 159. o
+n input line 159.
+Package pdftex.def Info: Requested size: 455.24408pt x 185.06624pt on input lin
+e 159.
+) [24 <./rozdzial04/P_DodajSeans.png>]
 \openout2 = `rozdzial05.aux'.
 
-
-(rozdzial05.tex
+ (./rozdzial05.tex
 Rozdzia\PlPrIeC {\l } 5.
-<rozdzial05/diagram.png, id=96, 678.28406pt x 530.73282pt>
+<rozdzial05/diagram.png, id=100, 678.28406pt x 530.73282pt>
 File: rozdzial05/diagram.png Graphic file (type png)
-
 <use rozdzial05/diagram.png>
-Package pdftex.def Info: rozdzial05/diagram.png used on input line 11.
-(pdftex.def)             Requested size: 273.14922pt x 213.72276pt.
- [24
+Package pdftex.def Info: rozdzial05/diagram.png  used on input line 11. on inpu
+t line 11.
+Package pdftex.def Info: Requested size: 273.14922pt x 213.72276pt on input lin
+e 11.
+[25
 
 
 
- <./rozdzial05/diagram.png>] [25]
-(rozdzial05/GET.txt [26]) (rozdzial05/POST.txt [27])
-<rozdzial05/interfejs/rejestracja.png, id=111, 974.13937pt x 478.03593pt>
+ <./rozdzial05/diagram.png>] [26] (./rozdzial05/GET.txt [27])
+(./rozdzial05/POST.txt [28])
+<rozdzial05/interfejs/rejestracja.png, id=115, 974.13937pt x 478.03593pt>
 File: rozdzial05/interfejs/rejestracja.png Graphic file (type png)
-
 <use rozdzial05/interfejs/rejestracja.png>
-Package pdftex.def Info: rozdzial05/interfejs/rejestracja.png used on input lin
+Package pdftex.def Info: rozdzial05/interfejs/rejestracja.png  used on input li
+ne 127. on input line 127.
+Package pdftex.def Info: Requested size: 455.24408pt x 223.40042pt on input lin
 e 127.
-(pdftex.def)             Requested size: 455.24408pt x 223.40042pt.
-
-<rozdzial05/interfejs/kupBilet.png, id=112, 974.13937pt x 456.95718pt>
+<rozdzial05/interfejs/kupBilet.png, id=116, 974.13937pt x 456.95718pt>
 File: rozdzial05/interfejs/kupBilet.png Graphic file (type png)
-
 <use rozdzial05/interfejs/kupBilet.png>
-Package pdftex.def Info: rozdzial05/interfejs/kupBilet.png used on input line 1
-35.
-(pdftex.def)             Requested size: 455.24408pt x 213.5497pt.
- [28 <./rozdzial05/interfejs/rejestracja.png>] <rozdzial05/interfejs/mojeBilety
-.png, id=117, 963.6pt x 384.6872pt>
+Package pdftex.def Info: rozdzial05/interfejs/kupBilet.png  used on input line 
+135. on input line 135.
+Package pdftex.def Info: Requested size: 455.24408pt x 213.5497pt on input line
+ 135.
+ [29 <./rozdzial05/interfejs/rejestracja.png>]
+<rozdzial05/interfejs/mojeBilety.png, id=121, 963.6pt x 384.6872pt>
 File: rozdzial05/interfejs/mojeBilety.png Graphic file (type png)
-
 <use rozdzial05/interfejs/mojeBilety.png>
-Package pdftex.def Info: rozdzial05/interfejs/mojeBilety.png used on input line
- 142.
-(pdftex.def)             Requested size: 455.24408pt x 181.74217pt.
-
-<rozdzial05/interfejs/filmy.png, id=118, 962.84718pt x 384.6872pt>
+Package pdftex.def Info: rozdzial05/interfejs/mojeBilety.png  used on input lin
+e 142. on input line 142.
+Package pdftex.def Info: Requested size: 455.24408pt x 181.74217pt on input lin
+e 142.
+<rozdzial05/interfejs/filmy.png, id=122, 962.84718pt x 384.6872pt>
 File: rozdzial05/interfejs/filmy.png Graphic file (type png)
-
 <use rozdzial05/interfejs/filmy.png>
-Package pdftex.def Info: rozdzial05/interfejs/filmy.png used on input line 149.
-
-(pdftex.def)             Requested size: 455.24408pt x 181.88306pt.
-
-<rozdzial05/interfejs/dadajFilm.png, id=119, 750.55406pt x 416.30531pt>
+Package pdftex.def Info: rozdzial05/interfejs/filmy.png  used on input line 149
+. on input line 149.
+Package pdftex.def Info: Requested size: 455.24408pt x 181.88306pt on input lin
+e 149.
+<rozdzial05/interfejs/dadajFilm.png, id=123, 750.55406pt x 416.30531pt>
 File: rozdzial05/interfejs/dadajFilm.png Graphic file (type png)
-
 <use rozdzial05/interfejs/dadajFilm.png>
-Package pdftex.def Info: rozdzial05/interfejs/dadajFilm.png used on input line 
-156.
-(pdftex.def)             Requested size: 455.24408pt x 252.51024pt.
- [29 <./rozdzial05/interfejs/kupBilet.png> <./rozdzial05/interfejs/mojeBilety.p
-ng> <./rozdzial05/interfejs/filmy.png>] <rozdzial05/interfejs/edytujFilm.png, i
-d=126, 617.30624pt x 436.63126pt>
+Package pdftex.def Info: rozdzial05/interfejs/dadajFilm.png  used on input line
+ 156. on input line 156.
+Package pdftex.def Info: Requested size: 455.24408pt x 252.51024pt on input lin
+e 156.
+
+[30 <./rozdzial05/interfejs/kupBilet.png> <./rozdzial05/interfejs/mojeBilety.pn
+g> <./rozdzial05/interfejs/filmy.png>]
+<rozdzial05/interfejs/edytujFilm.png, id=130, 617.30624pt x 436.63126pt>
 File: rozdzial05/interfejs/edytujFilm.png Graphic file (type png)
-
 <use rozdzial05/interfejs/edytujFilm.png>
-Package pdftex.def Info: rozdzial05/interfejs/edytujFilm.png used on input line
- 163.
-(pdftex.def)             Requested size: 455.24408pt x 322.00943pt.
-
-<rozdzial05/interfejs/seanse.png, id=127, 960.58875pt x 426.09187pt>
+Package pdftex.def Info: rozdzial05/interfejs/edytujFilm.png  used on input lin
+e 163. on input line 163.
+Package pdftex.def Info: Requested size: 455.24408pt x 322.00943pt on input lin
+e 163.
+<rozdzial05/interfejs/seanse.png, id=131, 960.58875pt x 426.09187pt>
 File: rozdzial05/interfejs/seanse.png Graphic file (type png)
-
 <use rozdzial05/interfejs/seanse.png>
-Package pdftex.def Info: rozdzial05/interfejs/seanse.png used on input line 170
-.
-(pdftex.def)             Requested size: 455.24408pt x 201.93411pt.
- [30 <./rozdzial05/interfejs/dadajFilm.png> <./rozdzial05/interfejs/edytujFilm.
+Package pdftex.def Info: rozdzial05/interfejs/seanse.png  used on input line 17
+0. on input line 170.
+Package pdftex.def Info: Requested size: 455.24408pt x 201.93411pt on input lin
+e 170.
+ [31 <./rozdzial05/interfejs/dadajFilm.png> <./rozdzial05/interfejs/edytujFilm.
 png>]
-<rozdzial05/interfejs/dodajSeans.png, id=133, 746.79pt x 413.29407pt>
+<rozdzial05/interfejs/dodajSeans.png, id=138, 746.79pt x 413.29407pt>
 File: rozdzial05/interfejs/dodajSeans.png Graphic file (type png)
-
 <use rozdzial05/interfejs/dodajSeans.png>
-Package pdftex.def Info: rozdzial05/interfejs/dodajSeans.png used on input line
- 177.
-(pdftex.def)             Requested size: 455.24408pt x 251.94504pt.
-
-<rozdzial05/interfejs/edytujSeans.png, id=134, 569.87906pt x 356.83313pt>
+Package pdftex.def Info: rozdzial05/interfejs/dodajSeans.png  used on input lin
+e 177. on input line 177.
+Package pdftex.def Info: Requested size: 455.24408pt x 251.94504pt on input lin
+e 177.
+<rozdzial05/interfejs/edytujSeans.png, id=139, 569.87906pt x 356.83313pt>
 File: rozdzial05/interfejs/edytujSeans.png Graphic file (type png)
-
 <use rozdzial05/interfejs/edytujSeans.png>
-Package pdftex.def Info: rozdzial05/interfejs/edytujSeans.png used on input lin
+Package pdftex.def Info: rozdzial05/interfejs/edytujSeans.png  used on input li
+ne 184. on input line 184.
+Package pdftex.def Info: Requested size: 455.24408pt x 285.05307pt on input lin
 e 184.
-(pdftex.def)             Requested size: 455.24408pt x 285.05307pt.
- [31 <./rozdzial05/interfejs/seanse.png> <./rozdzial05/interfejs/dodajSeans.png
+ [32 <./rozdzial05/interfejs/seanse.png> <./rozdzial05/interfejs/dodajSeans.png
 >]
-<rozdzial05/interfejs/sale.png, id=141, 971.88094pt x 380.17032pt>
+<rozdzial05/interfejs/sale.png, id=145, 971.88094pt x 380.17032pt>
 File: rozdzial05/interfejs/sale.png Graphic file (type png)
-
 <use rozdzial05/interfejs/sale.png>
-Package pdftex.def Info: rozdzial05/interfejs/sale.png used on input line 191.
-(pdftex.def)             Requested size: 455.24408pt x 178.07677pt.
-
-<rozdzial05/interfejs/alert1.png, id=142, 749.80125pt x 189.70876pt>
+Package pdftex.def Info: rozdzial05/interfejs/sale.png  used on input line 191.
+ on input line 191.
+Package pdftex.def Info: Requested size: 455.24408pt x 178.07677pt on input lin
+e 191.
+<rozdzial05/interfejs/alert1.png, id=146, 749.80125pt x 189.70876pt>
 File: rozdzial05/interfejs/alert1.png Graphic file (type png)
-
 <use rozdzial05/interfejs/alert1.png>
-Package pdftex.def Info: rozdzial05/interfejs/alert1.png used on input line 200
-.
-(pdftex.def)             Requested size: 455.24408pt x 115.18375pt.
- [32 <./rozdzial05/interfejs/edytujSeans.png> <./rozdzial05/interfejs/sale.png>
+Package pdftex.def Info: rozdzial05/interfejs/alert1.png  used on input line 20
+0. on input line 200.
+Package pdftex.def Info: Requested size: 455.24408pt x 115.18375pt on input lin
+e 200.
+ [33 <./rozdzial05/interfejs/edytujSeans.png> <./rozdzial05/interfejs/sale.png>
 ]
-<rozdzial05/interfejs/alert2.png, id=148, 749.80125pt x 189.70876pt>
+<rozdzial05/interfejs/alert2.png, id=152, 749.80125pt x 189.70876pt>
 File: rozdzial05/interfejs/alert2.png Graphic file (type png)
-
 <use rozdzial05/interfejs/alert2.png>
-Package pdftex.def Info: rozdzial05/interfejs/alert2.png used on input line 207
-.
-(pdftex.def)             Requested size: 455.24408pt x 115.18375pt.
+Package pdftex.def Info: rozdzial05/interfejs/alert2.png  used on input line 20
+7. on input line 207.
+Package pdftex.def Info: Requested size: 455.24408pt x 115.18375pt on input lin
+e 207.
 
 Overfull \hbox (30.4239pt too wide) in paragraph at lines 220--229
  [][] 
  []
 
-(rozdzial05/cinemaApi.txt [33 <./rozdzial05/interfejs/alert1.png (PNG copy)> <.
-/rozdzial05/interfejs/alert2.png (PNG copy)>] [34]) (rozdzial05/getApi.txt
-[35])) [36]
+(./rozdzial05/cinemaApi.txt [34 <./rozdzial05/interfejs/alert1.png (PNG copy)> 
+<./rozdzial05/interfejs/alert2.png (PNG copy)>] [35]) (./rozdzial05/getApi.txt
+[36])) [37]
 \openout2 = `rozdzial06.aux'.
 
- (rozdzial06.tex
+ (./rozdzial06.tex
 Rozdzia\PlPrIeC {\l } 6.
-(rozdzial06/node.txt) (rozdzial06/angular2.txt) (rozdzial06/localhost.txt)
+(./rozdzial06/node.txt) (./rozdzial06/angular2.txt) (./rozdzial06/localhost.txt
+)
 Underfull \hbox (badness 10000) in paragraph at lines 23--24
 
  []
@@ -1372,11 +1383,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
  []
 
-[37
+[38
 
 
 
-] (rozdzial06/server.txt) (rozdzial06/api.txt [38]) (rozdzial06/run.txt)
+] (./rozdzial06/server.txt) (./rozdzial06/api.txt [39])
+(./rozdzial06/run.txt)
 Underfull \hbox (badness 10000) in paragraph at lines 45--46
 
  []
@@ -1386,99 +1398,119 @@ Underfull \hbox (badness 10000) in paragraph at lines 50--51
 
  []
 
-<rozdzial06/5.png, id=168, 1839.87375pt x 957.5775pt>
+<rozdzial06/5.png, id=172, 1839.87375pt x 957.5775pt>
 File: rozdzial06/5.png Graphic file (type png)
- <use rozdzial06/5.png>
-Package pdftex.def Info: rozdzial06/5.png used on input line 56.
-(pdftex.def)             Requested size: 455.24408pt x 236.92445pt.
-
-[39] <rozdzial06/7.png, id=172, 1442.38875pt x 727.71875pt>
+<use rozdzial06/5.png>
+Package pdftex.def Info: rozdzial06/5.png  used on input line 56. on input line
+ 56.
+Package pdftex.def Info: Requested size: 455.24408pt x 236.92445pt on input lin
+e 56.
+[40]
+<rozdzial06/7.png, id=176, 1442.38875pt x 727.71875pt>
 File: rozdzial06/7.png Graphic file (type png)
-
 <use rozdzial06/7.png>
-Package pdftex.def Info: rozdzial06/7.png used on input line 63.
-(pdftex.def)             Requested size: 455.24408pt x 229.67677pt.
- <rozdzial06/8.png, id=173, 1421.31pt x 804.00375pt>
+Package pdftex.def Info: rozdzial06/7.png  used on input line 63. on input line
+ 63.
+Package pdftex.def Info: Requested size: 455.24408pt x 229.67677pt on input lin
+e 63.
+<rozdzial06/8.png, id=177, 1421.31pt x 804.00375pt>
 File: rozdzial06/8.png Graphic file (type png)
-
 <use rozdzial06/8.png>
-Package pdftex.def Info: rozdzial06/8.png used on input line 70.
-(pdftex.def)             Requested size: 455.24408pt x 257.51955pt.
- [40 <./rozdzial06/5.png (PNG copy)> <./rozdzial06/7.png (PNG copy)>] <rozdzial
-06/6.png, id=177, 1843.88875pt x 956.57375pt>
+Package pdftex.def Info: rozdzial06/8.png  used on input line 70. on input line
+ 70.
+Package pdftex.def Info: Requested size: 455.24408pt x 257.51955pt on input lin
+e 70.
+ [41 <./rozdzial06/5.png (PNG copy)> <./rozdzial06/7.png (PNG copy)>]
+<rozdzial06/6.png, id=181, 1843.88875pt x 956.57375pt>
 File: rozdzial06/6.png Graphic file (type png)
-
 <use rozdzial06/6.png>
-Package pdftex.def Info: rozdzial06/6.png used on input line 77.
-(pdftex.def)             Requested size: 455.24408pt x 236.16524pt.
-) [41 <./rozdzial06/8.png (PNG copy)> <./rozdzial06/6.png (PNG copy)>]
+Package pdftex.def Info: rozdzial06/6.png  used on input line 77. on input line
+ 77.
+Package pdftex.def Info: Requested size: 455.24408pt x 236.16524pt on input lin
+e 77.
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
+
+ []
+
+[42 <./rozdzial06/8.png (PNG copy)> <./rozdzial06/6.png (PNG copy)>]
+<rozdzial06/r1.png, id=185, 1835.85875pt x 755.82375pt>
+File: rozdzial06/r1.png Graphic file (type png)
+<use rozdzial06/r1.png>
+Package pdftex.def Info: rozdzial06/r1.png  used on input line 90. on input lin
+e 90.
+Package pdftex.def Info: Requested size: 455.24408pt x 187.42159pt on input lin
+e 90.
+<rozdzial06/r2.png, id=186, 978.65625pt x 569.12625pt>
+File: rozdzial06/r2.png Graphic file (type png)
+<use rozdzial06/r2.png>
+Package pdftex.def Info: rozdzial06/r2.png  used on input line 97. on input lin
+e 97.
+Package pdftex.def Info: Requested size: 455.24408pt x 264.74518pt on input lin
+e 97.
+<rozdzial06/r3.png, id=187, 1192.455pt x 693.59125pt>
+File: rozdzial06/r3.png Graphic file (type png)
+<use rozdzial06/r3.png>
+Package pdftex.def Info: rozdzial06/r3.png  used on input line 104. on input li
+ne 104.
+Package pdftex.def Info: Requested size: 455.24408pt x 264.79507pt on input lin
+e 104.
+ [43 <./rozdzial06/r1.png (PNG copy)> <./rozdzial06/r2.png (PNG copy)>]
+<rozdzial06/r4.png, id=192, 1830.84pt x 697.60625pt>
+File: rozdzial06/r4.png Graphic file (type png)
+<use rozdzial06/r4.png>
+Package pdftex.def Info: rozdzial06/r4.png  used on input line 111. on input li
+ne 111.
+Package pdftex.def Info: Requested size: 455.24408pt x 173.45375pt on input lin
+e 111.
+) [44 <./rozdzial06/r3.png (PNG copy)> <./rozdzial06/r4.png (PNG copy)>]
 \openout2 = `rozdzial07.aux'.
 
- (rozdzial07.tex
+ (./rozdzial07.tex
 Rozdzia\PlPrIeC {\l } 7.
-
-Underfull \hbox (badness 10000) in paragraph at lines 3--12
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 13--14
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 15--16
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 18--19
-
- []
-
 )
-Overfull \hbox (0.51273pt too wide) in paragraph at lines 20--134
+Overfull \hbox (0.51273pt too wide) in paragraph at lines 19--134
 []\T1/qtm/m/n/12 Speªniono wszyst-kie za-ªo-»e-nia pro-jek-to-we po-sta-wio-ne 
 przez pro-wa-dz¡-ce-go za-j¦-cia jak i spro-
  []
 
-[42
+[45
 
 
 
 ]
 \openout2 = `Bibliografia2.aux'.
 
- (Bibliografia2.tex) [43
+ (./Bibliografia2.tex) [46
 
 
-] (praca.aux (rozdzial01.aux) (rozdzial02.aux)
-(rozdzial03.aux) (rozdzial04.aux) (rozdzial05.aux) (rozdzial06.aux)
-(rozdzial07.aux) (Bibliografia2.aux))
+] (./praca.aux (./rozdzial01.aux)
+(./rozdzial02.aux) (./rozdzial03.aux) (./rozdzial04.aux) (./rozdzial05.aux)
+(./rozdzial06.aux) (./rozdzial07.aux) (./Bibliografia2.aux))
 
 LaTeX Warning: There were multiply-defined labels.
 
  )
 (\end occurred when \iftrue on line 249 was incomplete) 
 Here is how much of TeX's memory you used:
- 6914 strings out of 493333
- 95338 string characters out of 3139194
- 307957 words of memory out of 3000000
- 10100 multiletter control sequences out of 15000+200000
- 61424 words of font info for 51 fonts, out of 3000000 for 9000
+ 6892 strings out of 492990
+ 95459 string characters out of 6134997
+ 304933 words of memory out of 5000000
+ 10100 multiletter control sequences out of 15000+600000
+ 61424 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,15n,41p,1021b,1700s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX
- 2.9/fonts/enc/dvips/lm/lm-ec.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/
-tex-gyre/q-ts1.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/tex-gyre/q-ec.e
-nc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/tex-gyre/q-ec-sc.enc}<C:/Progra
-m Files/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb><C:/Program Files/MiKTeX 2.
-9/fonts/type1/public/tex-gyre/qtmb.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1
-/public/tex-gyre/qtmr.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/tex-g
-yre/qtmri.pfb>
-Output written on praca.pdf (43 pages, 2698245 bytes).
+ 42i,15n,41p,1188b,1700s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/
+enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ts1.enc}{/u
+sr/share/texmf/fonts/enc/dvips/tex-gyre/q-ec.enc}{/usr/share/texmf/fonts/enc/dv
+ips/tex-gyre/q-ec-sc.enc}</usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb></u
+sr/share/texmf/fonts/type1/public/tex-gyre/qtmb.pfb></usr/share/texmf/fonts/typ
+e1/public/tex-gyre/qtmr.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qtmri
+.pfb>
+Output written on praca.pdf (46 pages, 3174803 bytes).
 PDF statistics:
- 210 PDF objects out of 1000 (max. 8388607)
+ 226 PDF objects out of 1000 (max. 8388607)
+ 125 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 151 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 171 words of extra memory for PDF output out of 10000 (max. 10000000)
 

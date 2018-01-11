@@ -86,6 +86,7 @@ export class BuyticketComponent implements OnInit {
   }
 
   getFreeSeats(id: string) {
+    console.log(id);
     this._db.getFreeSeats(id).subscribe(res => {
       this.seats = res;
     });
